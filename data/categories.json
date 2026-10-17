@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "name": "Context, evaluators and evaluation"
+  },
+  {
+    "id": 1,
+    "name": "Construction, templates and discrete search"
+  },
+  {
+    "id": 2,
+    "name": "Random structure search"
+  },
+  {
+    "id": 3,
+    "name": "Evolutionary and genetic search"
+  },
+  {
+    "id": 4,
+    "name": "Swarm and differential evolution"
+  },
+  {
+    "id": 5,
+    "name": "Energy-landscape exploration"
+  },
+  {
+    "id": 6,
+    "name": "Adaptive and ML-guided search"
+  },
+  {
+    "id": 7,
+    "name": "Learned generation and conditional CSP"
+  }
+]

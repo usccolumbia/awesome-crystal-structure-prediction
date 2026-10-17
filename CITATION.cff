@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the original papers for individual algorithms and datasets. Cite this directory when referring to the curated collection."
+title: "Awesome Crystal Structure Prediction (CSP)"
+authors:
+  - name: "Awesome Crystal Structure Prediction contributors"
+repository-code: "https://github.com/usccolumbia/awesome-crystal-structure-prediction"
+url: "https://github.com/usccolumbia/awesome-crystal-structure-prediction"
+version: "0.1.0"
+date-released: "2026-10-17"
+license: MIT
+type: dataset

@@ -1,0 +1,1488 @@
+[
+  {
+    "paper_id": "CSP086",
+    "label": "Needs adaptation",
+    "support_scope": "Restricted binary-to-ternary hydride domain translation; no prescribed cell stoichiometry interface.",
+    "mechanism": "CrystalGAN transfers structures between two binary-hydride domains and combines them into a ternary domain; exported species counts are derived from generated arrays.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Input binary chemical domains",
+      "Nearest-neighbor distance constraints"
+    ],
+    "evidence_level": "Paper and official source code inspected",
+    "evidence": [
+      {
+        "url": "https://ceur-ws.org/Vol-2350/paper18.pdf",
+        "source_type": "Primary workshop full paper",
+        "locator": "Task Description: Exploring Novel Hydrides, p6 (PDF index5)",
+        "observation": "The experiments translate Pd-H/Ni-H and Mg-H/Ti-H datasets with padded coordinate matrices; no requested per-element count vector is provided."
+      },
+      {
+        "url": "https://github.com/asmanouira/CrystalGAN/blob/master/post_processing.py",
+        "source_type": "Official source code",
+        "locator": "clean_data and write_POSCAR",
+        "observation": "Padding is removed by coordinate repetition checks; the POSCAR count line is computed from the lengths of the resulting generated H/M1/M2 arrays rather than a requested formula."
+      }
+    ],
+    "adaptation_required": "Add explicit desired counts and enforce occupancy/coordinate masks during generation and export; chemistry beyond the trained domains also requires new training.",
+    "caveat": "Specified ternary element identities do not specify their multiplicities; no runtime validation performed.",
+    "checked_on": "2026-10-16",
+    "model_name": "CrystalGAN",
+    "title": "CrystalGAN: Learning to Discover Crystallographic Structures with Generative Adversarial Networks",
+    "year": 2019,
+    "paper_url": "https://ceur-ws.org/Vol-2350/paper18.pdf",
+    "aliases": [
+      "ML66"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP087",
+    "label": "Needs adaptation",
+    "support_scope": "Structure reconstruction/interpolation; formula-only inference not established",
+    "mechanism": "VAE density-field decoder and U-Net species segmentation reconstruct complete encoded structures.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Encoded full crystal; interpolated structural latent"
+    ],
+    "evidence_level": "Paper and official repository description",
+    "evidence": [
+      {
+        "url": "https://github.com/hoffmannjordan/Encoding-Decoding-3D-Crystals",
+        "source_type": "Official repository",
+        "locator": "README: Article Description; Data Generation; Crystal-VAE",
+        "observation": "Describes encoding/decoding density fields and species segmentation; input data are CIFs and latent interpolation, rather than a prescribed formula sampler."
+      }
+    ],
+    "adaptation_required": "Add a formula-conditioned latent prior and count-constrained density-to-atom decoder; this is a proposed extension.",
+    "caveat": "Accurate reconstruction of an input crystal does not establish formula-only CSP. No generation runtime was tested.",
+    "formula_interface": "None documented for formula-only sampling",
+    "enforcement": "Counts recovered from generated density, not prescribed",
+    "checked_on": "2026-10-16",
+    "model_name": "DD3DCS",
+    "title": "Data-Driven Approach to Encoding and Decoding 3-D Crystal Structures",
+    "year": 2019,
+    "paper_url": "https://arxiv.org/abs/1909.00949",
+    "aliases": [
+      "ML65"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP088",
+    "label": "Unconditional-only documented",
+    "support_scope": "V–O domain; variable stoichiometry from latent sampling",
+    "mechanism": "Hierarchical autoencoders decode sampled or interpolated material latent vectors into density images; atom identities/counts are extracted afterward.",
+    "hard_count_control": "no",
+    "documented_conditions": [],
+    "evidence_level": "Primary full paper; generation section inspected",
+    "evidence": [
+      {
+        "url": "https://light.utoronto.ca/wp-content/uploads/2020/09/matter_inverse_design.pdf",
+        "source_type": "Author-hosted accepted manuscript",
+        "locator": "Materials Generation, pp.6–8",
+        "observation": "Gaussian latent sampling and interpolation generate V–O structures; invalid oxidation-state stoichiometries are discarded afterward."
+      }
+    ],
+    "adaptation_required": "Add formula/count conditioning or constrained decoding, retrain/validate it; no such exact-formula interface established in this paper.",
+    "caveat": "Sampling in stable latent regions is documented; this is not a user-prescribed formula condition. Unconditional-only describes the reviewed generation workflow, not impossibility of future extensions.",
+    "checked_on": "2026-10-16",
+    "model_name": "iMatGen",
+    "title": "Inverse Design of Solid-State Materials via a Continuous Representation",
+    "year": 2019,
+    "paper_url": "https://doi.org/10.1016/j.matt.2019.08.017",
+    "aliases": [
+      "ML13"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP092",
+    "label": "Needs adaptation",
+    "support_scope": "Property-conditioned voxel generation around an encoded existing base crystal; not formula-only CSP.",
+    "mechanism": "ICSG3D encodes the complete base compound density/coordinate grids, samples nearby latent vectors, and decodes new atom species via segmentation.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Formation-energy interval",
+      "Encoded existing base crystal",
+      "Trained structural family"
+    ],
+    "evidence_level": "Official README and generation source inspected",
+    "evidence": [
+      {
+        "url": "https://github.com/by256/icsg3d",
+        "source_type": "Official repository",
+        "locator": "README: Generate new samples",
+        "observation": "The --base CeCrO3 example samples around a base compound rather than promising preservation of its stoichiometry."
+      },
+      {
+        "url": "https://github.com/by256/icsg3d/blob/master/generate.py",
+        "source_type": "Official source code",
+        "locator": "M_base/C_base loading; vae.encoder.predict; watershed_clustering; structure.formula export",
+        "observation": "The formula argument resolves a dataset record and loads its full voxel structure. Decoded species and cluster counts determine the new formula; validity checks do not enforce the base counts."
+      }
+    ],
+    "adaptation_required": "Provide formula-only inputs and constrain segmentation/occupancy to exact requested counts, with suitable conditional training or a separately validated count-constrained decoder.",
+    "caveat": "A --base formula-looking argument is a lookup of a known full structure, not exact formula conditioning.",
+    "checked_on": "2026-10-16",
+    "model_name": "ICSG3D",
+    "title": "3‑D Inorganic Crystal Structure Generation and Property Prediction via Representation Learning",
+    "year": 2020,
+    "paper_url": "https://pubs.acs.org/doi/10.1021/acs.jcim.0c00464",
+    "aliases": [
+      "ML68"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP097",
+    "label": "Needs adaptation",
+    "support_scope": "Demonstrated soft composition-conditioned GAN in Mg-Mn-O and V-O; exact hard count preservation is not established.",
+    "mechanism": "GANCSP receives a one-hot composition vector, trains a composition/occupancy classifier, and rejects outputs whose classifier-predicted composition disagrees with the target.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Target composition class within trained chemical system"
+    ],
+    "evidence_level": "Primary paper and included supporting information inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/pdf/2004.01396",
+        "source_type": "Primary full paper and SI",
+        "locator": "Composition-conditioned Crystal GAN, pp8–10; SI S1.1 and S6.2, PDF pp21–22 and34–35",
+        "observation": "Element-specific coordinate blocks contain learned zero padding. Target composition is a GAN input and classifier loss; SI accepts samples when the composition classifier agrees with the target. This is learned/classifier-based control, not a fixed external species list or a demonstrated exact decoded-atom-count check."
+      }
+    ],
+    "adaptation_required": "For hard guarantees, enforce the requested element occupancies in the coordinate blocks or verify actual decoded per-element counts with deterministic rejection, rather than relying only on a classifier label.",
+    "caveat": "The paper legitimately reports composition-conditioned generation. This stricter audit distinguishes that claim from exact per-element count enforcement; restricted chemistry and atom caps also apply.",
+    "checked_on": "2026-10-16",
+    "documented_formula_interface": "Yes: user-desired one-hot composition class and classifier-based post-filtering are explicitly demonstrated for Mg-Mn-O and V-O; label concerns missing deterministic atom-count guarantee, not absence of formula targeting.",
+    "model_name": "GANCSP",
+    "title": "Generative Adversarial Networks for Crystal Structure Prediction",
+    "year": 2020,
+    "paper_url": "https://pubs.acs.org/doi/10.1021/acscentsci.0c00426",
+    "aliases": [
+      "ML67"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP101",
+    "label": "Needs adaptation",
+    "support_scope": "Bi-Se chemical-system and formation-energy-guided generation; requested stoichiometry not enforced",
+    "mechanism": "CCDCGAN optimizes a formation-energy constraint over generated latent crystal graphs.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Bi-Se training system",
+      "Formation energy objective"
+    ],
+    "evidence_level": "Publisher full paper methods",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41524-021-00526-4.pdf",
+        "source_type": "Publisher paper",
+        "locator": "Results: Construction and prediction of DCGAN; Training of CCDCGAN; Fig.3",
+        "observation": "The constrained generator spans Bi-Se compositions; its extra feedback is formation energy, not an atom-count condition."
+      }
+    ],
+    "adaptation_required": "Add exact composition input and a species/count-preserving structural decoder or verified count constraint.",
+    "caveat": "The word constrained refers to the property/energy objective. Code is available on request in the article, so no public implementation was executed.",
+    "formula_interface": "Property-guided model; no exact-formula interface demonstrated",
+    "enforcement": "Formation-energy feedback; variable generated Bi:Se counts",
+    "checked_on": "2026-10-16",
+    "model_name": "CCDCGAN",
+    "title": "Constrained crystals deep convolutional generative adversarial network for the inverse design of crystal structures",
+    "year": 2021,
+    "paper_url": "https://www.nature.com/articles/s41524-021-00526-4",
+    "aliases": [
+      "ML22"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP105",
+    "label": "Needs adaptation",
+    "support_scope": "Ternary/quaternary cubic structures with selected space groups; element identity conditioning",
+    "mechanism": "GAN conditions on selected elements and cubic space group; generated asymmetric-site coordinates determine symmetry multiplicities and resulting stoichiometry.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Selected elements",
+      "Space groups 216, 221, 225; quaternary demonstration mainly 216"
+    ],
+    "evidence_level": "Primary paper and author follow-up methods",
+    "evidence": [
+      {
+        "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202100566",
+        "source_type": "Primary publisher paper",
+        "locator": "Model architecture and Dataset sections",
+        "observation": "Generator inputs include element and space-group embeddings; paper samples multiple anonymous formula prototypes."
+      },
+      {
+        "url": "https://www.nature.com/articles/s41524-022-00850-3",
+        "source_type": "Primary author follow-up",
+        "locator": "Method: Generative adversarial network",
+        "observation": "Documents selected element combinations, selected cubic groups and special fractional-coordinate support."
+      }
+    ],
+    "adaptation_required": "Add requested per-element multiplicities/site assignments or exact-count acceptance constraints; element labels alone do not specify formula.",
+    "caveat": "Cubic symmetry and one inequivalent site per element do not imply arbitrary exact formula support.",
+    "checked_on": "2026-10-16",
+    "model_name": "CubicGAN",
+    "title": "High‐Throughput Discovery of Novel Cubic Crystal Materials Using Deep Generative Neural Networks",
+    "year": 2021,
+    "paper_url": "https://doi.org/10.1002/advs.202100566",
+    "aliases": [
+      "ML12"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP111",
+    "label": "Needs adaptation",
+    "support_scope": "Property-targeted variable-composition VAE inverse design.",
+    "mechanism": "FTCP decodes composition, lattice and coordinates jointly from a property-structured latent space; formulas are decoded outputs.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Material-property targets via latent-space selection",
+      "Full-crystal reconstruction"
+    ],
+    "evidence_level": "Official repository and primary preprint inspected",
+    "evidence": [
+      {
+        "url": "https://github.com/PV-Lab/FTCP",
+        "source_type": "Official repository",
+        "locator": "README: package overview, Sampling, Usage module table",
+        "observation": "The model trains a property-structured latent space and sampling.py derives chemical formulas from decoded representations."
+      },
+      {
+        "url": "https://arxiv.org/html/2005.07609v2",
+        "source_type": "Primary preprint full text",
+        "locator": "Sections3.2,3.3,3.5",
+        "observation": "Regression organizes the latent space by properties; inverse design samples those regions and permits chemical formulas to change."
+      }
+    ],
+    "adaptation_required": "Introduce an explicit formula/count condition and preserve element/occupancy channels during decoding; latent property steering alone is insufficient.",
+    "caveat": "The cited early preprint is not identical to the final Matter text; the official published-paper repository confirms the same variable-composition sampling workflow.",
+    "checked_on": "2026-10-16",
+    "model_name": "FTCP",
+    "title": "An invertible crystallographic representation for general inverse design of inorganic crystals with targeted properties",
+    "year": 2022,
+    "paper_url": "https://doi.org/10.1016/j.matt.2021.11.032",
+    "aliases": [
+      "ML21"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP113",
+    "label": "Exact formula supported",
+    "support_scope": "LIMITED released low-level decoder hook; original paper standard generation is not a dedicated formula-only CSP model",
+    "mechanism": "langevin_dynamics accepts gt_num_atoms and gt_atom_types, initializes exactly that species list and bypasses type updates when supplied. Random coordinates do not require an input crystal.",
+    "hard_count_control": "limited",
+    "documented_conditions": [
+      "Latent z",
+      "Optional exact atom-count vector and species list",
+      "Full structure for reconstruction"
+    ],
+    "evidence_level": "Official implementation inspected; later adaptation described in primary paper",
+    "evidence": [
+      {
+        "url": "https://github.com/txie-93/cdvae/blob/f857f598d6f6cca5dc1ea0582d228f12dcc2c2ea/cdvae/pl_modules/model.py",
+        "source_type": "Official source code, pinned commit",
+        "locator": "CDVAE.langevin_dynamics lines226–302; sample lines304–308",
+        "observation": "Providing both optional arguments fixes N and all species throughout coordinate denoising; standard sample() supplies neither."
+      },
+      {
+        "url": "https://arxiv.org/html/2309.04475",
+        "source_type": "Primary paper describing adaptation",
+        "locator": "Appendix B.2 and Fig.5",
+        "observation": "DiffCSP adds a composition-conditioned prior encoder to CDVAE and fixes atom types for its CSP baseline."
+      }
+    ],
+    "adaptation_required": "No decoder change needed for exact counts. A wrapper must supply latent z, counts, and the species list; a composition-conditioned latent prior requires the separately documented adaptation.",
+    "caveat": "This is code-level structural support, not a reported original-paper formula-conditioned benchmark or a pretrained formula-conditioned latent distribution. No runtime test or quality claim.",
+    "formula_interface": "Low-level gt_num_atoms + gt_atom_types, not standard sample() CLI",
+    "enforcement": "Hard species/count freeze in decoder; latent prior remains separate",
+    "checked_on": "2026-10-16",
+    "model_name": "CDVAE",
+    "title": "Crystal Diffusion Variational Autoencoder for Periodic Material Generation",
+    "year": 2022,
+    "paper_url": "https://arxiv.org/abs/2110.06197",
+    "aliases": [
+      "ML11"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP126",
+    "label": "Needs adaptation",
+    "support_scope": "SLICES reconstruction from a full topology/composition string and formation-energy-conditioned generation",
+    "mechanism": "The cRNN embeds a scalar target formation energy while sampling the SLICES atom and edge sequence. A full supplied SLICES string has more information than formula alone.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Formation energy",
+      "Existing full SLICES string for reconstruction"
+    ],
+    "evidence_level": "Primary full paper methods inspected",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41467-023-42870-7",
+        "source_type": "Primary publisher paper",
+        "locator": "Methods: ucRNN/cRNN Models for SLICES String Generation; Discussion",
+        "observation": "The conditional RNN uses desired formation energy; SLI2Cry reconstructs composition plus topology supplied by a SLICES string."
+      }
+    ],
+    "adaptation_required": "Condition or constrain atom-prefix generation to prescribed species/counts while generating topology; validate stoichiometry after reconstruction.",
+    "caveat": "Representation invertibility does not establish formula-only conditional generation in the 2023 paper.",
+    "checked_on": "2026-10-16",
+    "model_name": "SLICES",
+    "title": "An invertible, invariant crystal representation for inverse design of solid-state materials using generative deep learning",
+    "year": 2023,
+    "paper_url": "https://www.nature.com/articles/s41467-023-42870-7",
+    "aliases": [
+      "ML19"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP128",
+    "label": "Exact formula supported",
+    "support_scope": "Fixed supplied unit-cell atom multiset across supported training chemistry/sizes",
+    "mechanism": "DiffCSP jointly denoises lattice and fractional coordinates conditional on a fixed list of atomic species.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact per-atom species list and N"
+    ],
+    "evidence_level": "Primary full methods and sampling algorithm",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2309.04475",
+        "source_type": "Primary paper",
+        "locator": "Sec.3 Task definition; Sec.4.2; Appendix B.3 Algorithm2",
+        "observation": "Sampling inputs include atom types A; only lattice and coordinate states are updated."
+      }
+    ],
+    "adaptation_required": "None for prescribed counts; reduced formulas still require selecting cell multiplicity.",
+    "caveat": "Exact species/count preservation does not guarantee the thermodynamic ground state, unseen-size generalization, or correct cell multiplicity.",
+    "formula_interface": "Native formula / atom-multiset CSP",
+    "enforcement": "Hard fixed species and N; geometric variables sampled",
+    "checked_on": "2026-10-16",
+    "model_name": "DiffCSP",
+    "title": "Crystal Structure Prediction by Joint Equivariant Diffusion",
+    "year": 2023,
+    "paper_url": "https://arxiv.org/abs/2309.04475",
+    "aliases": [
+      "ML09"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP130",
+    "label": "Needs adaptation",
+    "support_scope": "Partial crystal specification: space group, composition and lattice only; no atomic coordinates.",
+    "mechanism": "Crystal-GFN sequentially samples SG, per-element integer quantities and lattice parameters with action-space constraints.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Reward model",
+      "Charge neutrality",
+      "Space-group/composition compatibility",
+      "Lattice-system constraints"
+    ],
+    "evidence_level": "Primary full paper inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2310.04925v2",
+        "source_type": "Primary full paper",
+        "locator": "Introduction; Section4.2 Composition; Section6 Conclusions",
+        "observation": "The paper explicitly distinguishes its SG/composition/lattice output from generating atomic positions. Counts are sequentially sampled; the reported constraints are charge neutrality and Wyckoff compatibility, not a demonstrated fixed-formula full-structure CSP sampler."
+      }
+    ],
+    "adaptation_required": "Clamp or mask element-count actions for the requested formula and supply a downstream coordinate/occupancy generator consistent with the chosen symmetry.",
+    "caveat": "Even exact count control over this partial output would not make the original model a complete CSP algorithm.",
+    "checked_on": "2026-10-16",
+    "model_name": "Crystal-GFN",
+    "title": "Crystal-GFN: sampling crystals with desirable properties and constraints",
+    "year": 2023,
+    "paper_url": "https://arxiv.org/abs/2310.04925",
+    "aliases": [
+      "ML20"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP134",
+    "label": "Needs adaptation",
+    "support_scope": "Ternary elements and space-group-conditioned generation; arbitrary requested element counts not demonstrated",
+    "mechanism": "PGCGM generates one base atom site per element, applies symmetry operations, then clusters/merges equivalent or nearby atoms.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Three element identities",
+      "Space group",
+      "Noise"
+    ],
+    "evidence_level": "Publisher full paper methods",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41524-023-00987-9",
+        "source_type": "Publisher paper",
+        "locator": "Methods: Crystal symmetry based self-augmentation; Atom clustering and merging; Algorithm1; Materials representation",
+        "observation": "Full atom counts arise from symmetry expansion and clustering of generated base sites; the specified element set is not a specified per-element count vector."
+      }
+    ],
+    "adaptation_required": "Add stoichiometry-compatible Wyckoff allocation or a count-preserving decoder and enforce counts after merging.",
+    "caveat": "The published study also has an author correction (10.1038/s41524-023-01059-8); element conditioning must not be labeled arbitrary exact-formula CSP.",
+    "formula_interface": "Element identities plus symmetry",
+    "enforcement": "Symmetry/geometric constraints; no prescribed-count invariant",
+    "checked_on": "2026-10-16",
+    "model_name": "PGCGM",
+    "title": "Physics guided deep learning for generative design of crystal materials with symmetry constraints",
+    "year": 2023,
+    "paper_url": "https://www.nature.com/articles/s41524-023-00987-9",
+    "aliases": [
+      "ML10"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP138",
+    "label": "Needs adaptation",
+    "support_scope": "Random generation, reconstruction and latent property optimization; coordinate submodel conditions on atom list AND lattice",
+    "mechanism": "SyMat first generates element counts and lattice from latent vectors, then samples coordinates with those generated variables fixed.",
+    "hard_count_control": "limited",
+    "documented_conditions": [
+      "Atom types/counts and lattice inside coordinate-generation submodel",
+      "Encoded full structure for reconstruction",
+      "Latent energy optimization"
+    ],
+    "evidence_level": "Primary conference full paper inspected",
+    "evidence": [
+      {
+        "url": "https://papers.nips.cc/paper_files/paper/2023/file/a73474c359ed523e6cd3174ed29a4d56-Paper-Conference.pdf",
+        "source_type": "Primary conference paper",
+        "locator": "Sections3.2–3.4 and4.1; Algorithm1",
+        "observation": "The first stage samples atom sets and lattice; its coordinate decoder conditions on both. Reported tasks are random generation, property optimization and reconstruction."
+      }
+    ],
+    "adaptation_required": "Replace/recondition the joint proposal stage so prescribed atom counts can drive compatible lattice generation; evaluate formula-only CSP.",
+    "caveat": "The existence of p(coordinates | species, lattice) is not a demonstrated formula-only lattice-and-coordinate sampler.",
+    "checked_on": "2026-10-16",
+    "model_name": "SyMat",
+    "title": "Towards Symmetry-Aware Generation of Periodic Materials",
+    "year": 2023,
+    "paper_url": "https://papers.nips.cc/paper_files/paper/2023/hash/a73474c359ed523e6cd3174ed29a4d56-Abstract-Conference.html",
+    "aliases": [
+      "ML61"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP140",
+    "label": "Needs adaptation",
+    "support_scope": "Exact cell-composition prompt supported; strict preservation is not enforced by the reported autoregressive sampler",
+    "mechanism": "A CIF data_ prefix supplies desired element counts, optionally augmented by symmetry/Z. Subsequent CIF tokens are sampled and outputs are validated.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Cell-composition CIF prefix",
+      "Optional space group",
+      "Optional formula-unit count Z in web interface"
+    ],
+    "evidence_level": "Primary full publisher paper inspected",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41467-024-54639-7.pdf",
+        "source_type": "Primary publisher paper",
+        "locator": "Results: Generalizing to unseen structures; Fig.1; Methods: web application",
+        "observation": "Cell composition is supplied as a text prefix; model generates subsequent tokens and checks output validity afterward."
+      }
+    ],
+    "adaptation_required": "Add constrained decoding/count accounting or explicit target-composition rejection and retry for guaranteed count-compliant outputs.",
+    "caveat": "This label concerns strict count enforcement; formula-conditioned prompting and reported CSP experiments already exist and must not be described as absent.",
+    "checked_on": "2026-10-16",
+    "formula_interface": "Exact cell-composition CIF prefix (soft enforcement)",
+    "model_name": "CrystaLLM",
+    "title": "Crystal structure generation with autoregressive large language modeling",
+    "year": 2024,
+    "paper_url": "https://doi.org/10.1038/s41467-024-54639-7",
+    "aliases": [
+      "ML05"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP142",
+    "label": "Exact formula supported",
+    "support_scope": "Composition-plus-pressure CSP within the trained element/size/pressure domain.",
+    "mechanism": "Cond-CDVAE supplies the atom-type list A as fixed input; generates lattice and coordinates while A does not participate in diffusion.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact atom-species list/counts",
+      "External pressure"
+    ],
+    "evidence_level": "Primary publisher full paper inspected",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41524-024-01443-y",
+        "source_type": "Primary publisher full text",
+        "locator": "Results: Architecture and workflow of Cond-CDVAE, following Fig1; reconstruction comparison",
+        "observation": "The model targets q(M|A,p); generation initializes (A,noisy positions,L) and denoises positions. The text explicitly states composition is predetermined and does not participate in diffusion."
+      }
+    ],
+    "adaptation_required": "No count-conditioning adaptation needed; provide the desired expanded species list/number of formula units.",
+    "caveat": "Formula-unit multiplicity must still be specified or searched. Support does not imply all chemical systems, cell sizes or pressures are validated.",
+    "checked_on": "2026-10-16",
+    "model_name": "Cond-CDVAE",
+    "title": "Deep learning generative model for crystal structure prediction",
+    "year": 2024,
+    "paper_url": "https://www.nature.com/articles/s41524-024-01443-y",
+    "aliases": [
+      "ML17"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP143",
+    "label": "Unconditional-only documented",
+    "support_scope": "Reported de novo generation predicts species/counts; full-input reconstruction is a separate task.",
+    "mechanism": "DP-CDVAE decodes lattice, predicted atom number and atomic-type distribution from a structure-encoded or sampled latent vector, then denoises coordinates and species.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Full input structure for reconstruction",
+      "Dataset-specific training distribution"
+    ],
+    "evidence_level": "Primary publisher full paper inspected",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41598-024-51400-4",
+        "source_type": "Primary publisher full text",
+        "locator": "Figure1 caption; Results: Reconstruction performance, Generation performance; Methods",
+        "observation": "The architecture decodes the atom number and samples atomic types. The extra N_a encoder improves count prediction during reconstruction; no formula-only fixed-species generation interface is demonstrated."
+      }
+    ],
+    "adaptation_required": "To obtain exact formula CSP, replace predicted counts/types with an externally specified species list and train/validate a conditional latent prior and coordinate/lattice decoder.",
+    "caveat": "Reconstructing an encoded full crystal or training only on carbon does not demonstrate arbitrary requested cell stoichiometry. This label refers to the documented generation workflow, not architectural impossibility.",
+    "checked_on": "2026-10-16",
+    "model_name": "DP-CDVAE",
+    "title": "Diffusion probabilistic models enhance variational autoencoder for crystal structure generative modeling",
+    "year": 2024,
+    "paper_url": "https://www.nature.com/articles/s41598-024-51400-4",
+    "aliases": [
+      "ML47"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP144",
+    "label": "Exact formula supported",
+    "support_scope": "Fixed supplied unit-cell species/counts",
+    "mechanism": "EquiCSP conditions on A and diffuses lattice parameters C and fractional positions F.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact atom-type matrix A and N"
+    ],
+    "evidence_level": "Published ICML2024 full PDF methods inspected",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/lin24b/lin24b.pdf",
+        "source_type": "Published conference paper",
+        "locator": "Sec.3 Task definition; Sec.4.2; Algorithm2 Sampling Procedure of EquiCSP",
+        "observation": "Algorithm2 takes atom types A and returns only C0,F0; A is not generated."
+      },
+      {
+        "url": "https://proceedings.mlr.press/v235/lin24b.html",
+        "source_type": "Official conference record",
+        "locator": "Paper metadata and download PDF",
+        "observation": "Identifies the published 2024 EquiCSP paper; later arXiv deposition is not the original publication date."
+      }
+    ],
+    "adaptation_required": "None for prescribed counts; choose number of formula units separately.",
+    "caveat": "Count support is established by the original published methods; no model was executed.",
+    "formula_interface": "Native composition-conditioned CSP",
+    "enforcement": "Hard fixed A and N",
+    "checked_on": "2026-10-16",
+    "model_name": "EquiCSP",
+    "title": "Equivariant Diffusion for Crystal Structure Prediction",
+    "year": 2024,
+    "paper_url": "https://proceedings.mlr.press/v235/lin24b.html",
+    "aliases": [
+      "ML46"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP145",
+    "label": "Needs adaptation",
+    "support_scope": "LLM formula prompts and fixed-species flow refinement documented; full end-to-end hard counts not guaranteed",
+    "mechanism": "LLM proposes a complete approximate crystal, then RFM updates only lattice and coordinates while keeping its proposed species.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Optional formula prompt",
+      "LLM-generated complete initial structure"
+    ],
+    "evidence_level": "Primary full paper",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2410.23405v1",
+        "source_type": "Primary paper",
+        "locator": "Fig.1; Sec.4 Overview of sampling; Sec.4.1 Training; Algorithm1 step6",
+        "observation": "Flow refinement freezes LLM-produced atom types. Formula prompts appear in training pair construction, but the LLM stage has no stated hard count enforcement; main sampling is unconditional."
+      }
+    ],
+    "adaptation_required": "Enforce an exact formula in the LLM base sample with constrained decoding or a full-count acceptance check; retain fixed-type refinement.",
+    "caveat": "A conditional refinement distribution given a complete crystal does not itself provide a formula-only initial-structure sampler. Natural-language promptability is documented but not a hard guarantee.",
+    "formula_interface": "Soft optional formula prompt",
+    "enforcement": "Hard preservation of base-sample species, not guaranteed requested formula",
+    "checked_on": "2026-10-16",
+    "model_name": "FlowLLM",
+    "title": "FlowLLM: Flow Matching for Material Generation with Large Language Models as Base Distributions",
+    "year": 2024,
+    "paper_url": "https://arxiv.org/abs/2410.23405",
+    "aliases": [
+      "ML06"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP146",
+    "label": "Exact formula supported",
+    "support_scope": "Native CSP mode across benchmark compositions, distinct from de novo generation",
+    "mechanism": "CSP keeps the full per-site species list fixed and flows only fractional coordinates/lattice; atom types act solely as conditions.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Per-site atom identities and count"
+    ],
+    "evidence_level": "Primary full paper plus official README",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2406.04713",
+        "source_type": "Primary author manuscript",
+        "locator": "Sections2.1 Representing atomic types;2.4 Crystal Structure Prediction",
+        "observation": "CSP species are conditional information; model learns positions and lattice given the species tuple."
+      },
+      {
+        "url": "https://github.com/facebookresearch/flowmm",
+        "source_type": "Official author repository",
+        "locator": "Experiments: Conditional Training; atom type manifold options",
+        "observation": "The null atom-type manifold is used for conditional generation, including model=null_params."
+      }
+    ],
+    "adaptation_required": "None for native CSP mode; use its compatible model/training configuration.",
+    "caveat": "Support does not imply arbitrary cell-size extrapolation or a ground-state guarantee; no runtime validation here.",
+    "checked_on": "2026-10-16",
+    "model_name": "FlowMM",
+    "title": "FlowMM: Generating Materials with Riemannian Flow Matching",
+    "year": 2024,
+    "paper_url": "https://proceedings.mlr.press/v235/miller24a.html",
+    "aliases": [
+      "ML07"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP148",
+    "label": "Exact formula supported",
+    "support_scope": "Fixed-formula hybrid FUSE2 workflow with user-selected numbers of formula units; not a direct deep generative model.",
+    "mechanism": "A GN(MatB)-BO surrogate-guided structural search proposes fixed-composition starting structures, followed by FUSE basin hopping and local relaxation.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Composition",
+      "Numbers of formula units",
+      "Space-group range",
+      "Optimizer settings"
+    ],
+    "evidence_level": "Author accepted full manuscript inspected",
+    "evidence": [
+      {
+        "url": "https://livrepository.liverpool.ac.uk/3184543/1/C_Collins_accepted.pdf",
+        "source_type": "Primary author accepted manuscript",
+        "locator": "Sections2.1 and2.2, pp2–4; Section3.1, p5",
+        "observation": "Section2.1 identifies the structure proposer as GN-OA/MEGNet plus Bayesian optimization, not a latent deep generator. Section2.2 creates a user-selected number of structures for each requested formula-unit count; swaps and module moves preserve species, while cell extension changes formula-unit multiplicity."
+      }
+    ],
+    "adaptation_required": "No formula-conditioning adaptation needed for this hybrid CSP workflow. Catalogue algorithm wording should identify surrogate/BO-seeded FUSE2 rather than direct deep generative sampling.",
+    "caveat": "Searches can span multiple formula-unit counts; one exact cell count requires fixing that choice. GN-OA predicts energies while BO searches structures, an important taxonomy distinction.",
+    "checked_on": "2026-10-16",
+    "proposed_catalog_correction": {
+      "primary_category": 6,
+      "secondary_categories": [
+        5
+      ],
+      "method": "FUSE2: graph-network energy-surrogate / Bayesian-optimization seeding followed by flexible-unit basin hopping",
+      "workflow": "Specified composition and formula-unit counts → GN-OA/BO structural search → rank seeds → FUSE2 basin hopping → local relaxation and final ranking",
+      "energy_evaluator": "GN(MatB)/MEGNet formation-enthalpy surrogate during BO; SPP or ChgNET optional ranking/pre-relaxation; GULP/VASP local relaxation and final energies as configured",
+      "role": "Hybrid method"
+    },
+    "model_name": "FUSE2 hybrid workflow",
+    "title": "Integration of generative machine learning with the heuristic crystal structure prediction code FUSE",
+    "year": 2024,
+    "paper_url": "https://doi.org/10.1039/d4fd00094c",
+    "aliases": [
+      "RT08"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP149",
+    "label": "Needs adaptation",
+    "support_scope": "Formula-conditioned CSP is already reported, but strict cell-count enforcement is not established",
+    "mechanism": "Mat2Seq prepends desired compositional tokens before autoregressive structure tokens and evaluates formula consistency after generation.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Formula/composition prefix",
+      "Property tokens including band gap"
+    ],
+    "evidence_level": "Primary full paper methods and experiments",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2503.00152",
+        "source_type": "Primary paper",
+        "locator": "Sec.3.5 Conditional generation; Sec.4.2 Experimental setup",
+        "observation": "Composition prefix conditioning is explicit; generated formula consistency is part of post-generation validity. No count-preserving decoder is specified."
+      }
+    ],
+    "adaptation_required": "For a strict prescribed-cell contract, add count-aware token masking or an exact per-element-count acceptance check.",
+    "caveat": "Needs adaptation refers specifically to hard prescribed cell counts, not lack of formula-conditioned CSP capability; the paper already reports composition-conditioned prediction.",
+    "formula_interface": "Soft formula prefix; reported CSP benchmark",
+    "enforcement": "Prompt conditioning plus formula-validity evaluation, not demonstrated hard counts",
+    "checked_on": "2026-10-16",
+    "model_name": "Mat2Seq",
+    "title": "Invariant Tokenization of Crystalline Materials for Language Model Enabled Generation",
+    "year": 2024,
+    "paper_url": "https://papers.nips.cc/paper_files/paper/2024/hash/e23133d34964a0a09f6d076fc4b922a4-Abstract-Conference.html",
+    "aliases": [
+      "ML64"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP152",
+    "label": "Needs adaptation",
+    "support_scope": "Paper demonstrates exact-count/formula-conditioned inputs and per-composition CSP sampling; hard count preservation not verified",
+    "mechanism": "The denoiser concatenates a tensor condition giving the number of atoms per element, distinct from an element-presence condition.",
+    "hard_count_control": "unverified",
+    "documented_conditions": [
+      "Exact element counts, e.g. Si4C4",
+      "Alternative allowed-element/type-only condition"
+    ],
+    "evidence_level": "Primary full author manuscript; paper-only exact composition input evidence",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2311.09235v2",
+        "source_type": "Primary author manuscript",
+        "locator": "Section2.2 Conditioned Diffusion with UniMat; Section3.3",
+        "observation": "Authors distinguish exact per-element counts from type-only conditioning and evaluate per-composition conditional generation."
+      }
+    ],
+    "adaptation_required": "No adaptation needed to supply exact-count conditions as reported; count-clamped extraction or explicit rejection may be needed if every returned sample must exactly preserve those counts.",
+    "caveat": "This strict label concerns guaranteed counts only: the primary paper explicitly DOES support exact-count composition-conditioned inputs and reports per-composition sampling. The inspected conditioning tensor does not establish a hard occupancy/count guarantee or a released ready-to-use conditional checkpoint.",
+    "checked_on": "2026-10-16",
+    "formula_interface": "Exact-count conditional input (soft enforcement)",
+    "model_name": "UniMat",
+    "title": "Scalable Diffusion for Materials Generation",
+    "year": 2024,
+    "paper_url": "https://arxiv.org/abs/2311.09235",
+    "aliases": [
+      "ML08"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP154",
+    "label": "Exact formula supported",
+    "support_scope": "CSP mode with fixed species plus space-group/Wyckoff constraints, obtained from templates or supplied symmetry.",
+    "mechanism": "DiffCSP++ has a CSP configuration that keeps atom types fixed throughout training and generation while denoising symmetry-compatible lattice/coordinates.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact species list/counts in CSP mode",
+      "Space group",
+      "Wyckoff assignments or CSPML template"
+    ],
+    "evidence_level": "Primary ICLR full paper inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2402.03992v1",
+        "source_type": "Primary full paper",
+        "locator": "Section5.2 Crystal Structure Prediction; AppendixB.2",
+        "observation": "The CSP section explicitly keeps atom types unchanged in both training and generation. It also requires SG/Wyckoff information and obtains it either from ground truth or a composition-matched CSPML template."
+      }
+    ],
+    "adaptation_required": "No formula count adaptation in its CSP mode; provide or search compatible symmetry/Wyckoff/template conditions.",
+    "caveat": "The unrestricted generation mode also diffuses species. Ground-truth symmetry-assisted scores and template-assisted practical CSP scores are distinct.",
+    "checked_on": "2026-10-16",
+    "model_name": "DiffCSP++",
+    "title": "Space Group Constrained Crystal Generation",
+    "year": 2024,
+    "paper_url": "https://arxiv.org/abs/2402.03992",
+    "aliases": [
+      "ML18"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP157",
+    "label": "Exact formula supported",
+    "support_scope": "Released composition-specific sampling; distinguish current no-lattice-diffusion revision from original paper",
+    "mechanism": "sampling.py parses formula to one atomic number per requested atom, supplies that list and N to sampling, and writes the same species list into the CIF.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact formula string",
+      "Separate variable-composition chemical-system sampler"
+    ],
+    "evidence_level": "Official README and pinned source code",
+    "evidence": [
+      {
+        "url": "https://github.com/aklipf/gemsdiff/blob/5781f80eb072d313b3b3f1ac4bca34cb5feef1d7/sampling.py",
+        "source_type": "Official source code, pinned commit",
+        "locator": "Formula parsing lines63–69 and model.sampling / make_cif lines90–98",
+        "observation": "Per-element counts construct input_z and input_num_atoms; generated geometry is written with unchanged input_z."
+      },
+      {
+        "url": "https://github.com/aklipf/gemsdiff",
+        "source_type": "Official repository",
+        "locator": "README: Sampling a specific composition; opening version note",
+        "observation": "Documents LiFeO2 CLI and warns released revision omits the original lattice diffusion."
+      }
+    ],
+    "adaptation_required": "None for exact formula input in released sampler.",
+    "caveat": "Latest official release differs from AAAI paper geometry process; fixed counts are code-inspected, not runtime-tested.",
+    "formula_interface": "sampling.py LiFeO2 -c CHECKPOINT",
+    "enforcement": "Hard fixed parsed species list in sampling and CIF output",
+    "checked_on": "2026-10-16",
+    "model_name": "GemsDiff",
+    "title": "Vector Field Oriented Diffusion Model for Crystal Material Generation",
+    "year": 2024,
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/30224",
+    "aliases": [
+      "ML62"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP159",
+    "label": "Exact formula supported",
+    "support_scope": "Released CSP training/sampling mode; separate from paper’s chemical-system/property adapters",
+    "mechanism": "CSP mode excludes atom-type denoising and accepts target_compositions containing exact per-element atom numbers.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact per-element cell counts in CSP mode",
+      "Chemical system in adapter mode",
+      "Symmetry and scalar properties in adapter modes"
+    ],
+    "evidence_level": "Official author repository training/sampling documentation",
+    "evidence": [
+      {
+        "url": "https://github.com/microsoft/mattergen#crystal-structure-prediction",
+        "source_type": "Official repository README",
+        "locator": "Training > Crystal structure prediction",
+        "observation": "Documents --config-name=csp and --target_compositions with atom-number dictionaries and --sampling-config-name=csp; atomic identities are not denoised."
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-025-08628-5",
+        "source_type": "Primary publisher paper",
+        "locator": "Chemistry-guided design; Fig.3",
+        "observation": "Published chemistry-guided experiments explore chemical systems with variable stoichiometry, distinct from the repository CSP mode."
+      }
+    ],
+    "adaptation_required": "No architectural adaptation required for documented CSP mode, but training a CSP-mode model is explicitly required; a compatible pretrained CSP checkpoint was not established here.",
+    "caveat": "Do not present the released base/property-adapter checkpoint as plug-and-play exact-formula CSP. Interface/code evidence only; not runtime-tested.",
+    "checked_on": "2026-10-16",
+    "model_name": "MatterGen",
+    "title": "A generative model for inorganic materials design",
+    "year": 2025,
+    "paper_url": "https://www.nature.com/articles/s41586-025-08628-5",
+    "aliases": [
+      "ML14"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP160",
+    "label": "Exact formula supported",
+    "support_scope": "Native CSP mode on Perov-5, MP-20 and MPTS-52",
+    "mechanism": "CSP models p(lattice,fractional coordinates | atom types) with the full per-site species list embedded as fixed node conditions.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Per-site atom identities and cell count"
+    ],
+    "evidence_level": "Primary full author manuscript inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2502.02016v1",
+        "source_type": "Primary author manuscript",
+        "locator": "Section5.2 Stable Structure Prediction; crystal notation",
+        "observation": "CSP fixes the atom-type vector and generates lattice and coordinates; distinct ab initio mode also generates species."
+      }
+    ],
+    "adaptation_required": "None for documented CSP mode.",
+    "caveat": "Entropy conditioning concerns Bayesian-flow state uncertainty and is separate from composition conditioning; no runtime validation here.",
+    "checked_on": "2026-10-16",
+    "model_name": "CrysBFN",
+    "title": "A Periodic Bayesian Flow for Material Generation",
+    "year": 2025,
+    "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/1f09e1ee5035a4c3fe38a5681cae5815-Abstract-Conference.html",
+    "aliases": [
+      "ML01"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP163",
+    "label": "Needs adaptation",
+    "support_scope": "Unified model conditioned on periodic versus nonperiodic class; no exact formula control.",
+    "mechanism": "ADiT generates latent atomic systems with a DiT and decodes atom types, coordinates and lattice; the only implemented conditioning class distinguishes crystals from molecules.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Periodic/nonperiodic class label"
+    ],
+    "evidence_level": "Primary ICML preprint full text inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2503.03965v1",
+        "source_type": "Primary full paper",
+        "locator": "Denoiser architecture; Algorithm3; Limitations paragraph",
+        "observation": "The denoiser uses a binary periodic/nonperiodic embedding. Additional property/geometric conditioning is future work; the limitations call current output generation unconditional."
+      }
+    ],
+    "adaptation_required": "Add explicit species-count conditioning and a count-constrained species/occupancy decoder; additional training and fidelity evaluation are required.",
+    "caveat": "The paper uses unconditional in the scientific-design sense despite a domain class label; its class conditioning is not chemical-formula conditioning.",
+    "checked_on": "2026-10-16",
+    "model_name": "ADiT",
+    "title": "All-atom Diffusion Transformers: Unified generative modelling of molecules and materials",
+    "year": 2025,
+    "paper_url": "https://proceedings.mlr.press/v267/joshi25a.html",
+    "aliases": [
+      "ML02"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP166",
+    "label": "Exact formula supported",
+    "support_scope": "Composition-conditioned energy-based CSP; preliminary workshop evaluation.",
+    "mechanism": "ContinuouSP models p_theta(X,L|A) for a supplied species vector and samples coordinates and lattice with MCMC while A is held as the conditional variable.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact species vector/counts"
+    ],
+    "evidence_level": "Primary full preprint inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2502.02026v1",
+        "source_type": "Primary full paper",
+        "locator": "Definitions17–19, particularly Definition18 and Eq11; CSP sampling formulation",
+        "observation": "The normalized density integrates over X and L conditional on A, not over species; the species vector supplies the generation condition."
+      }
+    ],
+    "adaptation_required": "No count-conditioning adaptation needed; specify the full species vector/cell multiplicity.",
+    "caveat": "Symmetry/re-description invariance can relate several choices of unit cell; that mathematical property does not make the specified sampling vector variable. Physical ground-state completeness is not established.",
+    "checked_on": "2026-10-16",
+    "model_name": "ContinuouSP",
+    "title": "ContinuouSP: Generative Model for Crystal Structure Prediction with Invariance and Continuity",
+    "year": 2025,
+    "paper_url": "https://arxiv.org/abs/2502.02026",
+    "aliases": [
+      "ML57"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP169",
+    "label": "Exact formula supported",
+    "support_scope": "Fixed-composition CSP, optionally pressure-conditioned; separate de novo mode",
+    "mechanism": "CrystalFlow holds A0=A1 fixed and transports only lattice and fractional positions for CSP.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact atomic species/counts",
+      "Optional pressure"
+    ],
+    "evidence_level": "Publisher full paper methods",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41467-025-64364-4",
+        "source_type": "Publisher paper",
+        "locator": "Fig.1 caption; Results model definition; Methods flow on chemical composition",
+        "observation": "The CSP condition is A,P; Fig.1 explicitly fixes A0=A1. Atom-type flow is introduced separately for de novo generation."
+      }
+    ],
+    "adaptation_required": "None for exact composition; choose cell multiplicity and applicable pressure model.",
+    "caveat": "Preserving counts is separate from recovering the lowest-enthalpy phase or DFT validation.",
+    "formula_interface": "Native formula / atom-multiset CSP",
+    "enforcement": "Hard fixed atom types during CSP flow",
+    "checked_on": "2026-10-16",
+    "model_name": "CrystalFlow",
+    "title": "CrystalFlow: a flow-based generative model for crystalline materials",
+    "year": 2025,
+    "paper_url": "https://www.nature.com/articles/s41467-025-64364-4",
+    "aliases": [
+      "ML15"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP172",
+    "label": "Exact formula supported",
+    "support_scope": "Native CSP mode; separate species-diffusion extension for de novo generation",
+    "mechanism": "Uses the given K-entry atom identity vector a as the condition for p(f,l|a), so K and per-element counts remain supplied.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Per-site species/counts in CSP"
+    ],
+    "evidence_level": "Primary published full conference paper inspected",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/cornet25a/cornet25a.pdf",
+        "source_type": "Primary published conference PDF",
+        "locator": "Section2.1 Crystal Structure Prediction; Section5 CSP experiments",
+        "observation": "Defines composition as a K-entry atomic identity vector and CSP as sampling coordinates/lattice conditioned on it."
+      }
+    ],
+    "adaptation_required": "None for documented CSP mode.",
+    "caveat": "Published CSP recovery and MLIP evaluation do not prove thermodynamic ground states; no runtime validation here.",
+    "checked_on": "2026-10-16",
+    "model_name": "KLDM",
+    "title": "Kinetic Langevin Diffusion for Crystalline Materials Generation",
+    "year": 2025,
+    "paper_url": "https://proceedings.mlr.press/v267/cornet25a.html",
+    "aliases": [
+      "ML63"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP173",
+    "label": "Exact formula supported",
+    "support_scope": "Separate exact-composition CSP and variable-composition DNG configurations.",
+    "mechanism": "OMatG CSP fixes every atom species from t=0 and evolves only coordinates/lattice; DNG additionally learns species through discrete flow matching.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact atom-species list/counts in CSP configuration"
+    ],
+    "evidence_level": "Primary ICML full paper inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2502.02582v2",
+        "source_type": "Primary full paper",
+        "locator": "SectionIII.3 Joint Generation; Figure2 caption; AppendixC.2",
+        "observation": "The text fixes atom types for CSP, Figure2 fixes A at t=0, and the CSP objective omits the species-learning term. A separate formula-prediction model may feed the CSP model in a two-stage discovery workflow."
+      }
+    ],
+    "adaptation_required": "No formula-conditioning adaptation for the CSP checkpoint/configuration; select it rather than the joint DNG mode.",
+    "caveat": "The paper evaluates compositions from benchmark datasets; exact count control does not certify performance outside trained sizes/chemistries.",
+    "checked_on": "2026-10-16",
+    "model_name": "OMatG",
+    "title": "Open Materials Generation with Stochastic Interpolants",
+    "year": 2025,
+    "paper_url": "https://proceedings.mlr.press/v267/hollmer25a.html",
+    "aliases": [
+      "ML03"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP177",
+    "label": "Needs adaptation",
+    "support_scope": "Original space-group/element conditioning; current CrystalFormer-CSP extension already has formula-conditioned models and reduced-stoichiometry output filtering",
+    "mechanism": "Current sampler embeds formula and masks allowed species; it samples Wyckoff positions and species. Converter filters by reduced_formula, rather than exact full-cell atom counts.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Space group",
+      "Allowed elements",
+      "Formula in later v0.5/v0.6 extension"
+    ],
+    "evidence_level": "Original paper and current official implementation, pinned commit",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2403.15734",
+        "source_type": "Primary paper",
+        "locator": "Sec.II.1.3 Sampling",
+        "observation": "Original sampling supplies space group and possible elements; site count can fluctuate."
+      },
+      {
+        "url": "https://github.com/deepmodeling/CrystalFormer/blob/31bb734a3fd006af49a021921839061e6184cbf1/crystalformer/src/sample.py",
+        "source_type": "Official source code, pinned commit",
+        "locator": "make_sample_crystal / sample_crystal lines72–105",
+        "observation": "Formula affects model conditioning and a composition>0 element mask; no remaining-count budget enforces multiplicity totals."
+      },
+      {
+        "url": "https://github.com/deepmodeling/CrystalFormer/blob/31bb734a3fd006af49a021921839061e6184cbf1/scripts/awl2struct.py",
+        "source_type": "Official source code, pinned commit",
+        "locator": "check_formula_match lines86–109; output filtering lines149–157",
+        "observation": "Postprocessing compares reduced_formula, accepting matching stoichiometric ratios with potentially different cell multiplicities."
+      },
+      {
+        "url": "https://github.com/deepmodeling/CrystalFormer/blob/31bb734a3fd006af49a021921839061e6184cbf1/README.md",
+        "source_type": "Official repository, pinned commit",
+        "locator": "Status; Crystal Structure Prediction; How to cite",
+        "observation": "Documents --formula Cu12Sb4S13 and later CrystalFormer-CSP arXiv2512.18251, distinct from original paper."
+      }
+    ],
+    "adaptation_required": "For exact prescribed cell counts, use multiplicity-aware constrained decoding or compare full compositions and N after generation.",
+    "caveat": "Do not say CrystalFormer lacks formula-conditioned CSP: the current extension supports it. The strict deficit is hard full-cell count enforcement and explicit formula-unit multiplicity control.",
+    "formula_interface": "Current --formula CLI; original paper space-group/element interface",
+    "enforcement": "Soft formula conditioning + element mask + reduced-ratio acceptance filter",
+    "checked_on": "2026-10-16",
+    "model_name": "CrystalFormer",
+    "title": "Space group informed transformer for crystalline materials generation",
+    "year": 2025,
+    "paper_url": "https://doi.org/10.1016/j.scib.2025.09.035",
+    "aliases": [
+      "ML16"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP178",
+    "label": "Needs adaptation",
+    "support_scope": "Symmetry-conditioned discovery, not formula-given CSP",
+    "mechanism": "Samples space group and asymmetric-unit representatives, then diffuses representative types/site symmetries and expands symmetry orbits.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Target space group",
+      "Number of asymmetric-unit representatives"
+    ],
+    "evidence_level": "Primary full paper",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2502.03638",
+        "source_type": "Primary paper",
+        "locator": "Sec.4.3; Algorithm2 inputs; Conclusion limitation",
+        "observation": "Algorithm2 supplies space group and representative count. The conclusion explicitly identifies composition-given CSP as challenging because composition is sampled after space group."
+      }
+    ],
+    "adaptation_required": "Allocate symmetry-compatible orbits to requested species counts, keep species/counts fixed, and adapt conditional training/sampling.",
+    "caveat": "Fixing the number of representatives is not fixing the full-cell atom multiset; orbit multiplicities vary.",
+    "formula_interface": "No exact formula-given CSP interface established",
+    "enforcement": "Space-group preservation, not exact composition",
+    "checked_on": "2026-10-16",
+    "model_name": "SymmCD",
+    "title": "SymmCD: Symmetry-Preserving Crystal Generation with Diffusion Models",
+    "year": 2025,
+    "paper_url": "https://arxiv.org/abs/2502.03638",
+    "aliases": [
+      "ML04"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP179",
+    "label": "Exact formula supported",
+    "support_scope": "Released MP-20 CSP checkpoint/interface with exact species inventory constraints; separate de novo and PXRD modes",
+    "mechanism": "CSP conditions on atom types/counts and sampler keeps a remaining inventory per element, masking exhausted species and decrementing budgets after atom sampling.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Species and cell counts",
+      "PXRD plus composition in separate task"
+    ],
+    "evidence_level": "Primary methods plus released official inference/sampler code",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2503.16278v1",
+        "source_type": "Primary author manuscript",
+        "locator": "Section3.2 Tasks",
+        "observation": "Defines CSP inputs as atom types and counts."
+      },
+      {
+        "url": "https://github.com/dptech-corp/Uni-3DAR",
+        "source_type": "Official repository README",
+        "locator": "Reproducing Results on MP20: Inference with Pretrained Model",
+        "observation": "Documents mp20_csp.pt and inference_mp20_csp.sh separately from de novo and PXRD checkpoints."
+      },
+      {
+        "url": "https://github.com/dptech-corp/Uni-3DAR/blob/main/uni3dar/inference.py",
+        "source_type": "Official source code",
+        "locator": "lines149–157",
+        "observation": "Extracts target atomic inventory and passes it to model.generate(atom_constraint=gt_atoms)."
+      },
+      {
+        "url": "https://github.com/dptech-corp/Uni-3DAR/blob/main/uni3dar/models/uni3dar_sampler.py",
+        "source_type": "Official source code",
+        "locator": "get_atom_predict_funcs, lines570–621; generation known_atoms initialization",
+        "observation": "Maintains element budgets, zeros probability for exhausted species, and decrements the selected inventory; total atomic count is supplied."
+      }
+    ],
+    "adaptation_required": "None for documented CSP workflow.",
+    "caveat": "Constraint-code inspection is not runtime validation; model/data coverage and invalid structure handling still matter.",
+    "checked_on": "2026-10-16",
+    "model_name": "Uni-3DAR",
+    "title": "Uni-3DAR: Unified 3D Generation and Understanding via Autoregression on Compressed Spatial Tokens",
+    "year": 2025,
+    "paper_url": "https://arxiv.org/abs/2503.16278v1",
+    "aliases": [
+      "ML59"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP182",
+    "label": "Exact formula supported",
+    "support_scope": "Fixed-composition flow CSP with RL post-training; optional additional PXRD condition.",
+    "mechanism": "CrystalGRPO post-trains coordinate/lattice flow policies with composition and atom number supplied, preserving the species list.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact composition/atom types/count",
+      "Optional PXRD pattern"
+    ],
+    "evidence_level": "Primary full preprint inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2608.06582v1",
+        "source_type": "Primary full paper",
+        "locator": "Problem formulation; Section6.1; Appendix PXRD-conditioned CSP, Problem definition",
+        "observation": "The paper evaluates composition-conditioned MP-20/MPTS-52 and explicitly states that chemical composition, atom types and atom number are CSP inputs while fractional coordinates and lattice are predicted."
+      }
+    ],
+    "adaptation_required": "No formula-count adaptation needed for the CSP policy; PXRD conditioning is optional additional information.",
+    "caveat": "Preprint evidence only; no runtime test. Reference recovery rewards during RL training differ from the information needed at inference.",
+    "checked_on": "2026-10-16",
+    "model_name": "CrystalGRPO",
+    "title": "CrystalGRPO: Target-Aligned and Coverage-Preserving Reinforcement Learning for Flow-Based Crystal Structure Prediction",
+    "year": 2026,
+    "paper_url": "https://arxiv.org/abs/2608.06582",
+    "aliases": [
+      "ML50"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP183",
+    "label": "Exact formula supported",
+    "support_scope": "Released fixed-atom-types sampling option; paper mainly evaluates de novo and point-group-controlled generation",
+    "mechanism": "--force_atom_types takes per-site identities and atom counts from the input batch, removes atom_types from the diffused manifolds, and samples coordinates/lattice.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Fixed per-site species and cell counts via --force_atom_types",
+      "Point-group guidance in paper"
+    ],
+    "evidence_level": "Official implementation inspected; exact mode not benchmarked in reviewed paper",
+    "evidence": [
+      {
+        "url": "https://github.com/trachote/crystalgrw/blob/main/src/crystalgrw/cli/evaluate.py",
+        "source_type": "Official source code",
+        "locator": "sample_properties lines28–48; reconstruction lines140–174; run_eval lines304–332",
+        "observation": "Fixed-types flag copies batch atom types and counts and removes the atomic-type diffusion manifold."
+      },
+      {
+        "url": "https://github.com/trachote/crystalgrw/blob/main/src/crystalgrw/samplers/sample.py",
+        "source_type": "Official source code",
+        "locator": "sample",
+        "observation": "Sampling passes the supplied atomic identities into the SDE and returns them with generated coordinates and lattice. The optional encoder branch consumes input_encoder when a configured encoder exists; choose a compatible score-only model for formula-only use."
+      },
+      {
+        "url": "https://www.nature.com/articles/s41598-026-62470-x",
+        "source_type": "Primary publisher paper",
+        "locator": "Abstract; Condition guidance; Discussion",
+        "observation": "Paper demonstrates de novo generation and point-group controls rather than an exact-formula CSP benchmark."
+      }
+    ],
+    "adaptation_required": "No new sampling mechanism required for the released fixed-types option; build the input batch/dataset and select coordinate/lattice corruption appropriately.",
+    "caveat": "Code-supported mechanism, not proof of exact-formula recovery accuracy; no runtime execution or checkpoint compatibility testing was performed. Formula-only use requires coordinate and lattice corruption and a score-only configuration without a structure encoder; encoder-based variants can depend on full input structure.",
+    "checked_on": "2026-10-16",
+    "model_name": "CrystalGRW",
+    "title": "CrystalGRW: generative modeling of crystal structures with targeted crystallographic properties via geodesic random walks",
+    "year": 2026,
+    "paper_url": "https://www.nature.com/articles/s41598-026-62470-x",
+    "aliases": [
+      "ML48"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP184",
+    "label": "Exact formula supported",
+    "support_scope": "Dedicated CSP configuration with fixed supplied species/counts; separate de novo configuration",
+    "mechanism": "In CSP Crystalite holds atom-type features fixed and denoises coordinate and lattice channels only.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact per-atom composition / N"
+    ],
+    "evidence_level": "Primary full paper methods",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2604.02270",
+        "source_type": "Primary paper",
+        "locator": "Sec.3.1 after Eq.4; Sec.3.2; Sec.4.1 task configurations; Appendix Table4",
+        "observation": "CSP keeps atom-type features fixed and models p(F,L|A); task-specific CSP configurations differ from de novo generation."
+      }
+    ],
+    "adaptation_required": "None for counts in documented CSP configuration; select the CSP model/configuration.",
+    "caveat": "The reported CSP configuration uses fixed atomic-number features; the de novo configuration uses PCA subatomic tokens. Do not assume a single unchanged checkpoint handles both.",
+    "formula_interface": "Native fixed-composition CSP model/configuration",
+    "enforcement": "Hard fixed atom-type features and N",
+    "checked_on": "2026-10-16",
+    "model_name": "Crystalite",
+    "title": "Crystalite: A Lightweight Transformer for Efficient Crystal Modeling",
+    "year": 2026,
+    "paper_url": "https://arxiv.org/abs/2604.02270",
+    "aliases": [
+      "ML60"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP187",
+    "label": "Needs adaptation",
+    "support_scope": "Element-set-restricted battery-material discovery and reward-guided complete-crystal generation.",
+    "mechanism": "SHAFT samples space groups, lattice, atom positions and species using a hierarchical GFlowNet; element choices are restricted for the battery task.",
+    "hard_count_control": "no",
+    "documented_conditions": [
+      "Allowed element set",
+      "Physics-informed reward",
+      "Symmetry restrictions"
+    ],
+    "evidence_level": "Primary full preprint inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2411.04323v1",
+        "source_type": "Primary full paper",
+        "locator": "Section4.1 and Algorithm1; Sections5 and5.1",
+        "observation": "The policy samples atom types from a multinoulli distribution starting with an empty graph. Battery experiments restrict eligible elements, while per-element quantities remain generated. No explicit prescribed count vector appears in Algorithm1."
+      }
+    ],
+    "adaptation_required": "Track remaining per-element count budgets and mask type/placement/stop actions, including symmetry multiplicities; validate fixed-formula sampling after adaptation.",
+    "caveat": "The phrase specific formulas and elements in the motivation is not evidence that exact target atom counts are enforced.",
+    "checked_on": "2026-10-16",
+    "model_name": "SHAFT",
+    "title": "Efficient symmetry-aware materials generation via hierarchical generative flow networks",
+    "year": 2026,
+    "paper_url": "https://arxiv.org/abs/2411.04323",
+    "aliases": [
+      "ML23"
+    ],
+    "previous_mode": "Generation / reconstruction; formula-only CSP not established here",
+    "previously_unestablished": true
+  },
+  {
+    "paper_id": "CSP189",
+    "label": "Exact formula supported",
+    "support_scope": "Preprint v4 formula-and-cell-count-conditioned symmetry proposal plus constrained diffusion",
+    "mechanism": "Expanded atom sequence encodes input counts; constrained beam search assigns Wyckoff multiplicities consistent with each element inventory before diffusion.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Composition and atom counts",
+      "Inferred space group and count-consistent Wyckoff template"
+    ],
+    "evidence_level": "Primary full preprint v4 selected method sections inspected",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2602.17176v4",
+        "source_type": "Primary author preprint",
+        "locator": "Methods around Eqs1–3; Figure1; constrained assignment discussion",
+        "observation": "Input is expanded per-cell species sequence; assignment constraints enforce multiplicity totals compatible with requested stoichiometry."
+      }
+    ],
+    "adaptation_required": "None in the documented method; implementation/runtime availability not established in this audit.",
+    "caveat": "Preprint/method evidence only; algebraic count consistency does not establish ground-state discovery or universal scalability.",
+    "checked_on": "2026-10-16",
+    "model_name": "NextCrystal",
+    "title": "NextCrystal: a Symmetry-Driven Generative Framework for Crystal Structure Prediction",
+    "year": 2026,
+    "paper_url": "https://arxiv.org/abs/2602.17176v4",
+    "aliases": [
+      "RT15"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP193",
+    "label": "Exact formula supported",
+    "support_scope": "Composition-conditioned DAO-G lattice/coordinate generation with optional DAO-P energy guidance.",
+    "mechanism": "DAO-G models p(L,F|A), using a fixed N-entry atom-type array A and denoising only lattice and fractional coordinates.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Exact N-entry atom-species vector",
+      "Optional energy guidance"
+    ],
+    "evidence_level": "Primary publisher full paper inspected",
+    "evidence": [
+      {
+        "url": "https://www.nature.com/articles/s41467-026-72362-3",
+        "source_type": "Primary publisher full text",
+        "locator": "Methods: Crystal representation; Equivariant diffusion models for crystal structure generation; Eqs1–4",
+        "observation": "Chemical composition A is an N-entry species array. The generative distribution is explicitly p(L,F|A), and training/inference noise schedules cover lattice and coordinates, leaving species as input."
+      }
+    ],
+    "adaptation_required": "No formula-conditioning adaptation needed; supply the expanded species list/number of formula units.",
+    "caveat": "Count support is separate from demonstrated compositional/prototype generalization and from thermodynamic validation.",
+    "checked_on": "2026-10-16",
+    "model_name": "DAO",
+    "title": "Siamese foundation models for crystal structure prediction",
+    "year": 2026,
+    "paper_url": "https://www.nature.com/articles/s41467-026-72362-3",
+    "aliases": [
+      "ML55"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  },
+  {
+    "paper_id": "CSP195",
+    "label": "Exact formula supported",
+    "support_scope": "Primitive-cell atom multiset supplied to MP20 / CSPBench protocols",
+    "mechanism": "uFlowCSP transports continuous coordinates and lattice while atomic numbers remain fixed composition inputs.",
+    "hard_count_control": "yes",
+    "documented_conditions": [
+      "Primitive-cell per-atom atomic numbers / N",
+      "Formula embedding"
+    ],
+    "evidence_level": "Primary full preprint methods",
+    "evidence": [
+      {
+        "url": "https://arxiv.org/html/2609.09799",
+        "source_type": "Primary preprint",
+        "locator": "Sec.2.1 Problem Setting; Sec.2.2.1 Crystal Representation; Sec.2.3 inference conditions",
+        "observation": "Methods explicitly fix atomic numbers by the supplied composition; no space-group label is required at inference."
+      }
+    ],
+    "adaptation_required": "None for supplied-cell count control; formula-unit multiplicity must be chosen externally.",
+    "caveat": "Preprint support is methods-level; neither checkpoint execution nor independent recovery/energy validation was performed in this audit.",
+    "formula_interface": "Native formula / supplied atom-multiset CSP",
+    "enforcement": "Hard fixed atomic-number list and N",
+    "checked_on": "2026-10-16",
+    "model_name": "uFlowCSP",
+    "title": "uFlowCSP: Crystal Structure Prediction using Mean flow generative models",
+    "year": 2026,
+    "paper_url": "https://arxiv.org/abs/2609.09799",
+    "aliases": [
+      "ML49"
+    ],
+    "previous_mode": "Formula-conditioned CSP reported",
+    "previously_unestablished": false
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "created_on": "2026-10-17",
+  "literature_cutoff": "2026-10-16",
+  "original_catalogue_records": 196,
+  "additional_paper_records": 9,
+  "paper_records": 205,
+  "software_records": 129,
+  "bibliography_entries": 211,
+  "availability_audit_dates": [
+    "2026-10-16",
+    "2026-10-17"
+  ],
+  "scope": "Curated companion resources for Crystal Structure Prediction from Search to Learning: A 30-Year Expedition (in preparation). No claim of exhaustive coverage or runtime validation.",
+  "inputs": [
+    {
+      "file": "catalog.json",
+      "sha256": "88fd0fdf99bbc2750b653e75a0cb55883786bce64feefbf85527750ba780f74b"
+    },
+    {
+      "file": "software_directory/software.json",
+      "sha256": "8ea85e494edfbbe80319857e59bac262af93fc69f532ee31d4e2a22118f00add"
+    },
+    {
+      "file": "survey_paper/references.bib",
+      "sha256": "b1c3e4fb6c5fd1b538cb5f7f6d803a1969591631233c5366f410e9a22dce8c74"
+    },
+    {
+      "file": "survey_paper/working/formula_interface_evidence.json",
+      "sha256": "ca00c24eeaf7b0016d0e6cff87c83fa769b931168ecd0411ab3c3f71410fce9b"
+    }
+  ],
+  "new_repository_checks": [
+    {
+      "repository": "usccolumbia/dmcrystal",
+      "source": "https://github.com/usccolumbia/dmcrystal/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    },
+    {
+      "repository": "usccolumbia/cmcrystal",
+      "source": "https://github.com/usccolumbia/cmcrystal/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    },
+    {
+      "repository": "usccolumbia/DE-CSP-highsymmetry",
+      "source": "https://github.com/usccolumbia/DE-CSP-highsymmetry/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    },
+    {
+      "repository": "usccolumbia/MOOCSP",
+      "source": "https://github.com/usccolumbia/MOOCSP/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    },
+    {
+      "repository": "usccolumbia/MLatticeABC",
+      "source": "https://github.com/usccolumbia/MLatticeABC/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    },
+    {
+      "repository": "Yuxinya/SG_predict",
+      "source": "https://github.com/Yuxinya/SG_predict/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    },
+    {
+      "repository": "usccolumbia/CSPBenchMetrics",
+      "source": "https://github.com/usccolumbia/CSPBenchMetrics/blob/main/README.md",
+      "checked_on": "2026-10-17"
+    }
+  ]
+}

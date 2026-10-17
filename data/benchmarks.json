@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mp-20",
+    "name": "MP-20",
+    "kind": "Training / validation / test dataset",
+    "paper_ids": [
+      "CSP113"
+    ],
+    "url": "https://github.com/txie-93/cdvae/tree/f857f598d6f6cca5dc1ea0582d228f12dcc2c2ea/data/mp_20",
+    "protocol": "Up to 20 atoms per cell; use the released split, preprocessing and matcher. Canonical split sizes are 27,136 / 9,047 / 9,046.",
+    "bibtex_key": "CDVAECode",
+    "checked_on": "2026-10-17"
+  },
+  {
+    "id": "mpts-52",
+    "name": "MPTS-52",
+    "kind": "Chronological training / validation / test dataset",
+    "paper_ids": [
+      "MatbenchGenmetrics2024",
+      "CSP128"
+    ],
+    "url": "https://github.com/jiaor17/DiffCSP/tree/7121d159826efa2ba9500bf299250d96da37f146/data/mpts_52",
+    "protocol": "Up to 52 atoms per cell, not 52 test structures. Sometimes mistyped MPST-52. Preserve the chronological split.",
+    "bibtex_key": "DiffCSPData",
+    "checked_on": "2026-10-17",
+    "original_data_url": "https://figshare.com/articles/dataset/Materials_Project_Time_Split_Data/19991516",
+    "framework_url": "https://github.com/sparks-baird/matbench-genmetrics"
+  },
+  {
+    "id": "cspbench",
+    "name": "CSPBench",
+    "kind": "Cross-method benchmark study",
+    "paper_ids": [
+      "CSP180"
+    ],
+    "url": "https://github.com/usccolumbia/cspbenchmark/tree/6e2eee244f434e2010fa4f9d3a08e2c054242a47",
+    "protocol": "180-target study; the DFT-based baseline comparison uses a separate 23-target subset.",
+    "bibtex_key": "CSP180",
+    "checked_on": "2026-10-17"
+  },
+  {
+    "id": "t180",
+    "name": "T180",
+    "kind": "Versioned test cohort",
+    "paper_ids": [
+      "CSP185"
+    ],
+    "url": "https://github.com/usccolumbia/benchmark_deep_csp/tree/320b7289e70b61f9d8d51d7fe7dae3e074f75522/data/testsets/v3.1/T180",
+    "protocol": "180 targets in v3.1. Integer atom counts of the geometric primitive cell are supplied. Use the reference and query manifests; do not assume identity with the historical CSPBench cohort.",
+    "bibtex_key": "DeepCSPBenchmarkData2026",
+    "checked_on": "2026-10-17"
+  },
+  {
+    "id": "t46",
+    "name": "T46",
+    "kind": "Versioned test cohort",
+    "paper_ids": [
+      "CSP185"
+    ],
+    "url": "https://github.com/usccolumbia/benchmark_deep_csp/tree/320b7289e70b61f9d8d51d7fe7dae3e074f75522/data/testsets/v3.1/T46",
+    "protocol": "46 targets in v3.1. Keep its own denominator and primitive-cell-count query manifest.",
+    "bibtex_key": "DeepCSPBenchmarkData2026",
+    "checked_on": "2026-10-17"
+  },
+  {
+    "id": "cspmetrics",
+    "name": "CSPMetrics / CSPBenchMetrics",
+    "kind": "Evaluation metric package",
+    "paper_ids": [
+      "CSPMetrics2024"
+    ],
+    "url": "https://github.com/usccolumbia/CSPBenchMetrics",
+    "protocol": "Complementary geometry, graph, fingerprint, diffraction and energy comparisons. This is a toolkit, not a single fixed benchmark cohort.",
+    "bibtex_key": "CSPMetrics2024",
+    "checked_on": "2026-10-17"
+  }
+]
