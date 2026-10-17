@@ -43,7 +43,7 @@ Accurate reconstruction of an input crystal does not establish formula-only CSP.
 
 Hierarchical autoencoders decode sampled or interpolated material latent vectors into density images; atom identities/counts are extracted afterward.
 
-**Conditions:** 
+**Conditions:**
 
 **Adaptation:** Add formula/count conditioning or constrained decoding, retrain/validate it; no such exact-formula interface established in this paper.
 

@@ -4,11 +4,12 @@ import csv, html, json, re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def load(name): return json.loads((ROOT/'data'/f'{name}.json').read_text())
-def write(path,text): (ROOT/path).write_text(text.rstrip()+'\n')
+def write(path,text): (ROOT/path).write_text('\n'.join(line.rstrip() for line in text.splitlines()).rstrip()+'\n')
 def esc(s): return str(s or '').replace('|','\\|').replace('\n',' ')
 def link(label,url): return f'[{esc(label)}]({url})' if url else esc(label)
 def anchor(s): return re.sub(r'[^a-z0-9-]','',str(s).lower().replace(' ','-'))
 papers=load('papers'); software=load('software'); categories=load('categories'); benchmarks=load('benchmarks'); formula=load('formula_conditioning')
+priors=load('structural_priors'); feature_labels={f['id']:f['label'] for f in priors['features']}
 P={p['id']:p for p in papers}; C={c['id']:c['name'] for c in categories}
 S={p['id']:[s for s in software if p['id'] in s['paper_ids']] for p in papers}
 def paperlinks(ids): return ' · '.join(link(str(P[i]['year'])+' '+i,P[i]['url']) for i in ids)
@@ -31,6 +32,7 @@ Companion resources for *Crystal Structure Prediction from Search to Learning: A
 
 - [Browse and download](#browse-and-download)
 - [Algorithm categories](#algorithm-categories)
+- [Symmetry, topology and domain knowledge](#symmetry-topology-and-domain-knowledge)
 - [Benchmarks and evaluation](#benchmarks-and-evaluation)
 - [How to interpret availability](#how-to-interpret-availability)
 - [Contributing](CONTRIBUTING.md) · [Provenance](docs/provenance.md) · [BibTeX](references.bib)
@@ -39,6 +41,7 @@ Companion resources for *Crystal Structure Prediction from Search to Learning: A
 
 | Resource | What it contains |
 |---|---|
+| [Structural knowledge guide](docs/structural-priors.md) | Symmetry, Wyckoff sites, topology, motifs, prototypes and ordering; papers and code links |
 | [All papers](docs/papers.md) | Category, year, publication status, method, input information, group attribution, and primary sources |
 | [Software profiles](docs/software.md) | Paper/code links, license evidence, checkpoints, training data, evaluations, and limitations |
 | [Benchmarks](docs/benchmarks.md) | MP-20, MPTS-52, CSPBench, T180, T46, CSPMetrics; dataset and protocol distinctions |
@@ -71,12 +74,14 @@ for cat in [1,2,3,4,5,6,7,0]:
 readme += ['## Benchmarks and evaluation','','| Resource | Role | Paper and release |','|---|---|---|']
 for b in benchmarks: readme += [f"| **{b['name']}** | {b['kind']} | {paperlinks(b['paper_ids'])} · {link('Release / code',b['url'])} |"]
 readme += ['','**MPTS-52** is the correct spelling (sometimes transposed as MPST-52); 52 is an atom-count limit. **T180** and **T46** are versioned test cohorts. **CSPMetrics/CSPBenchMetrics** is a metric toolkit. Historical CSPBench targets and later T180 releases must be compared by their manifests, not by the shared number 180. See [protocol notes](docs/benchmarks.md).','', '## How to interpret availability','','- A public repository is not automatically open-source licensed; license evidence is a separate field.','- A checkpoint for a relaxation evaluator is different from a generator checkpoint. Classical algorithms can have no pretrained model by design.','- Formula prompting, reduced-formula matching, and exact per-element cell-count preservation are different capabilities.','- Paper-reported results, source inspection, and successful runtime reproduction are different evidence levels. This collection does not claim independent execution of the algorithms.','- Each entry retains dated sources. Upstream links and releases may change.','','## Citation and license','','Cite the original papers for the methods and datasets you use. This directory provides [BibTeX](references.bib) and a [repository citation](CITATION.cff); the companion survey is in preparation and has no assigned DOI here.','','Repository-authored curation and tooling are under [MIT](LICENSE), matching the related prototype collection. Linked papers, software, models, and datasets retain their own licenses.']
+readme[0]=readme[0].replace('## Algorithm categories', '## Symmetry, topology and domain knowledge\n\nExplore [21 documented method profiles](docs/structural-priors.md), including USPEX topology generation, constrained molecular USPEX, CALYPSO/SPAI divide-and-conquer, MAGUS, and symmetry-aware learned models. The [interactive explorer](docs/index.html) filters papers and software by nine structural-knowledge categories alongside algorithm family, group and release availability. Untagged entries have not been assessed in this focused pass.\n\n## Algorithm categories')
 write('README.md','\n'.join(readme))
 lines=['# Paper catalogue','',f'{len(papers)} records, grouped by primary category. All source records are in [papers.json](../data/papers.json); citations are in [references.bib](../references.bib).','']
 for cat in [1,2,3,4,5,6,7,0]:
  lines += [f'## {C[cat]}','']
  for p in sorted((p for p in papers if p['primary_category']==cat),key=lambda p:(p['year'],p['title'])):
   lines += [f"<a id=\"{p['id'].lower()}\"></a>",f"### {p['year']} — {p['title']}",'',f"**{p['id']} · {p.get('publication_status','')} · {p['domain']}**",'',f"{'; '.join(p['authors'])}. *{p.get('venue','')}*. {link('Paper',p['url'])}",'',f"**Method:** {p['method']}. {p.get('workflow','')}",'',f"**Inputs:** {p.get('inputs','See paper')}"]
+  if p.get('structural_priors'):lines += ['', '**Structural knowledge:** '+', '.join(feature_labels[t] for t in p['structural_priors'])+' — [Mechanisms and limits](structural-priors.md)']
   if S[p['id']]:lines += ['', '**Software:** '+' · '.join(link(s['name'],'software.md#'+s['id']) for s in S[p['id']])]
   if p.get('research_groups'):lines += ['', '**Groups:** '+' · '.join(link(g['label'],g.get('source_url','')) for g in p['research_groups'])]
   lines += ['',f"**Evidence:** {p.get('evidence_read','See primary sources')}. {sources(p.get('source_urls',[]))}"]
@@ -86,6 +91,7 @@ write('docs/papers.md','\n'.join(lines))
 lines=['# Software, model and data profiles','','Availability is recorded separately from license status and runtime validation. A missing release is marked unknown rather than inferred absent.','']
 for s in sorted(software,key=lambda x:x['name'].lower()):
  lines += [f'<a id="{s["id"]}"></a>',f'## {s["name"]}','',f"**{C[s['primary_category']]} · {s['domain']} · {s['role']}**",'',paperlinks(s['paper_ids']),'',f"**Source / access:** {link('Code',s.get('code_url')) if s.get('code_url') else link('Project',s.get('project_url')) if s.get('project_url') else 'No source or access link verified'} — {s.get('access_status','Unknown')}",'',f"**License:** {s.get('code_license_status','Unknown')} {link(s.get('code_license',''),s.get('license_url',''))}",'',f"**Pretrained model:** {s.get('pretrained_status','Unknown')}"]
+ if s.get('structural_priors'):lines += ['', '**Structural knowledge:** '+', '.join(feature_labels[t] for t in s['structural_priors'])+' — [Mechanisms and limits](structural-priors.md)']
  for x in s.get('checkpoint_links',[]):lines += [f"- {link(x.get('label','Checkpoint'),x['url'])} — {x.get('role','')} / {x.get('access','')}"]
  for field,title in [('training_datasets','Training data'),('reference_datasets','Reference data'),('evaluation_benchmarks','Evaluation')]:
   lines += ['',f'**{title}:**']
@@ -122,10 +128,22 @@ for name,items in sorted(groups.items()):
  for p,g in items:lines += [f"- {link(p['title'],p['url'])} ({p['year']}) — {C[p['primary_category']]}. {link('Attribution source',g.get('source_url',''))}"]
  lines+=['']
 write('docs/groups.md','\n'.join(lines))
-for name,records,fields in [('papers',papers,['id','year','title','method','domain','primary_category','publication_status','doi','url']),('software',software,['id','name','primary_category','domain','code_url','project_url','code_license_status','pretrained_status','paper_ids']),('benchmarks',benchmarks,['id','name','kind','url','protocol','paper_ids'])]:
+for name,records,fields in [('papers',papers,['id','year','title','method','domain','primary_category','publication_status','doi','url','structural_priors']),('software',software,['id','name','primary_category','domain','code_url','project_url','code_license_status','pretrained_status','paper_ids','structural_priors']),('benchmarks',benchmarks,['id','name','kind','url','protocol','paper_ids'])]:
  with (ROOT/'data'/f'{name}.csv').open('w',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
+  w=csv.DictWriter(f,fieldnames=fields,lineterminator="\n");w.writeheader()
   for d in records:w.writerow({k:('; '.join(map(str,d[k])) if isinstance(d.get(k),list) else d.get(k,'')) for k in fields})
-payload={'papers':papers,'software':software,'categories':categories,'benchmarks':benchmarks,'formula':formula}
+payload={'papers':papers,'software':software,'categories':categories,'benchmarks':benchmarks,'formula':formula,'priors':priors}
 template=(ROOT/'scripts/explorer.html').read_text();write('docs/index.html',template.replace('__DATA__',json.dumps(payload,ensure_ascii=False).replace('</','<\\/')))
 print(f'Built {len(papers)} papers, {len(software)} implementations, {len(benchmarks)} named benchmark resources.')
+
+lines=['# Symmetry, topology and domain knowledge','','Structural knowledge is a cross-cutting design choice, not a separate optimizer family. These source-backed profiles distinguish construction, constrained exploration, population diversity and learned representation. Untagged entries are unassessed in this focused update, not proven to lack these features.','','| Knowledge category | Role |','|---|---|']
+for f in priors['features']:lines += [f"| {f['label']} | {f['description']} |"]
+lines += ['','Space-group symmetry differs from connectivity topology, prototype identity and geometric equivariance. A fixed symmetry can reduce search dimension but exclude the target. Template substitution differs from enumerating ordered site decorations. Supplied reference symmetry is additional input in a CSP benchmark.','','## Methods, papers and implementations','']
+SB={s['id']:s for s in software}
+for r in priors['profiles']:
+ lines += [f"## {r['name']}",'', '**Knowledge:** '+', '.join(feature_labels[t] for t in r['features']),'',r['role'],'','**Symmetry handling:** '+r['symmetry_behavior'],'','**Limits:** '+r['limitations'],'','**Papers:** '+paperlinks(r['paper_ids']),'']
+ for sid in r['software_ids']:
+  s=SB[sid];url=s.get('code_url') or s.get('project_url');label='Source code / archive' if s.get('code_url') else 'Official access portal'
+  lines += [f"- {link(s['name'],'software.md#'+sid)}: {link(label,url)} — {s['access_status']}; {s['code_license_status']}."]
+ lines += ['','**Evidence:** '+sources(r['evidence_urls'])+'; checked '+r['checked_on']+'.','']
+write('docs/structural-priors.md','\n'.join(lines))

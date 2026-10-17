@@ -9,3 +9,9 @@ Benchmark links distinguish the historical CSPBench study from the later T180/T4
 The resources are source-qualified, not independently reproduced. Metadata verification does not imply full-text review of every paper; links to checkpoints and datasets do not imply that their payloads have been downloaded or executed. Existing availability findings retain their original dates rather than being presented as fresh runtime validation.
 
 The repository publishes the curated catalogue and bibliographic/resource metadata. The in-progress manuscript and private research workspace are not part of this repository.
+
+## Structural knowledge update (17 October 2026)
+
+Three source-verified papers were added: constrained molecular USPEX (2012), the topology-based USPEX generator (2019), and the MAGUS framework (2023). Together with existing records, 21 profiles describe nine cross-cutting categories in [structural-priors.json](../data/structural_priors.json). The CALYPSO/SPAI paper is explicitly linked to its parent implementation. MAGUS v2.0.0 has a public Zenodo source archive with restricted academic terms; it is not labeled open source. Original records retain their IDs. The companion interactive map also incorporates the nine earlier manuscript/benchmark additions, bringing both paper catalogues to 208 records.
+
+Profiles are backed by papers and developer documentation. Constraints, supplied information and release-specific availability are distinguished. Functional checks execute page JavaScript in a minimal DOM, validate cross-links, and exercise feature/license intersections; these do not establish browser rendering or algorithm runtime correctness.

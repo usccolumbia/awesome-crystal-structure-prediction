@@ -47,7 +47,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP001",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP002",
@@ -99,7 +100,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP002",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP003",
@@ -150,7 +152,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP003",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP004",
@@ -206,7 +209,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP004",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP005",
@@ -259,7 +263,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP005",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP006",
@@ -313,7 +318,8 @@
     "composition_scope_original": "Network topology enumeration",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP006",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP007",
@@ -365,7 +371,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP007",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP008",
@@ -416,7 +423,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP008",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP009",
@@ -477,7 +485,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP009",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP010",
@@ -530,7 +539,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP010",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP011",
@@ -583,7 +593,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP011",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP012",
@@ -634,7 +645,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP012",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP013",
@@ -691,7 +703,8 @@
     "composition_scope_original": "Variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP013",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP014",
@@ -755,7 +768,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP014",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP015",
@@ -808,7 +822,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP015",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP016",
@@ -860,7 +875,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP016",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP017",
@@ -918,7 +934,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP017",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP018",
@@ -970,7 +987,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP018",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP019",
@@ -1023,7 +1041,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP019",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP020",
@@ -1072,7 +1091,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP020",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP021",
@@ -1126,7 +1146,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP021",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP022",
@@ -1200,7 +1221,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP022",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP023",
@@ -1250,7 +1272,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP023",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP024",
@@ -1301,7 +1324,8 @@
     "composition_scope_original": "Binary and ternary network compositions",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP024",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP025",
@@ -1357,7 +1381,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP025",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP026",
@@ -1407,7 +1432,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP026",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP027",
@@ -1457,7 +1483,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP027",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP028",
@@ -1507,7 +1534,12 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP028",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization"
+    ]
   },
   {
     "id": "CSP029",
@@ -1562,7 +1594,8 @@
     "composition_scope_original": "Multiple compositions in a chemical system",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP029",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP030",
@@ -1613,7 +1646,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP030",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP031",
@@ -1663,7 +1697,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP031",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP032",
@@ -1714,7 +1749,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP032",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP033",
@@ -1764,7 +1800,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP033",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP034",
@@ -1819,7 +1856,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP034",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP035",
@@ -1868,7 +1906,11 @@
     "composition_scope_original": "Enumerated compositions / decorations",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP035",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "ordering",
+      "prototypes"
+    ]
   },
   {
     "id": "CSP036",
@@ -1927,7 +1969,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP036",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP037",
@@ -1976,7 +2019,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP037",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP038",
@@ -2027,7 +2071,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP038",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP039",
@@ -2086,7 +2131,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP039",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP040",
@@ -2164,7 +2210,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP040",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP041",
@@ -2220,7 +2267,8 @@
     "composition_scope_original": "Fixed composition per test; composition varied across benchmark cases",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP041",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP042",
@@ -2270,7 +2318,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP042",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP043",
@@ -2322,7 +2371,11 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP043",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "chemical-constraints",
+      "symmetry-initialization"
+    ]
   },
   {
     "id": "CSP044",
@@ -2373,7 +2426,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP044",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP045",
@@ -2428,7 +2482,12 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP045",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization"
+    ]
   },
   {
     "id": "CSP046",
@@ -2495,7 +2554,8 @@
     "composition_scope_original": "Fixed composition with prescribed cell constraints per test",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP046",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP047",
@@ -2543,7 +2603,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP047",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP048",
@@ -2600,7 +2661,11 @@
     "composition_scope_original": "Variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP048",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "chemical-constraints",
+      "prototypes"
+    ]
   },
   {
     "id": "CSP049",
@@ -2656,7 +2721,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP049",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP050",
@@ -2710,7 +2776,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP050",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP051",
@@ -2798,7 +2865,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP051",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP052",
@@ -2847,7 +2915,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP052",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP053",
@@ -2897,7 +2966,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP053",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP054",
@@ -2952,7 +3022,11 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP054",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "chemical-constraints",
+      "symmetry-initialization"
+    ]
   },
   {
     "id": "CSP055",
@@ -3006,7 +3080,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP055",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP056",
@@ -3057,7 +3132,11 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP056",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "ordering",
+      "prototypes"
+    ]
   },
   {
     "id": "CSP057",
@@ -3115,7 +3194,12 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP057",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization"
+    ]
   },
   {
     "id": "CSP058",
@@ -3165,7 +3249,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP058",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP059",
@@ -3225,7 +3310,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP059",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP060",
@@ -3276,7 +3362,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP060",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP061",
@@ -3324,7 +3411,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP061",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP062",
@@ -3375,7 +3463,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP062",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP063",
@@ -3431,7 +3520,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP063",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP064",
@@ -3488,7 +3578,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP064",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP065",
@@ -3542,7 +3633,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP065",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP066",
@@ -3593,7 +3685,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP066",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP067",
@@ -3653,7 +3746,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP067",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP068",
@@ -3792,7 +3886,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP068",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP069",
@@ -3844,7 +3939,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP069",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP070",
@@ -3904,7 +4000,11 @@
     "composition_scope_original": "Variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP070",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints"
+    ]
   },
   {
     "id": "CSP071",
@@ -3967,7 +4067,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP071",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP072",
@@ -4020,7 +4121,12 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP072",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "chemical-constraints",
+      "symmetry-initialization",
+      "wyckoff"
+    ]
   },
   {
     "id": "CSP073",
@@ -4073,7 +4179,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP073",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP074",
@@ -4123,7 +4230,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP074",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP075",
@@ -4188,7 +4296,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP075",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP076",
@@ -4241,7 +4350,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP076",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP077",
@@ -4302,7 +4412,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP077",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP078",
@@ -4359,7 +4470,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP078",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP079",
@@ -4417,7 +4529,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP079",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP080",
@@ -4467,7 +4580,8 @@
     "composition_scope_original": "Fixed and variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP080",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP081",
@@ -4524,7 +4638,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP081",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP082",
@@ -4578,7 +4693,8 @@
     "composition_scope_original": "Bounded multiple stoichiometries",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP082",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP083",
@@ -4634,7 +4750,11 @@
     "composition_scope_original": "Fixed and variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP083",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints"
+    ]
   },
   {
     "id": "CSP084",
@@ -4684,7 +4804,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP084",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP085",
@@ -4746,7 +4867,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP085",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP086",
@@ -4844,7 +4966,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP086",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP087",
@@ -4940,7 +5063,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP087",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Inverse Design of Solid-State Materials via a Continuous Representation",
@@ -5035,7 +5159,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP088",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP089",
@@ -5092,7 +5217,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP089",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP090",
@@ -5157,7 +5283,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP090",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP091",
@@ -5208,7 +5335,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP091",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP092",
@@ -5309,7 +5437,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP092",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP093",
@@ -5364,7 +5493,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP093",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP094",
@@ -5423,7 +5553,8 @@
     "composition_scope_original": "Fixed composition; partial structure descriptors",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP094",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP095",
@@ -5479,7 +5610,8 @@
     "composition_scope_original": "Fixed stoichiometry in studied examples",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP095",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP096",
@@ -5535,7 +5667,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP096",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP097",
@@ -5630,7 +5763,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP097",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP098",
@@ -5684,7 +5818,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP098",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP099",
@@ -5756,7 +5891,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP099",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP100",
@@ -5824,7 +5960,8 @@
     "composition_scope_original": "Fixed composition / symmetry-constrained geometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP100",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Constrained crystals deep convolutional generative adversarial network for the inverse design of crystal structures",
@@ -5927,7 +6064,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP101",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP102",
@@ -6004,7 +6142,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP102",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP103",
@@ -6057,7 +6196,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP103",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP104",
@@ -6109,7 +6249,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP104",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "High‐Throughput Discovery of Novel Cubic Crystal Materials Using Deep Generative Neural Networks",
@@ -6214,7 +6355,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP105",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP106",
@@ -6270,7 +6412,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP106",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP107",
@@ -6325,7 +6468,13 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP107",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization",
+      "wyckoff"
+    ]
   },
   {
     "id": "CSP108",
@@ -6384,7 +6533,12 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP108",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "symmetry-diversity",
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "CSP109",
@@ -6441,7 +6595,8 @@
     "composition_scope_original": "Evaluator; composition supplied by outer search",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP109",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP110",
@@ -6507,7 +6662,8 @@
     "composition_scope_original": "Fixed composition; multiple formula units can be searched",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP110",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "An invertible crystallographic representation for general inverse design of inorganic crystals with targeted properties",
@@ -6633,7 +6789,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP111",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP112",
@@ -6695,7 +6852,8 @@
     "composition_scope_original": "Fixed or implementation-dependent composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP112",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Crystal Diffusion Variational Autoencoder for Periodic Material Generation",
@@ -6809,7 +6967,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP113",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP114",
@@ -6870,7 +7029,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP114",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP115",
@@ -6929,7 +7089,10 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP115",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "prototypes"
+    ]
   },
   {
     "id": "CSP116",
@@ -6978,7 +7141,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP116",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP117",
@@ -7042,7 +7206,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP117",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP118",
@@ -7099,7 +7264,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP118",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP119",
@@ -7155,7 +7321,8 @@
     "composition_scope_original": "Variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP119",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP120",
@@ -7221,7 +7388,8 @@
     "composition_scope_original": "Fixed candidate composition / variable-composition discovery",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP120",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP121",
@@ -7273,7 +7441,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP121",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP122",
@@ -7335,7 +7504,8 @@
     "composition_scope_original": "Cross-cutting",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP122",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP123",
@@ -7402,7 +7572,11 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP123",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "chemical-constraints",
+      "prototypes"
+    ]
   },
   {
     "id": "CSP124",
@@ -7458,7 +7632,8 @@
     "composition_scope_original": "Fixed and variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP124",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP125",
@@ -7521,7 +7696,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP125",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "An invertible, invariant crystal representation for inverse design of solid-state materials using generative deep learning",
@@ -7621,7 +7797,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP126",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP127",
@@ -7688,7 +7865,8 @@
     "composition_scope_original": "Evaluator; composition supplied by outer search",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP127",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Crystal Structure Prediction by Joint Equivariant Diffusion",
@@ -7787,7 +7965,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP128",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP129",
@@ -7834,7 +8013,8 @@
     "composition_scope_original": "Cross-cutting",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP129",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Crystal-GFN: sampling crystals with desirable properties and constraints",
@@ -7939,7 +8119,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP130",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP131",
@@ -8006,7 +8187,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP131",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP132",
@@ -8060,7 +8242,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP132",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP133",
@@ -8119,7 +8302,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP133",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Physics guided deep learning for generative design of crystal materials with symmetry constraints",
@@ -8221,7 +8405,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP134",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP135",
@@ -8292,7 +8477,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP135",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP136",
@@ -8341,7 +8527,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP136",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP137",
@@ -8402,7 +8589,8 @@
     "composition_scope_original": "Fixed and variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP137",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP138",
@@ -8493,7 +8681,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP138",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP139",
@@ -8551,7 +8740,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP139",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Crystal structure generation with autoregressive large language modeling",
@@ -8648,7 +8838,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP140",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP141",
@@ -8709,7 +8900,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP141",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Deep learning generative model for crystal structure prediction",
@@ -8807,7 +8999,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP142",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP143",
@@ -8906,7 +9099,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP143",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP144",
@@ -9016,7 +9210,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP144",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "FlowLLM: Flow Matching for Material Generation with Large Language Models as Base Distributions",
@@ -9111,7 +9306,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP145",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "FlowMM: Generating Materials with Riemannian Flow Matching",
@@ -9210,7 +9406,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP146",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP147",
@@ -9268,7 +9465,8 @@
     "composition_scope_original": "Variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP147",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP148",
@@ -9373,7 +9571,11 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP148",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints"
+    ]
   },
   {
     "id": "CSP149",
@@ -9482,7 +9684,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP149",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP150",
@@ -9537,7 +9740,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP150",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP151",
@@ -9591,7 +9795,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Molecular identity / conformer conditioned",
     "bibtex_key": "CSP151",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Scalable Diffusion for Materials Generation",
@@ -9689,7 +9894,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP152",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP153",
@@ -9758,7 +9964,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP153",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Space Group Constrained Crystal Generation",
@@ -9853,7 +10060,11 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP154",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "CSP155",
@@ -10055,7 +10266,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP155",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP156",
@@ -10249,7 +10461,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP156",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP157",
@@ -10352,7 +10565,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP157",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP158",
@@ -10402,7 +10616,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP158",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "A generative model for inorganic materials design",
@@ -10546,7 +10761,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP159",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "A Periodic Bayesian Flow for Material Generation",
@@ -10648,7 +10864,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP160",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP161",
@@ -10719,7 +10936,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP161",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP162",
@@ -10785,7 +11003,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP162",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "All-atom Diffusion Transformers: Unified generative modelling of molecules and materials",
@@ -10883,7 +11102,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP163",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP164",
@@ -10935,7 +11155,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP164",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP165",
@@ -10990,7 +11211,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP165",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP166",
@@ -11082,7 +11304,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP166",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP167",
@@ -11142,7 +11365,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP167",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP168",
@@ -11194,7 +11418,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP168",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "CrystalFlow: a flow-based generative model for crystalline materials",
@@ -11297,7 +11522,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP169",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP170",
@@ -11357,7 +11583,13 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP170",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "building-blocks",
+      "symmetry-diversity",
+      "symmetry-preserving",
+      "topology"
+    ]
   },
   {
     "id": "CSP171",
@@ -11412,7 +11644,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP171",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP172",
@@ -11508,7 +11741,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP172",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Open Materials Generation with Stochastic Interpolants",
@@ -11630,7 +11864,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP173",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP174",
@@ -11689,7 +11924,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Molecular identity / conformer conditioned",
     "bibtex_key": "CSP174",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP175",
@@ -11749,7 +11985,10 @@
     "composition_scope_original": "Fixed composition; multiple polymorphs",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP175",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "symmetry-diversity"
+    ]
   },
   {
     "id": "CSP176",
@@ -11805,7 +12044,11 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP176",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "title": "Space group informed transformer for crystalline materials generation",
@@ -11923,7 +12166,12 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP177",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "prototypes",
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "title": "SymmCD: Symmetry-Preserving Crystal Generation with Diffusion Models",
@@ -12024,7 +12272,11 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP178",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "CSP179",
@@ -12145,7 +12397,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP179",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP180",
@@ -12214,7 +12467,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP180",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP181",
@@ -12282,7 +12536,8 @@
     "composition_scope_original": "Fixed candidate compositions and bounded chemical-system searches",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP181",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP182",
@@ -12373,7 +12628,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP182",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP183",
@@ -12490,7 +12746,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP183",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP184",
@@ -12584,7 +12841,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP184",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP185",
@@ -12639,7 +12897,8 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP185",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP186",
@@ -12700,7 +12959,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP186",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "title": "Efficient symmetry-aware materials generation via hierarchical generative flow networks",
@@ -12798,7 +13058,8 @@
     },
     "generative_csp_mode_previous": "Generation / reconstruction; formula-only CSP not established here",
     "bibtex_key": "CSP187",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP188",
@@ -12849,7 +13110,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Molecular identity / conformer conditioned",
     "bibtex_key": "CSP188",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP189",
@@ -12938,7 +13200,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP189",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP190",
@@ -13006,7 +13269,8 @@
     "composition_scope_original": "Evaluator / data framework; outer search supplies compositions",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP190",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP191",
@@ -13067,7 +13331,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Molecular identity / conformer conditioned",
     "bibtex_key": "CSP191",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP192",
@@ -13131,7 +13396,8 @@
     "composition_scope_original": "Fixed molecular identity / stoichiometry",
     "generative_csp_mode": "Molecular identity / conformer conditioned",
     "bibtex_key": "CSP192",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP193",
@@ -13240,7 +13506,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP193",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP194",
@@ -13303,7 +13570,11 @@
     "composition_scope_original": "Fixed composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP194",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": [
+      "chemical-constraints",
+      "prototypes"
+    ]
   },
   {
     "id": "CSP195",
@@ -13397,7 +13668,8 @@
     },
     "generative_csp_mode_previous": "Formula-conditioned CSP reported",
     "bibtex_key": "CSP195",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "CSP196",
@@ -13447,7 +13719,8 @@
     "composition_scope_original": "Variable composition",
     "generative_csp_mode": "Not a learned generative proposal",
     "bibtex_key": "CSP196",
-    "metadata_source": "Survey bibliography, including verified corrections"
+    "metadata_source": "Survey bibliography, including verified corrections",
+    "structural_priors": []
   },
   {
     "id": "DMCrystal2020",
@@ -13482,10 +13755,26 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu–Wenhui Yang collaboration",
         "source_url": "https://doi.org/10.1021/acs.jpca.0c08775",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Hu, Jianjun",
+          "Yang, Wenhui"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [],
+    "aliases": [
+      "DMCrystal2020"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Fixed composition; supplied geometric descriptors",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Fixed composition",
+    "search_keywords": [],
+    "search_text": "dmcrystal2020 dmcrystal2020 distance matrix-based crystal structure prediction using evolutionary algorithms 2020 hu, jianjun yang, wenhui dilanga siriwardane, edirisuriya m. dmcrystal genetic reconstruction from pairwise distances, lattice, and space-group information. pairwise atomic distances; lattice and space group see primary source atomic / inorganic fixed composition fixed composition; supplied geometric descriptors not a learned generative proposal method evolutionary / genetic search jianjun hu–wenhui yang collaboration"
   },
   {
     "id": "CMCrystal2021",
@@ -13524,10 +13813,26 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu–Wenhui Yang collaboration",
         "source_url": "https://doi.org/10.1039/d0ce01714k",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Hu, Jianjun",
+          "Yang, Wenhui"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [],
+    "aliases": [
+      "CMCrystal2021"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Fixed composition; supplied geometric descriptors",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Fixed composition",
+    "search_keywords": [],
+    "search_text": "cmcrystal2021 cmcrystal2021 contact map based crystal structure prediction using global optimization 2021 hu, jianjun yang, wenhui dong, rongzhi li, yuxin li, xiang li, shaobo siriwardane, edirisuriya m. d. cmcrystal contact-map reconstruction comparing global optimization algorithms. contact map and crystallographic information see primary source atomic / inorganic fixed composition fixed composition; supplied geometric descriptors not a learned generative proposal method evolutionary / genetic search jianjun hu–wenhui yang collaboration"
   },
   {
     "id": "CMCrystalHS2021",
@@ -13564,10 +13869,32 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu–Wenhui Yang collaboration",
         "source_url": "https://doi.org/10.1088/1361-648x/ac1d6c",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Yang, Wenhui",
+          "Hu, Jianjun"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ],
+    "aliases": [
+      "CMCrystalHS2021"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Fixed composition; supplied geometric descriptors",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Fixed composition",
+    "search_keywords": [
+      "symmetry-preserving",
+      "wyckoff"
+    ],
+    "search_text": "cmcrystalhs2021 cmcrystalhs2021 crystal structure prediction of materials with high symmetry using differential evolution 2021 yang, wenhui dilanga siriwardane, edirisuriya m dong, rongzhi li, yuxin hu, jianjun cmcrystalhs pyxtal-compatible wyckoff assignments followed by differential evolution of free coordinates. formula, contact map and space group see primary source atomic / inorganic fixed composition fixed composition; supplied geometric descriptors not a learned generative proposal method symmetry-preserving wyckoff swarm / differential evolution jianjun hu–wenhui yang collaboration"
   },
   {
     "id": "CMCrystalMOO2022",
@@ -13602,10 +13929,26 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu–Wenhui Yang collaboration",
         "source_url": "https://doi.org/10.1021/acs.jpca.1c07170",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Yang, Wenhui",
+          "Hu, Jianjun"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [],
+    "aliases": [
+      "CMCrystalMOO2022"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Fixed composition; supplied geometric descriptors",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Fixed composition",
+    "search_keywords": [],
+    "search_text": "cmcrystalmoo2022 cmcrystalmoo2022 crystal structure prediction using an age-fitness multiobjective genetic algorithm and coordination number constraints 2022 yang, wenhui dilanga siriwardane, edirisuriya m. hu, jianjun cmcrystalmoo / moocsp multiobjective reconstruction using contact agreement, coordination agreement and individual age. contact map, coordination constraints and crystallographic settings see primary source atomic / inorganic fixed composition fixed composition; supplied geometric descriptors not a learned generative proposal method evolutionary / genetic search jianjun hu–wenhui yang collaboration"
   },
   {
     "id": "MLatticeABC2021",
@@ -13641,10 +13984,26 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu–Wenhui Yang collaboration",
         "source_url": "https://doi.org/10.1021/acsomega.1c00781",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Yang, Wenhui",
+          "Hu, Jianjun"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [],
+    "aliases": [
+      "MLatticeABC2021"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Cross-cutting / not specified",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Cross-cutting / not specified",
+    "search_keywords": [],
+    "search_text": "mlatticeabc2021 mlatticeabc2021 mlatticeabc: generic lattice constant prediction of crystal materials using machine learning 2021 li, yuxin yang, wenhui dong, rongzhi hu, jianjun mlatticeabc random-forest lattice prediction from composition descriptors and atom-count features. composition descriptors and atom-count information see primary source atomic / inorganic cross-cutting / not specified cross-cutting / not specified not a learned generative proposal enabling predictor / evaluation reviews & evaluation jianjun hu–wenhui yang collaboration"
   },
   {
     "id": "CompositionSymmetry2021",
@@ -13680,10 +14039,26 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu–Wenhui Yang collaboration",
         "source_url": "https://doi.org/10.1016/j.commatsci.2021.110686",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Yang, Wenhui",
+          "Hu, Jianjun"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [],
+    "aliases": [
+      "CompositionSymmetry2021"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Cross-cutting / not specified",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Cross-cutting / not specified",
+    "search_keywords": [],
+    "search_text": "compositionsymmetry2021 compositionsymmetry2021 composition based crystal materials symmetry prediction using machine learning with enhanced descriptors 2021 li, yuxin dong, rongzhi yang, wenhui hu, jianjun composition-based symmetry prediction random-forest crystal-system and space-group classification from enhanced composition descriptors. formula / composition descriptors see primary source atomic / inorganic cross-cutting / not specified cross-cutting / not specified not a learned generative proposal enabling predictor / evaluation reviews & evaluation jianjun hu–wenhui yang collaboration"
   },
   {
     "id": "CSPMetrics2024",
@@ -13719,10 +14094,25 @@
         "id": "hu_yang_collaboration",
         "label": "Jianjun Hu group",
         "source_url": "https://doi.org/10.1016/j.commatsci.2024.112802",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Hu, Jianjun"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [],
+    "aliases": [
+      "CSPMetrics2024"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Cross-cutting / not specified",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Cross-cutting / not specified",
+    "search_keywords": [],
+    "search_text": "cspmetrics2024 cspmetrics2024 towards quantitative evaluation of crystal structure prediction performance 2024 wei, lai li, qin omee, sadman sadeed hu, jianjun cspmetrics quantitative structure comparison using complementary geometry, graph, fingerprint and energy distances. predicted and reference structures see primary source atomic / inorganic cross-cutting / not specified cross-cutting / not specified not a learned generative proposal enabling predictor / evaluation reviews & evaluation jianjun hu group"
   },
   {
     "id": "CrystalFormerCSP2025",
@@ -13757,10 +14147,33 @@
         "id": "crystalformer_collaboration",
         "label": "CrystalFormer collaboration",
         "source_url": "https://arxiv.org/abs/2512.18251",
-        "basis": "Named authors in primary paper"
+        "basis": "Named authors in primary paper",
+        "named_authors": [
+          "Lei Wang"
+        ]
       }
     ],
-    "metadata_source": "Publisher metadata and verified survey bibliography"
+    "metadata_source": "Publisher metadata and verified survey bibliography",
+    "structural_priors": [
+      "prototypes",
+      "symmetry-preserving",
+      "wyckoff"
+    ],
+    "aliases": [
+      "CrystalFormerCSP2025"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Fixed composition",
+    "generative_csp_mode": "Formula-conditioned CSP reported",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "composition_scope": "Fixed composition",
+    "search_keywords": [
+      "prototypes",
+      "symmetry-preserving",
+      "wyckoff"
+    ],
+    "search_text": "crystalformercsp2025 crystalformercsp2025 crystalformer-csp: thinking fast and slow for crystal structure prediction 2025 zhendong cao shigang ou lei wang crystalformer-csp composition-given autoregressive prediction using space-group and wyckoff representations. composition; additional inference controls depend on version see primary source atomic / inorganic fixed composition fixed composition formula-conditioned csp reported method prototypes symmetry-preserving wyckoff learned structure generation crystalformer collaboration"
   },
   {
     "id": "MatbenchGenmetrics2024",
@@ -13796,8 +14209,230 @@
         "id": "baird_sparks",
         "label": "Baird–Sparks collaboration",
         "source_url": "https://joss.theoj.org/papers/10.21105/joss.05618",
-        "basis": "Primary paper authors"
+        "basis": "Primary paper authors",
+        "named_authors": [
+          "Taylor D. Sparks"
+        ]
       }
-    ]
+    ],
+    "structural_priors": [],
+    "aliases": [
+      "MatbenchGenmetrics2024"
+    ],
+    "secondary_categories": [],
+    "composition_scope_original": "Cross-cutting / not specified",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "energy_evaluator": "See primary source",
+    "metadata_verification": "Primary-source record",
+    "limitations": "See primary source",
+    "composition_scope": "Cross-cutting / not specified",
+    "search_keywords": [],
+    "search_text": "matbenchgenmetrics2024 matbenchgenmetrics2024 matbench-genmetrics: a python library for benchmarking crystal structure generative models using time-based splits of materials project structures 2024 sterling g. baird hasan m. sayeed joseph montoya taylor d. sparks matbench-genmetrics / mpts-52 time-based materials project splits and crystal generation metrics. crystal datasets and generated structures see primary source atomic / inorganic cross-cutting / not specified cross-cutting / not specified not a learned generative proposal benchmark / evaluation reviews & evaluation baird–sparks collaboration"
+  },
+  {
+    "id": "USPEXTopology2019",
+    "title": "Topology-based crystal structure generator",
+    "year": 2019,
+    "doi": "10.1016/j.cpc.2018.09.016",
+    "url": "https://doi.org/10.1016/j.cpc.2018.09.016",
+    "authors": [
+      "Pavel V. Bushlanov",
+      "Vladislav A. Blatov",
+      "Artem R. Oganov"
+    ],
+    "authors_complete": true,
+    "venue": "Computer Physics Communications",
+    "publication_status": "Published journal article",
+    "primary_category": 1,
+    "secondary_categories": [
+      3
+    ],
+    "categories": [
+      1,
+      3
+    ],
+    "domain": "Atomic / inorganic",
+    "role": "Method",
+    "method": "Topological net construction for evolutionary CSP",
+    "workflow": "Select suitable idealized periodic nets, decorate for the target stoichiometry, and use candidates directly or within evolutionary search.",
+    "inputs": "Composition, permitted cell sizes and a periodic-net library",
+    "composition_scope": "Fixed composition",
+    "energy_evaluator": "Reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow",
+    "limitations": "Finite net-library and decoration coverage; topology is not a fixed space-group label.",
+    "evidence_read": "Primary paper and developer descriptions; Crossref title/authors verified",
+    "source_urls": [
+      "https://doi.org/10.1016/j.cpc.2018.09.016"
+    ],
+    "research_groups": [
+      {
+        "id": "oganov",
+        "label": "Oganov / USPEX collaboration",
+        "named_authors": [
+          "Artem R. Oganov"
+        ],
+        "source_url": "https://doi.org/10.1016/j.cpc.2018.09.016",
+        "basis": "Named authors on primary paper",
+        "original_group_label": "Oganov / USPEX team"
+      }
+    ],
+    "metadata_verification": "Crossref DOI/title matched",
+    "verified_on": "2026-10-17",
+    "structural_priors": [
+      "symmetry-initialization",
+      "topology"
+    ],
+    "aliases": [
+      "USPEXTopology2019"
+    ],
+    "composition_scope_original": "Fixed composition",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "search_keywords": [
+      "symmetry-initialization",
+      "topology"
+    ],
+    "search_text": "uspextopology2019 uspextopology2019 topology-based crystal structure generator 2019 pavel v. bushlanov vladislav a. blatov artem r. oganov topological net construction for evolutionary csp select suitable idealized periodic nets, decorate for the target stoichiometry, and use candidates directly or within evolutionary search. composition, permitted cell sizes and a periodic-net library reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow atomic / inorganic fixed composition fixed composition not a learned generative proposal method symmetry-initialization topology constructive / template / discrete search evolutionary / genetic search oganov / uspex collaboration"
+  },
+  {
+    "id": "MolecularUSPEX2012",
+    "title": "Constrained evolutionary algorithm for structure prediction of molecular crystals: methodology and applications",
+    "year": 2012,
+    "doi": "10.1107/S0108768112017466",
+    "url": "https://doi.org/10.1107/S0108768112017466",
+    "authors": [
+      "Qiang Zhu",
+      "Artem R. Oganov",
+      "Colin W. Glass",
+      "Harold T. Stokes"
+    ],
+    "authors_complete": true,
+    "venue": "Acta Crystallographica Section B Structural Science",
+    "publication_status": "Published journal article",
+    "primary_category": 3,
+    "secondary_categories": [
+      1
+    ],
+    "categories": [
+      1,
+      3
+    ],
+    "domain": "Molecular / organic",
+    "role": "Method",
+    "method": "Constrained molecular evolutionary CSP",
+    "workflow": "Construct and vary packings of molecular units; sample symmetry and relax candidate crystals.",
+    "inputs": "Molecular units, composition and search bounds",
+    "composition_scope": "Fixed molecular identity / stoichiometry",
+    "energy_evaluator": "Reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow",
+    "limitations": "Constraining units can exclude alternative bonding or dissociation.",
+    "evidence_read": "Primary paper and developer descriptions; Crossref title/authors verified",
+    "source_urls": [
+      "https://doi.org/10.1107/S0108768112017466"
+    ],
+    "research_groups": [
+      {
+        "id": "oganov",
+        "label": "Oganov / USPEX collaboration",
+        "named_authors": [
+          "Qiang Zhu",
+          "Artem R. Oganov"
+        ],
+        "source_url": "https://doi.org/10.1107/S0108768112017466",
+        "basis": "Named authors on primary paper",
+        "original_group_label": "Oganov / USPEX team"
+      }
+    ],
+    "metadata_verification": "Crossref DOI/title matched",
+    "verified_on": "2026-10-17",
+    "structural_priors": [
+      "building-blocks",
+      "symmetry-initialization"
+    ],
+    "aliases": [
+      "MolecularUSPEX2012"
+    ],
+    "composition_scope_original": "Fixed molecular identity / stoichiometry",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "search_keywords": [
+      "building-blocks",
+      "symmetry-initialization"
+    ],
+    "search_text": "molecularuspex2012 molecularuspex2012 constrained evolutionary algorithm for structure prediction of molecular crystals: methodology and applications 2012 qiang zhu artem r. oganov colin w. glass harold t. stokes constrained molecular evolutionary csp construct and vary packings of molecular units; sample symmetry and relax candidate crystals. molecular units, composition and search bounds reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow molecular / organic fixed molecular identity / stoichiometry fixed molecular identity / stoichiometry not a learned generative proposal method building-blocks symmetry-initialization constructive / template / discrete search evolutionary / genetic search oganov / uspex collaboration"
+  },
+  {
+    "id": "MAGUS2023",
+    "title": "MAGUS: machine learning and graph theory assisted universal structure searcher",
+    "year": 2023,
+    "doi": "10.1093/nsr/nwad128",
+    "url": "https://doi.org/10.1093/nsr/nwad128",
+    "authors": [
+      "Junjie Wang",
+      "Hao Gao",
+      "Yu Han",
+      "Chi Ding",
+      "Shuning Pan",
+      "Yong Wang",
+      "Qiuhan Jia",
+      "Hui-Tian Wang",
+      "Dingyu Xing",
+      "Jian Sun"
+    ],
+    "authors_complete": true,
+    "venue": "National Science Review",
+    "publication_status": "Published journal article",
+    "primary_category": 3,
+    "secondary_categories": [
+      1,
+      6
+    ],
+    "categories": [
+      1,
+      3,
+      6
+    ],
+    "domain": "Atomic / inorganic",
+    "role": "Method",
+    "method": "Graph-decomposition and ML-assisted evolutionary search",
+    "workflow": "Extract and rearrange graph-based fragments; accelerate structure evaluation using on-the-fly learned potentials.",
+    "inputs": "Composition, cell bounds and a reference energy evaluator",
+    "composition_scope": "Fixed composition",
+    "energy_evaluator": "Reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow",
+    "limitations": "Training generated during search is system-dependent; fragment restrictions and potential accuracy affect coverage.",
+    "evidence_read": "Primary paper and developer descriptions; Crossref title/authors verified",
+    "source_urls": [
+      "https://doi.org/10.1093/nsr/nwad128"
+    ],
+    "research_groups": [
+      {
+        "id": "sun-magus",
+        "label": "Jian Sun–Wang–Han / MAGUS team",
+        "named_authors": [
+          "Junjie Wang",
+          "Yu Han",
+          "Jian Sun"
+        ],
+        "source_url": "https://doi.org/10.1093/nsr/nwad128",
+        "basis": "Named authors on primary paper",
+        "original_group_label": "Jian Sun–Wang–Han / MAGUS team"
+      }
+    ],
+    "metadata_verification": "Crossref DOI/title matched",
+    "verified_on": "2026-10-17",
+    "structural_priors": [
+      "building-blocks",
+      "symmetry-diversity",
+      "symmetry-preserving",
+      "topology"
+    ],
+    "aliases": [
+      "MAGUS2023"
+    ],
+    "composition_scope_original": "Fixed composition",
+    "generative_csp_mode": "Not a learned generative proposal",
+    "search_keywords": [
+      "building-blocks",
+      "symmetry-diversity",
+      "symmetry-preserving",
+      "topology"
+    ],
+    "search_text": "magus2023 magus2023 magus: machine learning and graph theory assisted universal structure searcher 2023 junjie wang hao gao yu han chi ding shuning pan yong wang qiuhan jia hui-tian wang dingyu xing jian sun graph-decomposition and ml-assisted evolutionary search extract and rearrange graph-based fragments; accelerate structure evaluation using on-the-fly learned potentials. composition, cell bounds and a reference energy evaluator reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow atomic / inorganic fixed composition fixed composition not a learned generative proposal method building-blocks symmetry-diversity symmetry-preserving topology constructive / template / discrete search evolutionary / genetic search adaptive / ml-guided search jian sun–wang–han / magus team"
   }
 ]

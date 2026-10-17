@@ -1,130 +1,130 @@
-id,name,primary_category,domain,code_url,project_url,code_license_status,pretrained_status,paper_ids
-chgnet,CHGNet,0,Atomic / inorganic,https://github.com/CederGroupHub/chgnet,,Open-source license verified,Public pretrained download,CSP127
-crystaloptimizer,CrystalOptimizer / CSO-FM,0,Molecular / organic,,https://sargentcentre.org/impact/spinouts-software/,No source license verified,Not applicable — non-trained algorithm,CSP049
-csp-mace-a,CSP-MACE-Å,0,Molecular / organic,,,No source license verified,No pretrained release verified,CSP186
-deep-free-energy-df-csp,Deep free energy (DF) CSP,0,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP181
-disordered-structure-nnp-training-hong-et-al,Disordered-structure NNP training (Hong et al.),0,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP099
-m3gnet,M3GNet,0,Atomic / inorganic,https://github.com/materialyzeai/m3gnet,,Open-source license verified,Public pretrained download,CSP109
-molxtalnet-mxtaltools,MolXtalNet-D / MolXtalNet-S (MXtalTools),0,Molecular / organic,https://github.com/InfluenceFunctional/MXtalTools,https://github.com/InfluenceFunctional/MXtalTools,Open-source license verified,Public pretrained download,CSP132
-opencsp-crystal-prediction,OpenCSP (crystal prediction),0,Atomic / inorganic,,https://www.nature.com/articles/s41524-026-02180-0,No source license verified,Not applicable — non-trained algorithm,CSP190
-crysim,CRYSIM,1,Atomic / inorganic,https://github.com/tsudalab/CRYSIM,https://github.com/tsudalab/CRYSIM,Open-source license verified,Not applicable — non-trained algorithm,CSP176
-cspml,CSPML,1,Atomic / inorganic,https://github.com/Minoru938/CSPML,https://github.com/Minoru938/CSPML,Open-source license verified,Public pretrained download,CSP115
-pymatgen-ionic-substitution,Data-mined ionic substitution (pymatgen implementation),1,Atomic / inorganic,https://github.com/materialsproject/pymatgen,https://pymatgen.org/pymatgen.core.structure_prediction.html,Open-source license verified,Not applicable — non-trained algorithm,CSP048
-data-mined-prototype-search,Data-mined prototype search (Curtarolo / Fischer / Ceder),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP017; CSP029
-enumlib,enumlib,1,Atomic / inorganic,https://github.com/msg-byu/enumlib,https://github.com/msg-byu/enumlib,Open-source license verified,Not applicable — non-trained algorithm,CSP035; CSP056
-grinsp,GRINSP / GRINS,1,Atomic / inorganic,https://www.cristal.org/grinsp/,https://www.cristal.org/grinsp/,No source license verified,Not applicable — non-trained algorithm,CSP024
-ipcsp,IPCSP (integer-programming CSP),1,Atomic / inorganic,https://github.com/lrcfmd/ipcsp,https://github.com/lrcfmd/ipcsp,Open-source license verified,Not applicable — non-trained algorithm,CSP133
-tetrahedral-framework-enumeration,Periodic tetrahedral-framework enumeration (Treacy et al.),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP004; CSP019
-symmetry-divide-conquer,Symmetry-orientated divide-and-conquer CSP,1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP108
-systematic-network-enumeration,Systematic crystalline-network enumeration (Delgado Friedrichs et al.),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP006
-quotient-graph-search,Systematic periodic-network search (Winkler–Pickard–Thimm),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP011; CSP021
-tcsp,TCSP / TCSP2.0,1,Atomic / inorganic,https://github.com/usccolumbia/TCSP,https://github.com/usccolumbia/TCSP,Open-source license verified,Public pretrained download,CSP123; CSP194
-airss,AIRSS / buildcell,2,Atomic / inorganic,https://www.mtg.msm.cam.ac.uk/Codes/AIRSS,https://airss-docs.github.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP028; CSP165
-crystalpredictor,CrystalPredictor / CrystalPredictor II,2,Molecular / organic,,https://sargentcentre.org/impact/spinouts-software/,No source license verified,Not applicable — non-trained algorithm,CSP023; CSP031; CSP063; CSP065
-csp-aiff,CSP(aiFF) / autoPES–UPACK workflow,2,Molecular / organic,,https://www.physics.udel.edu/~szalewic/SAPT/SAPT.html,No source license verified,No pretrained release verified,CSP121
-genarris,Genarris (1.0–3.x; Rigid Press),2,Molecular / organic,https://www.noamarom.com/wp-content/uploads/2026/06/gnrs-3.1.4.zip,https://www.noamarom.com/software/genarris/,Open-source license verified,Not applicable — non-trained algorithm,CSP079; CSP096; CSP171
-glee,GLEE (Global Lattice Energy Explorer),2,Molecular / organic,,https://eprints.soton.ac.uk/385478,No source license verified,Not applicable — non-trained algorithm,CSP066; CSP071
-htocsp,HTOCSP (population / width-first sampling),2,Molecular / organic,https://github.com/MaterSim/HTOCSP,https://github.com/MaterSim/HTOCSP,Open-source license verified,Not applicable — non-trained algorithm,CSP164
-mol-cspy,"mol-CSPy: quasi-random sampling, QRBH and threshold MC",2,Molecular / organic,https://gitlab.com/mol-cspy/mol-cspy,https://mol-cspy.readthedocs.io/en/stable/,Open-source license verified,Not applicable — non-trained algorithm,CSP066; CSP104; CSP116; CSP136
-pyxtal,PyXtal,2,Atomic / inorganic,https://github.com/MaterSim/PyXtal,https://pyxtal.readthedocs.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP107
-randspg,RandSpg,2,Atomic / inorganic,https://github.com/xtalopt/randSpg,https://xtalopt.github.io/resources.html,Open-source license verified,Not applicable — non-trained algorithm,CSP072
-schrodinger-csp,Schrödinger Crystal Structure Prediction,2,Molecular / organic,,https://www.schrodinger.com/platform/products/ms-crystal-structure-prediction/,Commercial / controlled source,Not applicable — non-trained algorithm,CSP161
-symmetry-driven-random-search,Symmetry-driven structure search (Domingos–Shaik–Militzer),2,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP082
-upack,UPACK,2,Molecular / organic,,http://www.crystal.chem.uu.nl/~vaneyck/upack.html,No source license verified,Not applicable — non-trained algorithm,CSP008
-aga,Adaptive Genetic Algorithm (AGA; Wang–Ho collaboration),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP059
-cryspai,CrySPAI,3,Atomic / inorganic,,https://www.mdpi.com/2411-5134/10/2/26/html,No source license verified,Not applicable — non-trained algorithm,CSP167
-norskov-alloy-search,Evolutionary alloy-prototype search (Jóhannesson et al.),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP013
-gasp-python,GASP-Python,3,Atomic / inorganic,https://github.com/henniggroup/GASP-python,https://github.com/henniggroup/GASP-python,Open-source license verified,Not applicable — non-trained algorithm,CSP080
-gator-molecular,GAtor,3,Molecular / organic,https://www.noamarom.com/wp-content/uploads/2023/01/GAtor_Test.zip,https://www.noamarom.com/software/download/,No source license verified,Not applicable — non-trained algorithm,CSP076; CSP078
-gsgo,GSGO (global space-group optimization),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP033
-woodley-ga,Ionic-crystal genetic algorithm (Woodley et al.),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP007
-magus,MAGUS,3,Atomic / inorganic,,https://gitlab.com/bigd4/magus,No source license verified,Not applicable — non-trained algorithm,CSP170
-maise,MAISE,3,Atomic / inorganic,https://github.com/maise-guide/maise,https://github.com/maise-guide/maise,Open-source license verified,Not applicable — non-trained algorithm,CSP106
-bazterra-modified-ga,Modified genetic algorithm for molecular crystals (Bazterra–Ferraro–Facelli),3,Molecular / organic,,,No source license verified,Not applicable — non-trained algorithm,CSP015; CSP016
-muse,MUSE,3,Atomic / inorganic,https://github.com/zhongliliu/muse,https://sourceforge.net/projects/pymuse/,No source license verified,Not applicable — non-trained algorithm,CSP060
-paretocsp,ParetoCSP,3,Atomic / inorganic,https://github.com/sadmanomee/ParetoCSP,https://github.com/sadmanomee/ParetoCSP,No source license verified,Not applicable — non-trained algorithm,CSP141
-paretocsp2,ParetoCSP2,3,Atomic / inorganic,https://github.com/usccolumbia/ParetoCSP2,https://github.com/usccolumbia/ParetoCSP2,Open-source license verified,Not applicable — non-trained algorithm,CSP175
-periodic-ga-abraham-probert,Periodic real-space genetic algorithm (Abraham–Probert),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP026; CSP037
-spinner,SPINNER,3,Atomic / inorganic,https://github.com/MDIL-SNU/SPINNER,https://spinner-csp.readthedocs.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP110
-uspex,USPEX,3,Atomic / inorganic,,https://uspex-team.org/documentation.html/uspex/downloads,No source license verified,Not applicable — non-trained algorithm,CSP027; CSP030; CSP044; CSP055; CSP057; CSP085
-xtalopt,XtalOpt (including r7–14),3,Atomic / inorganic,https://github.com/xtalopt/XtalOpt,https://xtalopt.github.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP052; CSP053; CSP069; CSP074; CSP084; CSP091; CSP158; CSP196
-calypso,CALYPSO,4,Atomic / inorganic,,https://download.calypso.cn/home/,No source license verified,Not applicable — non-trained algorithm,CSP043; CSP054
-im2ode,IM²ODE,4,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP064
-sgo,SGO,4,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP073
-abinitio-landscape-sch-n,Ab initio landscape exploration (Schön et al.),5,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP032
-chemdash,ChemDASH,5,Atomic / inorganic,https://github.com/lrcfmd/ChemDASH,https://github.com/lrcfmd,Open-source license verified,Not applicable — non-trained algorithm,CSP093; CSP119
-cfmc-crystal,Conformation-family Monte Carlo (CFMC),5,Molecular / organic,,,No source license verified,Not applicable — non-trained algorithm,CSP010
-deds-crystal,Diffusion-equation / distance-scaling global optimization,5,Molecular / organic,,,No source license verified,Not applicable — non-trained algorithm,CSP005
-fuse,FUSE / FUSE2,5,Atomic / inorganic,https://github.com/lrcfmd/FUSE-stable,https://github.com/lrcfmd,Open-source license verified,Not applicable — non-trained algorithm,CSP083; CSP148
-grace-csp,GRACE (Generation Ranking and Characterization Engine),5,Molecular / organic,,https://www.avmatsim.eu/products,Commercial / controlled source,Not applicable — non-trained algorithm,CSP034; CSP038; CSP089; CSP135
-mc-emma,MC-EMMA,5,Atomic / inorganic,https://github.com/lrcfmd/MC-EMMA-stable,https://github.com/lrcfmd,Open-source license verified,Not applicable — non-trained algorithm,CSP070
-minima-hopping,Minima Hopping (Goedecker-group Python implementation),5,Atomic / inorganic,https://gitlab.com/goedeckergroup/ase_mh,https://python-minima-hopping.readthedocs.io/en/stable/,Open-source license verified,Not applicable — non-trained algorithm,CSP020; CSP042
-cell-metadynamics,Simulation-cell metadynamics (Martonak–Laio–Parrinello),5,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP018; CSP025
-ssw-lasp,SSW / LASP,5,Atomic / inorganic,,https://www.lasphub.com/,No source license verified,Not applicable — non-trained algorithm,CSP058; CSP062
-active-csp,active-csp,6,Atomic / inorganic,https://github.com/stefaanhessmann/active-csp,,Open-source license verified,No pretrained release verified,CSP162
-agox-gofee,AGOX / GOFEE,6,Surfaces / clusters (adjacent),https://gitlab.com/agox/agox,https://agox.gitlab.io/agox/,Open-source license verified,Not applicable — non-trained algorithm,CSP095; CSP112
-alphacrystal,AlphaCrystal,6,Atomic / inorganic,https://github.com/usccolumbia/AlphaCrystal,,Open-source license verified,Public pretrained download,CSP131
-alphacrystal-ii,AlphaCrystal-II,6,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP139
-bowsr-maml,BOWSR (maml),6,Atomic / inorganic,https://github.com/materialyzeai/maml,,Open-source license verified,Not applicable — non-trained algorithm,CSP100
-casting,CASTING,6,Atomic / inorganic,https://github.com/sbanik2/CASTING,,Open-source license verified,Not applicable — non-trained algorithm,CSP124
-cryspnet,CRYSPNet,6,Atomic / inorganic,https://github.com/AuroraLHT/cryspnet,,No source license verified,Public pretrained download,CSP094
-cryspy-bo-laqa,CrySPY / BO / LAQA,6,Atomic / inorganic,https://github.com/Tomoki-YAMASHITA/CrySPY,https://tomoki-yamashita.github.io/CrySPY_doc/,Open-source license verified,Not applicable — non-trained algorithm,CSP075; CSP077; CSP102; CSP117; CSP118
-csp-al-molecular,CSP-AL (committee active / delta learning),6,Molecular / organic,https://github.com/pwvbutler/CSP-AL,https://github.com/pwvbutler/CSP-AL,Open-source license verified,No pretrained release verified,CSP150
-gn-oa,GN-OA,6,Atomic / inorganic,,http://www.comates.group/links?software=gn_oa,No source license verified,Not applicable — non-trained algorithm,CSP114
-phasebo,PhaseBO,6,Atomic / inorganic,https://github.com/lrcfmd/PhaseBO,,Open-source license verified,Not applicable — non-trained algorithm,CSP147
-rl-csp,RL-CSP,6,Atomic / inorganic,https://github.com/lrcfmd/rlcsp,,Open-source license verified,No pretrained release verified,CSP137
-shotguncsp,ShotgunCSP,6,Atomic / inorganic,https://github.com/TsumiNa/ShotgunCSP,,Open-source license verified,No pretrained release verified,CSP153
-spade-csp,SPaDe-CSP,6,Molecular / organic,https://github.com/takuyhaa/SPaDe-CSP,https://github.com/takuyhaa/SPaDe-CSP,Open-source license verified,Public pretrained download,CSP168
-wren-aviary,Wren (aviary),6,Atomic / inorganic,https://github.com/CompRhys/aviary,,Open-source license verified,No pretrained release verified,CSP120
-all-atom-diffusion-transformer-adit,All-atom Diffusion Transformer (ADiT),7,Atomic / inorganic,https://github.com/facebookresearch/all-atom-diffusion-transformer,,Restrictive / noncommercial source license,Public pretrained download,CSP163
-ccdcgan,CCDCGAN,7,Atomic / inorganic,https://github.com/TengLong1993/CCDCGAN-for-single-system,,No source license verified,No pretrained release verified,CSP101
-cdvae,CDVAE,7,Atomic / inorganic,https://github.com/txie-93/cdvae,,Open-source license verified,No pretrained release verified,CSP113
-cellnet-prototype,CellNet (conditional unit-cell flow + packing),7,Molecular / organic,https://github.com/qzhu2017/CellNet-prototype,https://github.com/qzhu2017/CellNet-prototype,Open-source license verified,Public pretrained download,CSP188
-cg-omatg,CG-OMatG,7,Molecular / organic,,,No source license verified,No pretrained release verified,CSP192
-composition-conditioned-crystal-gan,Composition-Conditioned Crystal GAN,7,Atomic / inorganic,https://github.com/kaist-amsg/Composition-Conditioned-Crystal-GAN,,No source license verified,No pretrained release verified,CSP097
-cond-cdvae,Cond-CDVAE,7,Atomic / inorganic,https://github.com/ixsluo/cond-cdvae,,Open-source license verified,Public pretrained download,CSP142
-cond-dfc-vae-icsg3d,Cond-DFC-VAE / ICSG3D,7,Atomic / inorganic,https://github.com/by256/icsg3d,,Open-source license verified,Public pretrained download,CSP092
-continuousp,ContinuouSP,7,Atomic / inorganic,https://github.com/tony998244353/ContinuouSP,,Open-source license verified,No pretrained release verified,CSP166
-crysbfn,CrysBFN,7,Atomic / inorganic,https://github.com/wu-han-lin/CrysBFN,,No source license verified,Public pretrained download,CSP160
-crystal-gfn,Crystal-GFN,7,Atomic / inorganic,https://github.com/alexhernandezgarcia/gflownet,https://gflownet.readthedocs.io/en/latest/,Open-source license verified,No pretrained release verified,CSP130
-crystalflow,CrystalFlow,7,Atomic / inorganic,https://github.com/ixsluo/CrystalFlow,,Open-source license verified,Public pretrained download,CSP169
-crystalformer,CrystalFormer,7,Atomic / inorganic,https://github.com/deepmodeling/CrystalFormer,,Open-source license verified,Public pretrained download,CSP177; CrystalFormerCSP2025
-crystalgan,CrystalGAN,7,Atomic / inorganic,https://github.com/asmanouira/CrystalGAN,,Open-source license verified,No pretrained release verified,CSP086
-crystalgrpo,CrystalGRPO,7,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP182
-crystalgrw,CrystalGRW,7,Atomic / inorganic,https://github.com/trachote/crystalgrw,,Open-source license verified,Public pretrained download,CSP183
-crystalite,Crystalite,7,Atomic / inorganic,https://github.com/joshrosie/crystalite,,Open-source license verified,Public pretrained download,CSP184
-crystallm,CrystaLLM,7,Atomic / inorganic,https://github.com/lantunes/CrystaLLM,,Open-source license verified,Public pretrained download,CSP140
-cubicgan,CubicGAN,7,Atomic / inorganic,https://github.com/MilesZhao/CubicGAN,,Open-source license verified,Public pretrained download,CSP105
-dao,DAO,7,Atomic / inorganic,https://github.com/GLAD-RUC/DAO,https://glad-ruc.github.io/DAO/,Open-source license verified,Public pretrained download,CSP193
-dd3dcs-encoding-decoding-3d-crystals,DD3DCS / Encoding-Decoding 3D Crystals,7,Atomic / inorganic,https://github.com/hoffmannjordan/Encoding-Decoding-3D-Crystals,,Open-source license verified,No pretrained release verified,CSP087
-deepcsp-organic-gan,DeepCSP (organic conditional GAN + GCN),7,Molecular / organic,,https://sites.google.com/view/yezhuyifan/,No source license verified,No pretrained release verified,CSP151
-diffcsp,DiffCSP,7,Atomic / inorganic,https://github.com/jiaor17/DiffCSP,,Open-source license verified,Public pretrained download,CSP128
-diffcsp-plus-plus,DiffCSP++,7,Atomic / inorganic,https://github.com/jiaor17/DiffCSP-PP,,Open-source license verified,Public pretrained download,CSP154
-dp-cdvae,DP-CDVAE,7,Atomic / inorganic,https://github.com/trachote/dp-cdvae,,Open-source license verified,No pretrained release verified,CSP143
-equicsp,EquiCSP,7,Atomic / inorganic,https://github.com/EmperorJia/EquiCSP,,Open-source license verified,Public pretrained download,CSP144
-flowmm-flowllm,FlowMM / FlowLLM,7,Atomic / inorganic,https://github.com/facebookresearch/flowmm,,Restrictive / noncommercial source license,No pretrained release verified,CSP145; CSP146
-ftcp,FTCP,7,Atomic / inorganic,https://github.com/PV-Lab/FTCP,,Open-source license verified,No pretrained release verified,CSP111
-gemsdiff,GemsDiff,7,Atomic / inorganic,https://github.com/aklipf/gemsdiff,,No source license verified,Public pretrained download,CSP157
-imatgen,iMatGen,7,Atomic / inorganic,https://github.com/kaist-amsg/imatgen,,No source license verified,No pretrained release verified,CSP088
-kldm,KLDM,7,Atomic / inorganic,https://github.com/frcnt/kldm,,Open-source license verified,No pretrained release verified,CSP172
-mat2seq-airs,Mat2Seq (AIRS),7,Atomic / inorganic,https://github.com/divelab/AIRS/tree/main/OpenMat/Mat2Seq,,Open-source license verified,Public pretrained download,CSP149
-mattergen,MatterGen,7,Atomic / inorganic,https://github.com/microsoft/mattergen,,Open-source license verified,Public pretrained download,CSP159
-nextcrystal,NextCrystal,7,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP189
-omatg,OMatG,7,Atomic / inorganic,https://github.com/FERMat-ML/OMatG,,Open-source license verified,Public pretrained download,CSP173
-oxtal,OXtal,7,Molecular / organic,https://github.com/OXtal/OXtal,https://oxtal.github.io/,Open-source license verified,Public pretrained download,CSP174
-packflow-molecular,PackFlow,7,Molecular / organic,https://github.com/learningmatter-mit/packflow,https://github.com/learningmatter-mit/packflow,Open-source license verified,Public pretrained download,CSP191
-pgcgm,PGCGM,7,Atomic / inorganic,https://github.com/MilesZhao/PGCGM,,Open-source license verified,Public pretrained download,CSP134
-shaft,SHAFT,7,Atomic / inorganic,https://github.com/ngminhtri0394/SHAFT,,No source license verified,No pretrained release verified,CSP187
-slices,SLICES,7,Atomic / inorganic,https://github.com/xiaohang007/SLICES,,Open-source license verified,No pretrained release verified,CSP126
-symat-airs,SyMat (AIRS),7,Atomic / inorganic,https://github.com/divelab/AIRS/tree/main/OpenMat/SyMat,,Open-source license verified,No pretrained release verified,CSP138
-symmcd,SymmCD,7,Atomic / inorganic,https://github.com/sibasmarak/SymmCD,,No source license verified,No pretrained release verified,CSP178
-uflowcsp,uFlowCSP,7,Atomic / inorganic,https://github.com/usccolumbia/uFlowCSP,,Open-source license verified,Public pretrained download,CSP195
-uni-3dar,Uni-3DAR,7,Atomic / inorganic,https://github.com/dptech-corp/Uni-3DAR,,Open-source license verified,Public pretrained download,CSP179
-unimat,UniMat,7,Atomic / inorganic,,https://unified-materials.github.io/unimat/,No source license verified,No pretrained release verified,CSP152
-dmcrystal,DMCrystal,3,Atomic / inorganic,https://github.com/usccolumbia/dmcrystal,,No source license verified,Not applicable — non-trained algorithm,DMCrystal2020
-cmcrystal,CMCrystal,3,Atomic / inorganic,https://github.com/usccolumbia/cmcrystal,,No source license verified,Not applicable — non-trained algorithm,CMCrystal2021
-cmcrystalhs,CMCrystalHS,4,Atomic / inorganic,https://github.com/usccolumbia/DE-CSP-highsymmetry,,No source license verified,Not applicable — non-trained algorithm,CMCrystalHS2021
-cmcrystalmoo,CMCrystalMOO / MOOCSP,3,Atomic / inorganic,https://github.com/usccolumbia/MOOCSP,,Open-source license verified,Not applicable — non-trained algorithm,CMCrystalMOO2022
-mlatticeabc,MLatticeABC,0,Atomic / inorganic,https://github.com/usccolumbia/MLatticeABC,,Open-source license verified,No pretrained release verified,MLatticeABC2021
-composition-symmetry,Composition-based symmetry prediction,0,Atomic / inorganic,https://github.com/Yuxinya/SG_predict,,No source license verified,No pretrained release verified,CompositionSymmetry2021
-cspmetrics,CSPMetrics,0,Atomic / inorganic,https://github.com/usccolumbia/CSPBenchMetrics,,Open-source license verified,Not applicable — non-trained algorithm,CSPMetrics2024
+id,name,primary_category,domain,code_url,project_url,code_license_status,pretrained_status,paper_ids,structural_priors
+chgnet,CHGNet,0,Atomic / inorganic,https://github.com/CederGroupHub/chgnet,,Open-source license verified,Public pretrained download,CSP127,
+crystaloptimizer,CrystalOptimizer / CSO-FM,0,Molecular / organic,,https://sargentcentre.org/impact/spinouts-software/,No source license verified,Not applicable — non-trained algorithm,CSP049,
+csp-mace-a,CSP-MACE-Å,0,Molecular / organic,,,No source license verified,No pretrained release verified,CSP186,
+deep-free-energy-df-csp,Deep free energy (DF) CSP,0,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP181,
+disordered-structure-nnp-training-hong-et-al,Disordered-structure NNP training (Hong et al.),0,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP099,
+m3gnet,M3GNet,0,Atomic / inorganic,https://github.com/materialyzeai/m3gnet,,Open-source license verified,Public pretrained download,CSP109,
+molxtalnet-mxtaltools,MolXtalNet-D / MolXtalNet-S (MXtalTools),0,Molecular / organic,https://github.com/InfluenceFunctional/MXtalTools,https://github.com/InfluenceFunctional/MXtalTools,Open-source license verified,Public pretrained download,CSP132,
+opencsp-crystal-prediction,OpenCSP (crystal prediction),0,Atomic / inorganic,,https://www.nature.com/articles/s41524-026-02180-0,No source license verified,Not applicable — non-trained algorithm,CSP190,
+crysim,CRYSIM,1,Atomic / inorganic,https://github.com/tsudalab/CRYSIM,https://github.com/tsudalab/CRYSIM,Open-source license verified,Not applicable — non-trained algorithm,CSP176,symmetry-preserving; wyckoff
+cspml,CSPML,1,Atomic / inorganic,https://github.com/Minoru938/CSPML,https://github.com/Minoru938/CSPML,Open-source license verified,Public pretrained download,CSP115,prototypes
+pymatgen-ionic-substitution,Data-mined ionic substitution (pymatgen implementation),1,Atomic / inorganic,https://github.com/materialsproject/pymatgen,https://pymatgen.org/pymatgen.core.structure_prediction.html,Open-source license verified,Not applicable — non-trained algorithm,CSP048,chemical-constraints; prototypes
+data-mined-prototype-search,Data-mined prototype search (Curtarolo / Fischer / Ceder),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP017; CSP029,
+enumlib,enumlib,1,Atomic / inorganic,https://github.com/msg-byu/enumlib,https://github.com/msg-byu/enumlib,Open-source license verified,Not applicable — non-trained algorithm,CSP035; CSP056,ordering; prototypes
+grinsp,GRINSP / GRINS,1,Atomic / inorganic,https://www.cristal.org/grinsp/,https://www.cristal.org/grinsp/,No source license verified,Not applicable — non-trained algorithm,CSP024,
+ipcsp,IPCSP (integer-programming CSP),1,Atomic / inorganic,https://github.com/lrcfmd/ipcsp,https://github.com/lrcfmd/ipcsp,Open-source license verified,Not applicable — non-trained algorithm,CSP133,
+tetrahedral-framework-enumeration,Periodic tetrahedral-framework enumeration (Treacy et al.),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP004; CSP019,
+symmetry-divide-conquer,SPAI / CALYPSO symmetry divide-and-conquer,1,Atomic / inorganic,,https://download.calypso.cn/home/,No source license verified,Not applicable — non-trained algorithm,CSP108,symmetry-diversity; symmetry-preserving; wyckoff
+systematic-network-enumeration,Systematic crystalline-network enumeration (Delgado Friedrichs et al.),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP006,
+quotient-graph-search,Systematic periodic-network search (Winkler–Pickard–Thimm),1,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP011; CSP021,
+tcsp,TCSP / TCSP2.0,1,Atomic / inorganic,https://github.com/usccolumbia/TCSP,https://github.com/usccolumbia/TCSP,Open-source license verified,Public pretrained download,CSP123; CSP194,chemical-constraints; prototypes
+airss,AIRSS / buildcell,2,Atomic / inorganic,https://www.mtg.msm.cam.ac.uk/Codes/AIRSS,https://airss-docs.github.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP028; CSP165; CSP045,building-blocks; chemical-constraints; symmetry-initialization
+crystalpredictor,CrystalPredictor / CrystalPredictor II,2,Molecular / organic,,https://sargentcentre.org/impact/spinouts-software/,No source license verified,Not applicable — non-trained algorithm,CSP023; CSP031; CSP063; CSP065,
+csp-aiff,CSP(aiFF) / autoPES–UPACK workflow,2,Molecular / organic,,https://www.physics.udel.edu/~szalewic/SAPT/SAPT.html,No source license verified,No pretrained release verified,CSP121,
+genarris,Genarris (1.0–3.x; Rigid Press),2,Molecular / organic,https://www.noamarom.com/wp-content/uploads/2026/06/gnrs-3.1.4.zip,https://www.noamarom.com/software/genarris/,Open-source license verified,Not applicable — non-trained algorithm,CSP079; CSP096; CSP171,
+glee,GLEE (Global Lattice Energy Explorer),2,Molecular / organic,,https://eprints.soton.ac.uk/385478,No source license verified,Not applicable — non-trained algorithm,CSP066; CSP071,
+htocsp,HTOCSP (population / width-first sampling),2,Molecular / organic,https://github.com/MaterSim/HTOCSP,https://github.com/MaterSim/HTOCSP,Open-source license verified,Not applicable — non-trained algorithm,CSP164,
+mol-cspy,"mol-CSPy: quasi-random sampling, QRBH and threshold MC",2,Molecular / organic,https://gitlab.com/mol-cspy/mol-cspy,https://mol-cspy.readthedocs.io/en/stable/,Open-source license verified,Not applicable — non-trained algorithm,CSP066; CSP104; CSP116; CSP136,
+pyxtal,PyXtal,2,Atomic / inorganic,https://github.com/MaterSim/PyXtal,https://pyxtal.readthedocs.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP107,building-blocks; chemical-constraints; symmetry-initialization; wyckoff
+randspg,RandSpg,2,Atomic / inorganic,https://github.com/xtalopt/randSpg,https://xtalopt.github.io/resources.html,Open-source license verified,Not applicable — non-trained algorithm,CSP072,chemical-constraints; symmetry-initialization; wyckoff
+schrodinger-csp,Schrödinger Crystal Structure Prediction,2,Molecular / organic,,https://www.schrodinger.com/platform/products/ms-crystal-structure-prediction/,Commercial / controlled source,Not applicable — non-trained algorithm,CSP161,
+symmetry-driven-random-search,Symmetry-driven structure search (Domingos–Shaik–Militzer),2,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP082,
+upack,UPACK,2,Molecular / organic,,http://www.crystal.chem.uu.nl/~vaneyck/upack.html,No source license verified,Not applicable — non-trained algorithm,CSP008,
+aga,Adaptive Genetic Algorithm (AGA; Wang–Ho collaboration),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP059,
+cryspai,CrySPAI,3,Atomic / inorganic,,https://www.mdpi.com/2411-5134/10/2/26/html,No source license verified,Not applicable — non-trained algorithm,CSP167,
+norskov-alloy-search,Evolutionary alloy-prototype search (Jóhannesson et al.),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP013,
+gasp-python,GASP-Python,3,Atomic / inorganic,https://github.com/henniggroup/GASP-python,https://github.com/henniggroup/GASP-python,Open-source license verified,Not applicable — non-trained algorithm,CSP080,
+gator-molecular,GAtor,3,Molecular / organic,https://www.noamarom.com/wp-content/uploads/2023/01/GAtor_Test.zip,https://www.noamarom.com/software/download/,No source license verified,Not applicable — non-trained algorithm,CSP076; CSP078,
+gsgo,GSGO (global space-group optimization),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP033,
+woodley-ga,Ionic-crystal genetic algorithm (Woodley et al.),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP007,
+magus,MAGUS,3,Atomic / inorganic,https://zenodo.org/records/14730874,https://gitlab.com/bigd4/magus,Restricted / non-open-source license,Not applicable — non-trained algorithm,CSP170; MAGUS2023,building-blocks; symmetry-diversity; symmetry-preserving; topology
+maise,MAISE,3,Atomic / inorganic,https://github.com/maise-guide/maise,https://github.com/maise-guide/maise,Open-source license verified,Not applicable — non-trained algorithm,CSP106,
+bazterra-modified-ga,Modified genetic algorithm for molecular crystals (Bazterra–Ferraro–Facelli),3,Molecular / organic,,,No source license verified,Not applicable — non-trained algorithm,CSP015; CSP016,
+muse,MUSE,3,Atomic / inorganic,https://github.com/zhongliliu/muse,https://sourceforge.net/projects/pymuse/,No source license verified,Not applicable — non-trained algorithm,CSP060,
+paretocsp,ParetoCSP,3,Atomic / inorganic,https://github.com/sadmanomee/ParetoCSP,https://github.com/sadmanomee/ParetoCSP,No source license verified,Not applicable — non-trained algorithm,CSP141,
+paretocsp2,ParetoCSP2,3,Atomic / inorganic,https://github.com/usccolumbia/ParetoCSP2,https://github.com/usccolumbia/ParetoCSP2,Open-source license verified,Not applicable — non-trained algorithm,CSP175,symmetry-diversity
+periodic-ga-abraham-probert,Periodic real-space genetic algorithm (Abraham–Probert),3,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP026; CSP037,
+spinner,SPINNER,3,Atomic / inorganic,https://github.com/MDIL-SNU/SPINNER,https://spinner-csp.readthedocs.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP110,
+uspex,USPEX,3,Atomic / inorganic,,https://uspex-team.org/documentation.html/uspex/downloads,No source license verified,Not applicable — non-trained algorithm,CSP027; CSP030; CSP044; CSP055; CSP057; CSP085; USPEXTopology2019; MolecularUSPEX2012,building-blocks; chemical-constraints; symmetry-initialization; topology
+xtalopt,XtalOpt (including r7–14),3,Atomic / inorganic,https://github.com/xtalopt/XtalOpt,https://xtalopt.github.io/,Open-source license verified,Not applicable — non-trained algorithm,CSP052; CSP053; CSP069; CSP074; CSP084; CSP091; CSP158; CSP196,
+calypso,CALYPSO,4,Atomic / inorganic,,https://download.calypso.cn/home/,No source license verified,Not applicable — non-trained algorithm,CSP043; CSP054; CSP108,chemical-constraints; symmetry-diversity; symmetry-initialization; symmetry-preserving; wyckoff
+im2ode,IM²ODE,4,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP064,
+sgo,SGO,4,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP073,
+abinitio-landscape-sch-n,Ab initio landscape exploration (Schön et al.),5,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP032,
+chemdash,ChemDASH,5,Atomic / inorganic,https://github.com/lrcfmd/ChemDASH,https://github.com/lrcfmd,Open-source license verified,Not applicable — non-trained algorithm,CSP093; CSP119,
+cfmc-crystal,Conformation-family Monte Carlo (CFMC),5,Molecular / organic,,,No source license verified,Not applicable — non-trained algorithm,CSP010,
+deds-crystal,Diffusion-equation / distance-scaling global optimization,5,Molecular / organic,,,No source license verified,Not applicable — non-trained algorithm,CSP005,
+fuse,FUSE / FUSE2,5,Atomic / inorganic,https://github.com/lrcfmd/FUSE-stable,https://github.com/lrcfmd,Open-source license verified,Not applicable — non-trained algorithm,CSP083; CSP148,building-blocks; chemical-constraints
+grace-csp,GRACE (Generation Ranking and Characterization Engine),5,Molecular / organic,,https://www.avmatsim.eu/products,Commercial / controlled source,Not applicable — non-trained algorithm,CSP034; CSP038; CSP089; CSP135,
+mc-emma,MC-EMMA,5,Atomic / inorganic,https://github.com/lrcfmd/MC-EMMA-stable,https://github.com/lrcfmd,Open-source license verified,Not applicable — non-trained algorithm,CSP070,building-blocks; chemical-constraints
+minima-hopping,Minima Hopping (Goedecker-group Python implementation),5,Atomic / inorganic,https://gitlab.com/goedeckergroup/ase_mh,https://python-minima-hopping.readthedocs.io/en/stable/,Open-source license verified,Not applicable — non-trained algorithm,CSP020; CSP042,
+cell-metadynamics,Simulation-cell metadynamics (Martonak–Laio–Parrinello),5,Atomic / inorganic,,,No source license verified,Not applicable — non-trained algorithm,CSP018; CSP025,
+ssw-lasp,SSW / LASP,5,Atomic / inorganic,,https://www.lasphub.com/,No source license verified,Not applicable — non-trained algorithm,CSP058; CSP062,
+active-csp,active-csp,6,Atomic / inorganic,https://github.com/stefaanhessmann/active-csp,,Open-source license verified,No pretrained release verified,CSP162,
+agox-gofee,AGOX / GOFEE,6,Surfaces / clusters (adjacent),https://gitlab.com/agox/agox,https://agox.gitlab.io/agox/,Open-source license verified,Not applicable — non-trained algorithm,CSP095; CSP112,
+alphacrystal,AlphaCrystal,6,Atomic / inorganic,https://github.com/usccolumbia/AlphaCrystal,,Open-source license verified,Public pretrained download,CSP131,
+alphacrystal-ii,AlphaCrystal-II,6,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP139,
+bowsr-maml,BOWSR (maml),6,Atomic / inorganic,https://github.com/materialyzeai/maml,,Open-source license verified,Not applicable — non-trained algorithm,CSP100,
+casting,CASTING,6,Atomic / inorganic,https://github.com/sbanik2/CASTING,,Open-source license verified,Not applicable — non-trained algorithm,CSP124,
+cryspnet,CRYSPNet,6,Atomic / inorganic,https://github.com/AuroraLHT/cryspnet,,No source license verified,Public pretrained download,CSP094,
+cryspy-bo-laqa,CrySPY / BO / LAQA,6,Atomic / inorganic,https://github.com/Tomoki-YAMASHITA/CrySPY,https://tomoki-yamashita.github.io/CrySPY_doc/,Open-source license verified,Not applicable — non-trained algorithm,CSP075; CSP077; CSP102; CSP117; CSP118,
+csp-al-molecular,CSP-AL (committee active / delta learning),6,Molecular / organic,https://github.com/pwvbutler/CSP-AL,https://github.com/pwvbutler/CSP-AL,Open-source license verified,No pretrained release verified,CSP150,
+gn-oa,GN-OA,6,Atomic / inorganic,,http://www.comates.group/links?software=gn_oa,No source license verified,Not applicable — non-trained algorithm,CSP114,
+phasebo,PhaseBO,6,Atomic / inorganic,https://github.com/lrcfmd/PhaseBO,,Open-source license verified,Not applicable — non-trained algorithm,CSP147,
+rl-csp,RL-CSP,6,Atomic / inorganic,https://github.com/lrcfmd/rlcsp,,Open-source license verified,No pretrained release verified,CSP137,
+shotguncsp,ShotgunCSP,6,Atomic / inorganic,https://github.com/TsumiNa/ShotgunCSP,,Open-source license verified,No pretrained release verified,CSP153,
+spade-csp,SPaDe-CSP,6,Molecular / organic,https://github.com/takuyhaa/SPaDe-CSP,https://github.com/takuyhaa/SPaDe-CSP,Open-source license verified,Public pretrained download,CSP168,
+wren-aviary,Wren (aviary),6,Atomic / inorganic,https://github.com/CompRhys/aviary,,Open-source license verified,No pretrained release verified,CSP120,
+all-atom-diffusion-transformer-adit,All-atom Diffusion Transformer (ADiT),7,Atomic / inorganic,https://github.com/facebookresearch/all-atom-diffusion-transformer,,Restrictive / noncommercial source license,Public pretrained download,CSP163,
+ccdcgan,CCDCGAN,7,Atomic / inorganic,https://github.com/TengLong1993/CCDCGAN-for-single-system,,No source license verified,No pretrained release verified,CSP101,
+cdvae,CDVAE,7,Atomic / inorganic,https://github.com/txie-93/cdvae,,Open-source license verified,No pretrained release verified,CSP113,
+cellnet-prototype,CellNet (conditional unit-cell flow + packing),7,Molecular / organic,https://github.com/qzhu2017/CellNet-prototype,https://github.com/qzhu2017/CellNet-prototype,Open-source license verified,Public pretrained download,CSP188,
+cg-omatg,CG-OMatG,7,Molecular / organic,,,No source license verified,No pretrained release verified,CSP192,
+composition-conditioned-crystal-gan,Composition-Conditioned Crystal GAN,7,Atomic / inorganic,https://github.com/kaist-amsg/Composition-Conditioned-Crystal-GAN,,No source license verified,No pretrained release verified,CSP097,
+cond-cdvae,Cond-CDVAE,7,Atomic / inorganic,https://github.com/ixsluo/cond-cdvae,,Open-source license verified,Public pretrained download,CSP142,
+cond-dfc-vae-icsg3d,Cond-DFC-VAE / ICSG3D,7,Atomic / inorganic,https://github.com/by256/icsg3d,,Open-source license verified,Public pretrained download,CSP092,
+continuousp,ContinuouSP,7,Atomic / inorganic,https://github.com/tony998244353/ContinuouSP,,Open-source license verified,No pretrained release verified,CSP166,
+crysbfn,CrysBFN,7,Atomic / inorganic,https://github.com/wu-han-lin/CrysBFN,,No source license verified,Public pretrained download,CSP160,
+crystal-gfn,Crystal-GFN,7,Atomic / inorganic,https://github.com/alexhernandezgarcia/gflownet,https://gflownet.readthedocs.io/en/latest/,Open-source license verified,No pretrained release verified,CSP130,
+crystalflow,CrystalFlow,7,Atomic / inorganic,https://github.com/ixsluo/CrystalFlow,,Open-source license verified,Public pretrained download,CSP169,
+crystalformer,CrystalFormer,7,Atomic / inorganic,https://github.com/deepmodeling/CrystalFormer,,Open-source license verified,Public pretrained download,CSP177; CrystalFormerCSP2025,prototypes; symmetry-preserving; wyckoff
+crystalgan,CrystalGAN,7,Atomic / inorganic,https://github.com/asmanouira/CrystalGAN,,Open-source license verified,No pretrained release verified,CSP086,
+crystalgrpo,CrystalGRPO,7,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP182,
+crystalgrw,CrystalGRW,7,Atomic / inorganic,https://github.com/trachote/crystalgrw,,Open-source license verified,Public pretrained download,CSP183,
+crystalite,Crystalite,7,Atomic / inorganic,https://github.com/joshrosie/crystalite,,Open-source license verified,Public pretrained download,CSP184,
+crystallm,CrystaLLM,7,Atomic / inorganic,https://github.com/lantunes/CrystaLLM,,Open-source license verified,Public pretrained download,CSP140,
+cubicgan,CubicGAN,7,Atomic / inorganic,https://github.com/MilesZhao/CubicGAN,,Open-source license verified,Public pretrained download,CSP105,
+dao,DAO,7,Atomic / inorganic,https://github.com/GLAD-RUC/DAO,https://glad-ruc.github.io/DAO/,Open-source license verified,Public pretrained download,CSP193,
+dd3dcs-encoding-decoding-3d-crystals,DD3DCS / Encoding-Decoding 3D Crystals,7,Atomic / inorganic,https://github.com/hoffmannjordan/Encoding-Decoding-3D-Crystals,,Open-source license verified,No pretrained release verified,CSP087,
+deepcsp-organic-gan,DeepCSP (organic conditional GAN + GCN),7,Molecular / organic,,https://sites.google.com/view/yezhuyifan/,No source license verified,No pretrained release verified,CSP151,
+diffcsp,DiffCSP,7,Atomic / inorganic,https://github.com/jiaor17/DiffCSP,,Open-source license verified,Public pretrained download,CSP128,
+diffcsp-plus-plus,DiffCSP++,7,Atomic / inorganic,https://github.com/jiaor17/DiffCSP-PP,,Open-source license verified,Public pretrained download,CSP154,symmetry-preserving; wyckoff
+dp-cdvae,DP-CDVAE,7,Atomic / inorganic,https://github.com/trachote/dp-cdvae,,Open-source license verified,No pretrained release verified,CSP143,
+equicsp,EquiCSP,7,Atomic / inorganic,https://github.com/EmperorJia/EquiCSP,,Open-source license verified,Public pretrained download,CSP144,
+flowmm-flowllm,FlowMM / FlowLLM,7,Atomic / inorganic,https://github.com/facebookresearch/flowmm,,Restrictive / noncommercial source license,No pretrained release verified,CSP145; CSP146,
+ftcp,FTCP,7,Atomic / inorganic,https://github.com/PV-Lab/FTCP,,Open-source license verified,No pretrained release verified,CSP111,
+gemsdiff,GemsDiff,7,Atomic / inorganic,https://github.com/aklipf/gemsdiff,,No source license verified,Public pretrained download,CSP157,
+imatgen,iMatGen,7,Atomic / inorganic,https://github.com/kaist-amsg/imatgen,,No source license verified,No pretrained release verified,CSP088,
+kldm,KLDM,7,Atomic / inorganic,https://github.com/frcnt/kldm,,Open-source license verified,No pretrained release verified,CSP172,
+mat2seq-airs,Mat2Seq (AIRS),7,Atomic / inorganic,https://github.com/divelab/AIRS/tree/main/OpenMat/Mat2Seq,,Open-source license verified,Public pretrained download,CSP149,
+mattergen,MatterGen,7,Atomic / inorganic,https://github.com/microsoft/mattergen,,Open-source license verified,Public pretrained download,CSP159,
+nextcrystal,NextCrystal,7,Atomic / inorganic,,,No source license verified,No pretrained release verified,CSP189,
+omatg,OMatG,7,Atomic / inorganic,https://github.com/FERMat-ML/OMatG,,Open-source license verified,Public pretrained download,CSP173,
+oxtal,OXtal,7,Molecular / organic,https://github.com/OXtal/OXtal,https://oxtal.github.io/,Open-source license verified,Public pretrained download,CSP174,
+packflow-molecular,PackFlow,7,Molecular / organic,https://github.com/learningmatter-mit/packflow,https://github.com/learningmatter-mit/packflow,Open-source license verified,Public pretrained download,CSP191,
+pgcgm,PGCGM,7,Atomic / inorganic,https://github.com/MilesZhao/PGCGM,,Open-source license verified,Public pretrained download,CSP134,
+shaft,SHAFT,7,Atomic / inorganic,https://github.com/ngminhtri0394/SHAFT,,No source license verified,No pretrained release verified,CSP187,
+slices,SLICES,7,Atomic / inorganic,https://github.com/xiaohang007/SLICES,,Open-source license verified,No pretrained release verified,CSP126,
+symat-airs,SyMat (AIRS),7,Atomic / inorganic,https://github.com/divelab/AIRS/tree/main/OpenMat/SyMat,,Open-source license verified,No pretrained release verified,CSP138,
+symmcd,SymmCD,7,Atomic / inorganic,https://github.com/sibasmarak/SymmCD,,No source license verified,No pretrained release verified,CSP178,symmetry-preserving; wyckoff
+uflowcsp,uFlowCSP,7,Atomic / inorganic,https://github.com/usccolumbia/uFlowCSP,,Open-source license verified,Public pretrained download,CSP195,
+uni-3dar,Uni-3DAR,7,Atomic / inorganic,https://github.com/dptech-corp/Uni-3DAR,,Open-source license verified,Public pretrained download,CSP179,
+unimat,UniMat,7,Atomic / inorganic,,https://unified-materials.github.io/unimat/,No source license verified,No pretrained release verified,CSP152,
+dmcrystal,DMCrystal,3,Atomic / inorganic,https://github.com/usccolumbia/dmcrystal,,No source license verified,Not applicable — non-trained algorithm,DMCrystal2020,
+cmcrystal,CMCrystal,3,Atomic / inorganic,https://github.com/usccolumbia/cmcrystal,,No source license verified,Not applicable — non-trained algorithm,CMCrystal2021,
+cmcrystalhs,CMCrystalHS,4,Atomic / inorganic,https://github.com/usccolumbia/DE-CSP-highsymmetry,,No source license verified,Not applicable — non-trained algorithm,CMCrystalHS2021,symmetry-preserving; wyckoff
+cmcrystalmoo,CMCrystalMOO / MOOCSP,3,Atomic / inorganic,https://github.com/usccolumbia/MOOCSP,,Open-source license verified,Not applicable — non-trained algorithm,CMCrystalMOO2022,
+mlatticeabc,MLatticeABC,0,Atomic / inorganic,https://github.com/usccolumbia/MLatticeABC,,Open-source license verified,No pretrained release verified,MLatticeABC2021,
+composition-symmetry,Composition-based symmetry prediction,0,Atomic / inorganic,https://github.com/Yuxinya/SG_predict,,No source license verified,No pretrained release verified,CompositionSymmetry2021,
+cspmetrics,CSPMetrics,0,Atomic / inorganic,https://github.com/usccolumbia/CSPBenchMetrics,,Open-source license verified,Not applicable — non-trained algorithm,CSPMetrics2024,

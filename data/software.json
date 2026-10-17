@@ -88,7 +88,8 @@
       "https://www.nature.com/articles/s42256-023-00716-3",
       "https://github.com/CederGroupHub/chgnet/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystaloptimizer",
@@ -141,7 +142,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1021/ct100597e"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "csp-mace-a",
@@ -230,7 +232,8 @@
     "dataset_evidence_urls": [
       "https://arxiv.org/abs/2605.28905"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "deep-free-energy-df-csp",
@@ -307,7 +310,8 @@
     "dataset_evidence_urls": [
       "https://journals.aps.org/prb/abstract/10.1103/3qjr-mgv7"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "disordered-structure-nnp-training-hong-et-al",
@@ -384,7 +388,8 @@
     "dataset_evidence_urls": [
       "https://arxiv.org/abs/2008.07786"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "m3gnet",
@@ -476,7 +481,8 @@
       "https://www.nature.com/articles/s43588-022-00349-3",
       "https://github.com/materialyzeai/m3gnet/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "molxtalnet-mxtaltools",
@@ -539,7 +545,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/InfluenceFunctional/MXtalTools/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "opencsp-crystal-prediction",
@@ -638,7 +645,8 @@
     "dataset_evidence_urls": [
       "https://www.nature.com/articles/s41524-026-02180-0"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crysim",
@@ -741,7 +749,11 @@
       "https://github.com/tsudalab/CRYSIM/blob/main/README.md",
       "https://github.com/materialyzeai/m3gnet/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "cspml",
@@ -829,7 +841,10 @@
       "https://github.com/Minoru938/CSPML/blob/master/README.md",
       "https://www.nature.com/articles/s41524-024-01474-5"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "prototypes"
+    ]
   },
   {
     "id": "pymatgen-ionic-substitution",
@@ -883,7 +898,11 @@
       "https://doi.org/10.1021/ic102031h",
       "https://github.com/materialsproject/pymatgen/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "chemical-constraints",
+      "prototypes"
+    ]
   },
   {
     "id": "data-mined-prototype-search",
@@ -950,7 +969,8 @@
       "https://doi.org/10.1103/PhysRevLett.91.135503",
       "https://doi.org/10.1038/nmat1691"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "enumlib",
@@ -1003,7 +1023,11 @@
       "https://doi.org/10.1016/j.commatsci.2012.02.015",
       "https://github.com/msg-byu/enumlib/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "ordering",
+      "prototypes"
+    ]
   },
   {
     "id": "grinsp",
@@ -1053,7 +1077,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1107/S0021889805002384"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "ipcsp",
@@ -1119,7 +1144,8 @@
       "https://doi.org/10.1038/s41586-023-06071-y",
       "https://github.com/lrcfmd/ipcsp/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "tetrahedral-framework-enumeration",
@@ -1173,11 +1199,12 @@
       "https://doi.org/10.1524/zkri.1997.212.11.768",
       "https://doi.org/10.1016/j.micromeso.2004.06.013"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "symmetry-divide-conquer",
-    "name": "Symmetry-orientated divide-and-conquer CSP",
+    "name": "SPAI / CALYPSO symmetry divide-and-conquer",
     "paper_ids": [
       "CSP108"
     ],
@@ -1189,13 +1216,15 @@
     "domain": "Atomic / inorganic",
     "role": "Algorithm described in paper; source not verified",
     "code_url": "",
-    "project_url": "",
-    "access_status": "No public code verified",
+    "project_url": "https://download.calypso.cn/home/",
+    "access_status": "Registration or request required",
     "evidence_urls": [
-      "https://doi.org/10.1063/5.0074677"
+      "https://doi.org/10.1063/5.0074677",
+      "https://www.shaoxc.com/assets/pdf/publications/shao2022symmetry.pdf",
+      "https://calypso.cn/docs/posts/_input_parameters.html#ialgo"
     ],
-    "notes": "Primary paper defines the algorithm. An author-maintained public source repository or source download for this particular implementation was not verified; this label does not mean no code exists. The descriptive entry name is not a claimed software-package name.",
-    "checked_on": "2026-10-16",
+    "notes": "SPAI is implemented within CALYPSO according to the primary paper. The parent software portal requires registration. No separate public standalone source release was verified. The documented method organizes space groups, Wyckoff combinations and coordinates; it excludes P1 in the reported search.",
+    "checked_on": "2026-10-17",
     "primary_category_name": "Construction, templates and discrete search",
     "category_names": [
       "Construction, templates and discrete search",
@@ -1223,7 +1252,12 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1063/5.0074677"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "symmetry-diversity",
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "systematic-network-enumeration",
@@ -1271,7 +1305,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1038/23210"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "quotient-graph-search",
@@ -1323,7 +1358,8 @@
       "https://doi.org/10.1016/S0009-2614(01)00126-9",
       "https://doi.org/10.1103/PhysRevB.70.045101"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "tcsp",
@@ -1402,14 +1438,19 @@
       "https://www.sciencedirect.com/science/article/pii/S0927025625006603",
       "https://github.com/usccolumbia/TCSP/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "chemical-constraints",
+      "prototypes"
+    ]
   },
   {
     "id": "airss",
     "name": "AIRSS / buildcell",
     "paper_ids": [
       "CSP028",
-      "CSP165"
+      "CSP165",
+      "CSP045"
     ],
     "primary_category": 2,
     "categories": [
@@ -1428,7 +1469,7 @@
       "https://airss-docs.github.io/getting-started/installation/"
     ],
     "notes": "Developer university page explicitly provides full-source downloads and links historical versions. Hot random search and datum-derived structures are associated later workflows; the page source download does not by itself verify availability of every paper-specific component.",
-    "checked_on": "2026-10-16",
+    "checked_on": "2026-10-17",
     "primary_category_name": "Random structure search",
     "category_names": [
       "Random structure search",
@@ -1478,7 +1519,12 @@
       "https://doi.org/10.1039/D4FD00134F",
       "https://arxiv.org/abs/1101.3987"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization"
+    ]
   },
   {
     "id": "crystalpredictor",
@@ -1537,7 +1583,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1002/jcc.20165"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "csp-aiff",
@@ -1615,7 +1662,8 @@
     "dataset_evidence_urls": [
       "https://www.nature.com/articles/s41467-022-30692-y"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "genarris",
@@ -1673,7 +1721,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1063/1.5014038"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "glee",
@@ -1726,7 +1775,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1021/acs.jctc.5b01112"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "htocsp",
@@ -1788,7 +1838,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/MaterSim/HTOCSP/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "mol-cspy",
@@ -1849,7 +1900,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1021/acs.jctc.5b01112"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "pyxtal",
@@ -1903,7 +1955,13 @@
       "https://doi.org/10.1016/j.cpc.2020.107810",
       "https://github.com/MaterSim/PyXtal/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization",
+      "wyckoff"
+    ]
   },
   {
     "id": "randspg",
@@ -1956,7 +2014,12 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1016/j.cpc.2016.12.005"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "chemical-constraints",
+      "symmetry-initialization",
+      "wyckoff"
+    ]
   },
   {
     "id": "schrodinger-csp",
@@ -2034,7 +2097,8 @@
     "dataset_evidence_urls": [
       "https://www.nature.com/articles/s41467-025-57479-1"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "symmetry-driven-random-search",
@@ -2097,7 +2161,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1103/PhysRevB.98.174107"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "upack",
@@ -2148,7 +2213,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1002/(SICI)1096-987X(199906)20:8<799::AID-JCC6>3.0.CO;2-Z"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "aga",
@@ -2200,7 +2266,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1088/0953-8984/26/3/035402"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cryspai",
@@ -2264,7 +2331,8 @@
     "dataset_evidence_urls": [
       "https://arxiv.org/abs/2501.15838"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "norskov-alloy-search",
@@ -2327,7 +2395,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1103/PhysRevLett.88.255506"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "gasp-python",
@@ -2378,7 +2447,8 @@
       "https://doi.org/10.5281/zenodo.2554076",
       "https://github.com/henniggroup/GASP-python/blob/master/README.rst"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "gator-molecular",
@@ -2432,7 +2502,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1039/C8FD00067K"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "gsgo",
@@ -2493,7 +2564,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1103/PhysRevB.75.104113"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "woodley-ga",
@@ -2541,13 +2613,15 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1039/A901227C"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "magus",
     "name": "MAGUS",
     "paper_ids": [
-      "CSP170"
+      "CSP170",
+      "MAGUS2023"
     ],
     "primary_category": 3,
     "categories": [
@@ -2557,15 +2631,17 @@
     ],
     "domain": "Atomic / inorganic",
     "role": "CSP search / proposal implementation",
-    "code_url": "",
+    "code_url": "https://zenodo.org/records/14730874",
     "project_url": "https://gitlab.com/bigd4/magus",
-    "access_status": "Registration or request required",
+    "access_status": "Source download",
     "evidence_urls": [
       "https://gitlab.com/bigd4/magus",
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275355/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275355/",
+      "https://zenodo.org/records/14730874",
+      "https://doi.org/10.1093/nsr/nwad128"
     ],
-    "notes": "Developer GitLab public README identifies Jian Sun group and the 2025 paper, but How to get access explicitly requires registration and invitation before full source can be seen. GitLab link is a project/access portal, not a verified public source repository. Registration endpoint: https://table.nju.edu.cn/dtable/forms/custom/magus/.",
-    "checked_on": "2026-10-16",
+    "notes": "MAGUS v2.0.0 has a public source-code-and-demo.zip on Zenodo. The archive description imposes academic non-commercial terms and registration/approval; GitLab updates require registration. Includes the 2023 framework and 2025 symmetry-principle paper; no runtime validation.",
+    "checked_on": "2026-10-17",
     "primary_category_name": "Evolutionary and genetic search",
     "category_names": [
       "Construction, templates and discrete search",
@@ -2573,18 +2649,19 @@
       "Adaptive and ML-guided search"
     ],
     "release_id": "rel-89f3cd877dfc",
-    "code_license_status": "No source license verified",
-    "code_license": "",
-    "license_url": "",
-    "license_evidence": "No explicit source-code license was verified in the inspected implementation links.",
+    "code_license_status": "Restricted / non-open-source license",
+    "code_license": "Academic non-commercial terms; registration/approval and no redistribution",
+    "license_url": "https://zenodo.org/records/14730874",
+    "license_evidence": "Zenodo record description specifies non-commercial research, registration/approval and no redistribution. Public file access does not establish an open-source license.",
     "pretrained_status": "Not applicable — non-trained algorithm",
     "checkpoint_links": [],
     "weights_license": "Not verified",
-    "availability_notes": "Availability checked from linked release documentation; this is not an installation or inference test. No public implementation license was established from the paper/project evidence already linked in the directory.",
-    "availability_checked_on": "2026-10-16",
+    "availability_notes": "Version-specific Zenodo archive verified from record metadata; not classified as open source. On-the-fly potentials are trained during a search rather than a universal MAGUS checkpoint.",
+    "availability_checked_on": "2026-10-17",
     "availability_evidence_urls": [
       "https://gitlab.com/bigd4/magus",
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275355/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10275355/",
+      "https://zenodo.org/api/records/14730874"
     ],
     "training_status": "Not applicable — non-trained algorithm",
     "training_datasets": [],
@@ -2609,7 +2686,13 @@
       "https://doi.org/10.1038/s43588-025-00775-z",
       "https://www.nature.com/articles/s43588-025-00775-z"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "building-blocks",
+      "symmetry-diversity",
+      "symmetry-preserving",
+      "topology"
+    ]
   },
   {
     "id": "maise",
@@ -2685,7 +2768,8 @@
       "https://doi.org/10.1016/j.cpc.2020.107679",
       "https://github.com/maise-guide/maise/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "bazterra-modified-ga",
@@ -2736,7 +2820,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1063/1.1458547"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "muse",
@@ -2789,7 +2874,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1016/j.cpc.2014.03.017"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "paretocsp",
@@ -2879,7 +2965,8 @@
       "https://github.com/sadmanomee/ParetoCSP/blob/main/README.md",
       "https://github.com/materialyzeai/m3gnet/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "paretocsp2",
@@ -2948,7 +3035,10 @@
       "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202510792",
       "https://github.com/usccolumbia/ParetoCSP2/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "symmetry-diversity"
+    ]
   },
   {
     "id": "periodic-ga-abraham-probert",
@@ -3014,7 +3104,8 @@
       "https://doi.org/10.1103/PhysRevB.73.224104",
       "https://doi.org/10.1103/PhysRevB.77.134117"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "spinner",
@@ -3112,7 +3203,8 @@
       "https://www.nature.com/articles/s41524-022-00792-w",
       "https://github.com/MDIL-SNU/SPINNER/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "uspex",
@@ -3123,7 +3215,9 @@
       "CSP044",
       "CSP055",
       "CSP057",
-      "CSP085"
+      "CSP085",
+      "USPEXTopology2019",
+      "MolecularUSPEX2012"
     ],
     "primary_category": 3,
     "categories": [
@@ -3138,10 +3232,13 @@
     "access_status": "Registration or request required",
     "evidence_urls": [
       "https://uspex-team.org/documentation.html/uspex/downloads",
-      "https://uspex-team.org/static/file/uspex_manual_english_v25.pdf"
+      "https://uspex-team.org/static/file/uspex_manual_english_v25.pdf",
+      "https://doi.org/10.1016/j.cpc.2018.09.016",
+      "https://doi.org/10.1107/S0108768112017466",
+      "https://uspex-team.org/en/uspex/overview"
     ],
-    "notes": "Official portal requires registration. Recent USPEX25 documentation describes a binary package; this link is a software-access portal, not a verified public source repository. Evolutionary metadynamics and active-learning MTP variants are linked as USPEX workflows, not separate independently verified public releases. Access and redistribution terms differ between historical versions.",
-    "checked_on": "2026-10-16",
+    "notes": "Official portal requires registration. Recent USPEX25 documentation describes a binary package; this link is a software-access portal, not a verified public source repository. Evolutionary metadynamics and active-learning MTP variants are linked as USPEX workflows, not separate independently verified public releases. Access and redistribution terms differ between historical versions. The topology-based generator (2019) and constrained molecular search (2012) are USPEX methods; a separate public standalone source release was not verified.",
+    "checked_on": "2026-10-17",
     "primary_category_name": "Evolutionary and genetic search",
     "category_names": [
       "Evolutionary and genetic search",
@@ -3208,7 +3305,13 @@
       "https://pubmed.ncbi.nlm.nih.gov/16821993/",
       "https://uspex-team.org/static/file/CPC-USPEX-2006.pdf"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints",
+      "symmetry-initialization",
+      "topology"
+    ]
   },
   {
     "id": "xtalopt",
@@ -3292,14 +3395,16 @@
       "https://github.com/xtalopt/XtalOpt/blob/master/README.md",
       "https://xtalopt.github.io/pub.html"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "calypso",
     "name": "CALYPSO",
     "paper_ids": [
       "CSP043",
-      "CSP054"
+      "CSP054",
+      "CSP108"
     ],
     "primary_category": 4,
     "categories": [
@@ -3313,10 +3418,12 @@
     "evidence_urls": [
       "https://download.calypso.cn/home/",
       "https://download.calypso.cn/releasenotes/",
-      "https://www.calypso.cn/static/web/documentation/CALYPSO_Manual_English.pdf"
+      "https://www.calypso.cn/static/web/documentation/CALYPSO_Manual_English.pdf",
+      "https://doi.org/10.1063/5.0074677",
+      "https://calypso.cn/docs/posts/_input_parameters.html#ialgo"
     ],
-    "notes": "Official distribution and manual describe licensed registration/request access and binary releases. No public source-code repository was verified. CALYPSO-Python documentation is separate from evidence that the full CSP source is publicly downloadable.",
-    "checked_on": "2026-10-16",
+    "notes": "Official distribution and manual describe licensed registration/request access and binary releases. No public source-code repository was verified. CALYPSO-Python documentation is separate from evidence that the full CSP source is publicly downloadable. SPAI (2022) is the symmetry-preserving divide-and-conquer method implemented in CALYPSO. The v10.1.x documentation lists IAlgo=3 as ABC with symmetry; no separate public SPAI source release was verified.",
+    "checked_on": "2026-10-17",
     "primary_category_name": "Swarm and differential evolution",
     "category_names": [
       "Swarm and differential evolution"
@@ -3360,7 +3467,14 @@
       "https://doi.org/10.1103/PhysRevB.82.094116",
       "https://doi.org/10.1016/j.cpc.2012.05.008"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "chemical-constraints",
+      "symmetry-diversity",
+      "symmetry-initialization",
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "im2ode",
@@ -3410,7 +3524,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1016/j.commatsci.2014.10.054"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "sgo",
@@ -3460,7 +3575,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1016/j.cpc.2017.05.005"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "abinitio-landscape-sch-n",
@@ -3508,7 +3624,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1039/B709943F"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "chemdash",
@@ -3564,7 +3681,8 @@
       "https://doi.org/10.1039/d2cp02180c",
       "https://github.com/lrcfmd/ChemDASH/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cfmc-crystal",
@@ -3614,7 +3732,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1073/pnas.231479298"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "deds-crystal",
@@ -3662,7 +3781,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1021/jp972424u"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "fuse",
@@ -3751,7 +3871,11 @@
       "https://doi.org/10.1039/d4fd00094c",
       "https://pubs.rsc.org/en/content/articlehtml/2018/fd/c8fd00045j"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints"
+    ]
   },
   {
     "id": "grace-csp",
@@ -3813,7 +3937,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1002/anie.200704247"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "mc-emma",
@@ -3868,7 +3993,11 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1038/nature22374"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "building-blocks",
+      "chemical-constraints"
+    ]
   },
   {
     "id": "minima-hopping",
@@ -3938,7 +4067,8 @@
       "https://arxiv.org/abs/1007.2003",
       "https://edoc.unibas.ch/95451/1/20230811123429_64d60eb59705f.pdf"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cell-metadynamics",
@@ -4004,7 +4134,8 @@
       "https://doi.org/10.1103/PhysRevLett.90.075503",
       "https://doi.org/10.1524/zkri.220.5.489.65078"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "ssw-lasp",
@@ -4059,7 +4190,8 @@
       "https://doi.org/10.1021/ct301010b",
       "https://doi.org/10.1039/C4CP01485E"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "active-csp",
@@ -4141,7 +4273,8 @@
       "https://www.nature.com/articles/s41524-025-01523-7",
       "https://github.com/stefaanhessmann/active-csp/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "agox-gofee",
@@ -4230,7 +4363,8 @@
       "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.086102",
       "https://arxiv.org/abs/2204.01451"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "alphacrystal",
@@ -4293,7 +4427,8 @@
       "https://pubs.acs.org/doi/10.1021/acsomega.3c02115",
       "https://github.com/usccolumbia/AlphaCrystal/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "alphacrystal-ii",
@@ -4341,7 +4476,8 @@
     "dataset_evidence_urls": [
       "https://arxiv.org/abs/2404.04810"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "bowsr-maml",
@@ -4396,7 +4532,8 @@
       "https://www.sciencedirect.com/science/article/pii/S1369702121002984",
       "https://github.com/materialyzeai/maml/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "casting",
@@ -4449,7 +4586,8 @@
       "https://doi.org/10.1038/s41524-023-01128-y",
       "https://github.com/sbanik2/CASTING/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cryspnet",
@@ -4538,7 +4676,8 @@
       "https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.4.123802",
       "https://github.com/AuroraLHT/cryspnet/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cryspy-bo-laqa",
@@ -4647,7 +4786,8 @@
       "https://www.tandfonline.com/doi/full/10.1080/27660400.2022.2059335",
       "https://github.com/Tomoki-YAMASHITA/CrySPY/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "csp-al-molecular",
@@ -4704,7 +4844,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/pwvbutler/CSP-AL/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "gn-oa",
@@ -4793,7 +4934,8 @@
     "dataset_evidence_urls": [
       "https://www.nature.com/articles/s41467-022-29241-4"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "phasebo",
@@ -4877,7 +5019,8 @@
       "https://doi.org/10.1063/5.0180818",
       "https://github.com/lrcfmd/PhaseBO/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "rl-csp",
@@ -4945,7 +5088,8 @@
       "https://doi.org/10.1039/d3dd00063j",
       "https://github.com/lrcfmd/rlcsp/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "shotguncsp",
@@ -5000,7 +5144,8 @@
       "https://www.nature.com/articles/s41524-024-01471-8",
       "https://github.com/TsumiNa/ShotgunCSP/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "spade-csp",
@@ -5075,7 +5220,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/takuyhaa/SPaDe-CSP/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "wren-aviary",
@@ -5132,7 +5278,8 @@
       "https://www.science.org/doi/10.1126/sciadv.abn4117",
       "https://github.com/CompRhys/aviary/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "all-atom-diffusion-transformer-adit",
@@ -5285,7 +5432,8 @@
     "dataset_evidence_urls": [
       "https://github.com/facebookresearch/all-atom-diffusion-transformer/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "ccdcgan",
@@ -5363,7 +5511,8 @@
       "https://github.com/TengLong1993/CCDCGAN-for-single-system/blob/main/README.md",
       "https://www.nature.com/articles/s41524-021-00526-4"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cdvae",
@@ -5485,7 +5634,8 @@
     "dataset_evidence_urls": [
       "https://github.com/txie-93/cdvae/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cellnet-prototype",
@@ -5574,7 +5724,8 @@
       "https://raw.githubusercontent.com/qzhu2017/CellNet-prototype/main/README.md",
       "https://arxiv.org/abs/2610.04193"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cg-omatg",
@@ -5662,7 +5813,8 @@
     "dataset_evidence_urls": [
       "https://arxiv.org/abs/2609.39773"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "composition-conditioned-crystal-gan",
@@ -5724,7 +5876,8 @@
     "dataset_evidence_urls": [
       "https://github.com/kaist-amsg/Composition-Conditioned-Crystal-GAN/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cond-cdvae",
@@ -5795,7 +5948,8 @@
     "dataset_evidence_urls": [
       "https://github.com/ixsluo/cond-cdvae/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cond-dfc-vae-icsg3d",
@@ -5880,7 +6034,8 @@
     "dataset_evidence_urls": [
       "https://github.com/by256/icsg3d/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "continuousp",
@@ -6003,7 +6158,8 @@
     "dataset_evidence_urls": [
       "https://github.com/tony998244353/ContinuouSP/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crysbfn",
@@ -6087,7 +6243,8 @@
     "dataset_evidence_urls": [
       "https://github.com/wu-han-lin/CrysBFN/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystal-gfn",
@@ -6178,7 +6335,8 @@
       "https://github.com/alexhernandezgarcia/gflownet/blob/main/README.md",
       "https://arxiv.org/html/2310.04925"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystalflow",
@@ -6296,7 +6454,8 @@
     "dataset_evidence_urls": [
       "https://github.com/ixsluo/CrystalFlow/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystalformer",
@@ -6359,7 +6518,9 @@
         "access": "Public author dataset or preparation instructions; full payload not downloaded.",
         "evidence_urls": [
           "https://github.com/deepmodeling/CrystalFormer/blob/main/README.md"
-        ]
+        ],
+        "kind": "Paper-specific validation",
+        "protocol": "See linked source"
       }
     ],
     "reference_datasets": [],
@@ -6383,7 +6544,12 @@
       "https://github.com/deepmodeling/CrystalFormer/blob/main/README.md",
       "https://github.com/deepmodeling/CrystalFormer/blob/main/MODEL_CARD.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "prototypes",
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "crystalgan",
@@ -6459,7 +6625,8 @@
     "dataset_evidence_urls": [
       "https://github.com/asmanouira/CrystalGAN/blob/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystalgrpo",
@@ -6562,7 +6729,8 @@
       "https://arxiv.org/abs/2608.06582",
       "https://arxiv.org/html/2608.06582"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystalgrw",
@@ -6664,7 +6832,8 @@
     "dataset_evidence_urls": [
       "https://github.com/trachote/crystalgrw/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystalite",
@@ -6784,7 +6953,8 @@
     "dataset_evidence_urls": [
       "https://github.com/joshrosie/crystalite/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "crystallm",
@@ -6870,7 +7040,8 @@
     "dataset_evidence_urls": [
       "https://github.com/lantunes/CrystaLLM/blob/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "cubicgan",
@@ -6941,7 +7112,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/MilesZhao/CubicGAN/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "dao",
@@ -7052,7 +7224,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/GLAD-RUC/DAO/release/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "dd3dcs-encoding-decoding-3d-crystals",
@@ -7131,7 +7304,8 @@
       "https://raw.githubusercontent.com/hoffmannjordan/Encoding-Decoding-3D-Crystals/master/README.md",
       "https://arxiv.org/html/1909.00949"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "deepcsp-organic-gan",
@@ -7184,7 +7358,8 @@
     "dataset_evidence_urls": [
       "https://doi.org/10.1016/j.xinn.2023.100562"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "diffcsp",
@@ -7337,7 +7512,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/jiaor17/DiffCSP/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "diffcsp-plus-plus",
@@ -7490,7 +7666,11 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/jiaor17/DiffCSP-PP/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "dp-cdvae",
@@ -7619,7 +7799,8 @@
       "https://raw.githubusercontent.com/trachote/dp-cdvae/main/README.md",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC10787843/"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "equicsp",
@@ -7772,7 +7953,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/EmperorJia/EquiCSP/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "flowmm-flowllm",
@@ -7949,7 +8131,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/facebookresearch/flowmm/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "ftcp",
@@ -8028,7 +8211,8 @@
       "https://raw.githubusercontent.com/PV-Lab/FTCP/master/README.md",
       "https://dspace.mit.edu/server/api/core/bitstreams/c07ccb4d-df07-41e2-a14f-8c6df86522d1/content"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "gemsdiff",
@@ -8098,7 +8282,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/aklipf/gemsdiff/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "imatgen",
@@ -8148,7 +8333,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/kaist-amsg/imatgen/master/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "kldm",
@@ -8211,7 +8397,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/frcnt/kldm/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "mat2seq-airs",
@@ -8364,7 +8551,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/divelab/AIRS/main/OpenMat/Mat2Seq/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "mattergen",
@@ -8483,7 +8671,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/microsoft/mattergen/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "nextcrystal",
@@ -8611,7 +8800,8 @@
       "https://arxiv.org/abs/2602.17176v4",
       "https://arxiv.org/html/2602.17176v4"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "omatg",
@@ -8810,7 +9000,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/FERMat-ML/OMatG/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "oxtal",
@@ -8887,7 +9078,8 @@
       "https://raw.githubusercontent.com/OXtal/OXtal/main/LICENSE-MODEL-WEIGHTS",
       "https://arxiv.org/abs/2512.06987"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "packflow-molecular",
@@ -8978,7 +9170,8 @@
       "https://raw.githubusercontent.com/learningmatter-mit/packflow/main/README.md",
       "https://arxiv.org/abs/2602.20140"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "pgcgm",
@@ -9065,7 +9258,8 @@
       "https://raw.githubusercontent.com/MilesZhao/PGCGM/main/README.md",
       "https://www.nature.com/articles/s41524-023-00987-9"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "shaft",
@@ -9142,7 +9336,8 @@
       "https://raw.githubusercontent.com/ngminhtri0394/SHAFT/main/README.md",
       "https://arxiv.org/html/2411.04323"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "slices",
@@ -9248,7 +9443,8 @@
       "https://raw.githubusercontent.com/xiaohang007/SLICES/main/README.md",
       "https://www.nature.com/articles/s41467-023-42870-7"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "symat-airs",
@@ -9324,7 +9520,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/divelab/AIRS/main/OpenMat/SyMat/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "symmcd",
@@ -9468,7 +9665,11 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/sibasmarak/SymmCD/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ]
   },
   {
     "id": "uflowcsp",
@@ -9564,7 +9765,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/usccolumbia/uFlowCSP/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "uni-3dar",
@@ -9670,7 +9872,8 @@
     "dataset_evidence_urls": [
       "https://raw.githubusercontent.com/dptech-corp/Uni-3DAR/main/README.md"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "unimat",
@@ -9804,7 +10007,8 @@
       "https://unified-materials.github.io/unimat/materials/paper.pdf",
       "https://proceedings.iclr.cc/paper_files/paper/2024/file/cea5ebedc384c5f4b4ef6b6eb29c197f-Paper-Conference.pdf"
     ],
-    "dataset_checked_on": "2026-10-16"
+    "dataset_checked_on": "2026-10-16",
+    "structural_priors": []
   },
   {
     "id": "dmcrystal",
@@ -9842,7 +10046,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/usccolumbia/dmcrystal/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1021/acs.jpca.0c08775",
+          "https://github.com/usccolumbia/dmcrystal/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -9850,7 +10059,20 @@
     "primary_category_name": "Evolutionary and genetic search",
     "category_names": [
       "Evolutionary and genetic search"
-    ]
+    ],
+    "structural_priors": [],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1021/acs.jpca.0c08775",
+      "https://github.com/usccolumbia/dmcrystal/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1021/acs.jpca.0c08775",
+      "https://github.com/usccolumbia/dmcrystal/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-dmcrystal"
   },
   {
     "id": "cmcrystal",
@@ -9888,7 +10110,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/usccolumbia/cmcrystal/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1039/d0ce01714k",
+          "https://github.com/usccolumbia/cmcrystal/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -9896,7 +10123,20 @@
     "primary_category_name": "Evolutionary and genetic search",
     "category_names": [
       "Evolutionary and genetic search"
-    ]
+    ],
+    "structural_priors": [],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1039/d0ce01714k",
+      "https://github.com/usccolumbia/cmcrystal/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1039/d0ce01714k",
+      "https://github.com/usccolumbia/cmcrystal/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-cmcrystal"
   },
   {
     "id": "cmcrystalhs",
@@ -9934,7 +10174,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/usccolumbia/DE-CSP-highsymmetry/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1088/1361-648x/ac1d6c",
+          "https://github.com/usccolumbia/DE-CSP-highsymmetry/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -9942,7 +10187,23 @@
     "primary_category_name": "Swarm and differential evolution",
     "category_names": [
       "Swarm and differential evolution"
-    ]
+    ],
+    "structural_priors": [
+      "symmetry-preserving",
+      "wyckoff"
+    ],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1088/1361-648x/ac1d6c",
+      "https://github.com/usccolumbia/DE-CSP-highsymmetry/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1088/1361-648x/ac1d6c",
+      "https://github.com/usccolumbia/DE-CSP-highsymmetry/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-cmcrystalhs"
   },
   {
     "id": "cmcrystalmoo",
@@ -9980,7 +10241,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/usccolumbia/MOOCSP/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1021/acs.jpca.1c07170",
+          "https://github.com/usccolumbia/MOOCSP/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -9988,7 +10254,20 @@
     "primary_category_name": "Evolutionary and genetic search",
     "category_names": [
       "Evolutionary and genetic search"
-    ]
+    ],
+    "structural_priors": [],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1021/acs.jpca.1c07170",
+      "https://github.com/usccolumbia/MOOCSP/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1021/acs.jpca.1c07170",
+      "https://github.com/usccolumbia/MOOCSP/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-cmcrystalmoo"
   },
   {
     "id": "mlatticeabc",
@@ -10026,7 +10305,10 @@
         "version_split": "See author README for feature files and split",
         "evidence_urls": [
           "https://github.com/usccolumbia/MLatticeABC/blob/main/README.md"
-        ]
+        ],
+        "id": "materials-project-derived-descriptor-dataset",
+        "kind": "Paper-specific validation",
+        "protocol": "See linked source"
       }
     ],
     "reference_datasets": [],
@@ -10036,7 +10318,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/usccolumbia/MLatticeABC/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1021/acsomega.1c00781",
+          "https://github.com/usccolumbia/MLatticeABC/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -10044,7 +10331,20 @@
     "primary_category_name": "Context, evaluators and evaluation",
     "category_names": [
       "Context, evaluators and evaluation"
-    ]
+    ],
+    "structural_priors": [],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1021/acsomega.1c00781",
+      "https://github.com/usccolumbia/MLatticeABC/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1021/acsomega.1c00781",
+      "https://github.com/usccolumbia/MLatticeABC/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-mlatticeabc"
   },
   {
     "id": "composition-symmetry",
@@ -10082,7 +10382,10 @@
         "version_split": "See author README for feature files and split",
         "evidence_urls": [
           "https://github.com/Yuxinya/SG_predict/blob/main/README.md"
-        ]
+        ],
+        "id": "materials-project-derived-descriptor-dataset",
+        "kind": "Paper-specific validation",
+        "protocol": "See linked source"
       }
     ],
     "reference_datasets": [],
@@ -10092,7 +10395,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/Yuxinya/SG_predict/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.commatsci.2021.110686",
+          "https://github.com/Yuxinya/SG_predict/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -10100,7 +10408,20 @@
     "primary_category_name": "Context, evaluators and evaluation",
     "category_names": [
       "Context, evaluators and evaluation"
-    ]
+    ],
+    "structural_priors": [],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1016/j.commatsci.2021.110686",
+      "https://github.com/Yuxinya/SG_predict/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1016/j.commatsci.2021.110686",
+      "https://github.com/Yuxinya/SG_predict/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-composition-symmetry"
   },
   {
     "id": "cspmetrics",
@@ -10138,7 +10459,12 @@
         "name": "Paper evaluation and author examples",
         "url": "https://github.com/usccolumbia/CSPBenchMetrics/blob/main/README.md",
         "kind": "Paper-defined evaluation",
-        "protocol": "See paper and README; exact dataset payload not independently checked."
+        "protocol": "See paper and README; exact dataset payload not independently checked.",
+        "id": "paper-evaluation-and-author-examples",
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.commatsci.2024.112802",
+          "https://github.com/usccolumbia/CSPBenchMetrics/blob/main/README.md"
+        ]
       }
     ],
     "dataset_checked_on": "2026-10-17",
@@ -10146,6 +10472,19 @@
     "primary_category_name": "Context, evaluators and evaluation",
     "category_names": [
       "Context, evaluators and evaluation"
-    ]
+    ],
+    "structural_priors": [],
+    "dataset_evidence_urls": [
+      "https://doi.org/10.1016/j.commatsci.2024.112802",
+      "https://github.com/usccolumbia/CSPBenchMetrics/blob/main/README.md"
+    ],
+    "weights_license": "Not verified",
+    "availability_notes": "Source and release links checked; no runtime execution.",
+    "availability_checked_on": "2026-10-17",
+    "availability_evidence_urls": [
+      "https://doi.org/10.1016/j.commatsci.2024.112802",
+      "https://github.com/usccolumbia/CSPBenchMetrics/blob/main/README.md"
+    ],
+    "release_id": "supplement-20261017-cspmetrics"
   }
 ]

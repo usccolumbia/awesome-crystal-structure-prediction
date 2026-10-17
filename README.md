@@ -10,12 +10,13 @@ A curated directory of **algorithms, papers, source code, pretrained models, dat
 
 Companion resources for *Crystal Structure Prediction from Search to Learning: A 30-Year Expedition* (survey in preparation). Related collection: [Awesome Crystal Prototype](https://github.com/usccolumbia/awesome-crystal-prototype).
 
-**205 literature/software-paper records · 129 implementation and component entries · 42 formula-conditioning audits.** Literature window: 1996–16 October 2026. Resource checks: 16–17 October 2026. This is a curated collection, not an exhaustive census or a performance ranking. The 1996 start is a survey boundary; the founding USPEX journal papers appeared in 2006.
+**208 literature/software-paper records · 129 implementation and component entries · 42 formula-conditioning audits.** Literature window: 1996–16 October 2026. Resource checks: 16–17 October 2026. This is a curated collection, not an exhaustive census or a performance ranking. The 1996 start is a survey boundary; the founding USPEX journal papers appeared in 2006.
 
 ## Contents
 
 - [Browse and download](#browse-and-download)
 - [Algorithm categories](#algorithm-categories)
+- [Symmetry, topology and domain knowledge](#symmetry-topology-and-domain-knowledge)
 - [Benchmarks and evaluation](#benchmarks-and-evaluation)
 - [How to interpret availability](#how-to-interpret-availability)
 - [Contributing](CONTRIBUTING.md) · [Provenance](docs/provenance.md) · [BibTeX](references.bib)
@@ -24,6 +25,7 @@ Companion resources for *Crystal Structure Prediction from Search to Learning: A
 
 | Resource | What it contains |
 |---|---|
+| [Structural knowledge guide](docs/structural-priors.md) | Symmetry, Wyckoff sites, topology, motifs, prototypes and ordering; papers and code links |
 | [All papers](docs/papers.md) | Category, year, publication status, method, input information, group attribution, and primary sources |
 | [Software profiles](docs/software.md) | Paper/code links, license evidence, checkpoints, training data, evaluations, and limitations |
 | [Benchmarks](docs/benchmarks.md) | MP-20, MPTS-52, CSPBench, T180, T46, CSPMetrics; dataset and protocol distinctions |
@@ -42,6 +44,10 @@ python3 -m http.server 8000
 # Open http://localhost:8000/docs/
 ```
 
+## Symmetry, topology and domain knowledge
+
+Explore [21 documented method profiles](docs/structural-priors.md), including USPEX topology generation, constrained molecular USPEX, CALYPSO/SPAI divide-and-conquer, MAGUS, and symmetry-aware learned models. The [interactive explorer](docs/index.html) filters papers and software by nine structural-knowledge categories alongside algorithm family, group and release availability. Untagged entries have not been assessed in this focused pass.
+
 ## Algorithm categories
 
 Categories describe candidate construction or search. Learned energy evaluators, symmetry predictors, and metric packages are listed as supporting components. Hybrids retain secondary categories in the data. Each table links to detailed release evidence.
@@ -58,7 +64,7 @@ Categories describe candidate construction or search. Learned energy evaluators,
 | **GRINSP / GRINS** | [2005 CSP024](https://doi.org/10.1107/S0021889805002384) | [Source](https://www.cristal.org/grinsp/) | [Profile](docs/software.md#grinsp) |
 | **IPCSP (integer-programming CSP)** | [2023 CSP133](https://doi.org/10.1038/s41586-023-06071-y) | [Source](https://github.com/lrcfmd/ipcsp) | [Profile](docs/software.md#ipcsp) |
 | **Periodic tetrahedral-framework enumeration (Treacy et al.)** | [1997 CSP004](https://doi.org/10.1524/zkri.1997.212.11.768) · [2004 CSP019](https://doi.org/10.1016/j.micromeso.2004.06.013) | Not verified | [Profile](docs/software.md#tetrahedral-framework-enumeration) |
-| **Symmetry-orientated divide-and-conquer CSP** | [2022 CSP108](https://doi.org/10.1063/5.0074677) | Not verified | [Profile](docs/software.md#symmetry-divide-conquer) |
+| **SPAI / CALYPSO symmetry divide-and-conquer** | [2022 CSP108](https://doi.org/10.1063/5.0074677) | [Access portal](https://download.calypso.cn/home/) | [Profile](docs/software.md#symmetry-divide-conquer) |
 | **Systematic crystalline-network enumeration (Delgado Friedrichs et al.)** | [1999 CSP006](https://doi.org/10.1038/23210) | Not verified | [Profile](docs/software.md#systematic-network-enumeration) |
 | **Systematic periodic-network search (Winkler–Pickard–Thimm)** | [2001 CSP011](https://doi.org/10.1016/S0009-2614(01)00126-9) · [2004 CSP021](https://doi.org/10.1103/PhysRevB.70.045101) | Not verified | [Profile](docs/software.md#quotient-graph-search) |
 | **TCSP / TCSP2.0** | [2022 CSP123](https://pubs.acs.org/doi/10.1021/acs.inorgchem.1c03879) · [2026 CSP194](https://www.sciencedirect.com/science/article/pii/S0927025625006603) | [Source](https://github.com/usccolumbia/TCSP) | [Profile](docs/software.md#tcsp) |
@@ -67,7 +73,7 @@ Categories describe candidate construction or search. Learned energy evaluators,
 
 | Algorithm / component | Papers | Code or access | Details |
 |---|---|---|---|
-| **AIRSS / buildcell** | [2006 CSP028](https://doi.org/10.1103/PhysRevLett.97.045504) · [2025 CSP165](https://doi.org/10.1039/D4FD00134F) | [Source](https://www.mtg.msm.cam.ac.uk/Codes/AIRSS) | [Profile](docs/software.md#airss) |
+| **AIRSS / buildcell** | [2006 CSP028](https://doi.org/10.1103/PhysRevLett.97.045504) · [2025 CSP165](https://doi.org/10.1039/D4FD00134F) · [2011 CSP045](https://doi.org/10.1088/0953-8984/23/5/053201) | [Source](https://www.mtg.msm.cam.ac.uk/Codes/AIRSS) | [Profile](docs/software.md#airss) |
 | **CrystalPredictor / CrystalPredictor II** | [2005 CSP023](https://doi.org/10.1002/jcc.20165) · [2007 CSP031](https://doi.org/10.1080/00268970601143317) · [2015 CSP063](https://doi.org/10.1021/ct500621v) · [2016 CSP065](https://doi.org/10.1107/S2052520616015122) | [Access portal](https://sargentcentre.org/impact/spinouts-software/) | [Profile](docs/software.md#crystalpredictor) |
 | **CSP(aiFF) / autoPES–UPACK workflow** | [2022 CSP121](https://doi.org/10.1038/s41467-022-30692-y) | [Access portal](https://www.physics.udel.edu/~szalewic/SAPT/SAPT.html) | [Profile](docs/software.md#csp-aiff) |
 | **Genarris (1.0–3.x; Rigid Press)** | [2018 CSP079](https://doi.org/10.1063/1.5014038) · [2020 CSP096](https://doi.org/10.1016/j.cpc.2020.107170) · [2025 CSP171](https://doi.org/10.1021/acs.jctc.5c01080) | [Source](https://www.noamarom.com/wp-content/uploads/2026/06/gnrs-3.1.4.zip) | [Profile](docs/software.md#genarris) |
@@ -94,7 +100,7 @@ Categories describe candidate construction or search. Learned energy evaluators,
 | **GAtor** | [2018 CSP076](https://doi.org/10.1039/C8FD00067K) · [2018 CSP078](https://doi.org/10.1021/acs.jctc.7b01152) | [Source](https://www.noamarom.com/wp-content/uploads/2023/01/GAtor_Test.zip) | [Profile](docs/software.md#gator-molecular) |
 | **GSGO (global space-group optimization)** | [2007 CSP033](https://doi.org/10.1103/PhysRevB.75.104113) | Not verified | [Profile](docs/software.md#gsgo) |
 | **Ionic-crystal genetic algorithm (Woodley et al.)** | [1999 CSP007](https://doi.org/10.1039/A901227C) | Not verified | [Profile](docs/software.md#woodley-ga) |
-| **MAGUS** | [2025 CSP170](https://doi.org/10.1038/s43588-025-00775-z) | [Access portal](https://gitlab.com/bigd4/magus) | [Profile](docs/software.md#magus) |
+| **MAGUS** | [2025 CSP170](https://doi.org/10.1038/s43588-025-00775-z) · [2023 MAGUS2023](https://doi.org/10.1093/nsr/nwad128) | [Source](https://zenodo.org/records/14730874) | [Profile](docs/software.md#magus) |
 | **MAISE** | [2021 CSP106](https://doi.org/10.1016/j.cpc.2020.107679) | [Source](https://github.com/maise-guide/maise) | [Profile](docs/software.md#maise) |
 | **Modified genetic algorithm for molecular crystals (Bazterra–Ferraro–Facelli)** | [2002 CSP015](https://doi.org/10.1063/1.1458547) · [2003 CSP016](https://doi.org/10.1002/qua.10726) | Not verified | [Profile](docs/software.md#bazterra-modified-ga) |
 | **MUSE** | [2014 CSP060](https://doi.org/10.1016/j.cpc.2014.03.017) | [Source](https://github.com/zhongliliu/muse) | [Profile](docs/software.md#muse) |
@@ -102,14 +108,14 @@ Categories describe candidate construction or search. Learned energy evaluators,
 | **ParetoCSP2** | [2025 CSP175](https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202510792) | [Source](https://github.com/usccolumbia/ParetoCSP2) | [Profile](docs/software.md#paretocsp2) |
 | **Periodic real-space genetic algorithm (Abraham–Probert)** | [2006 CSP026](https://doi.org/10.1103/PhysRevB.73.224104) · [2008 CSP037](https://doi.org/10.1103/PhysRevB.77.134117) | Not verified | [Profile](docs/software.md#periodic-ga-abraham-probert) |
 | **SPINNER** | [2022 CSP110](https://www.nature.com/articles/s41524-022-00792-w) | [Source](https://github.com/MDIL-SNU/SPINNER) | [Profile](docs/software.md#spinner) |
-| **USPEX** | [2006 CSP027](https://doi.org/10.1063/1.2210932) · [2006 CSP030](https://doi.org/10.1016/j.cpc.2006.07.020) · [2010 CSP044](https://doi.org/10.1016/j.cpc.2010.06.007) · [2012 CSP055](https://doi.org/10.1039/C2CE06642D) · [2013 CSP057](https://doi.org/10.1016/j.cpc.2012.12.009) · [2019 CSP085](https://uspex-team.org/static/file/Podryabinkin-2019.pdf) | [Access portal](https://uspex-team.org/documentation.html/uspex/downloads) | [Profile](docs/software.md#uspex) |
+| **USPEX** | [2006 CSP027](https://doi.org/10.1063/1.2210932) · [2006 CSP030](https://doi.org/10.1016/j.cpc.2006.07.020) · [2010 CSP044](https://doi.org/10.1016/j.cpc.2010.06.007) · [2012 CSP055](https://doi.org/10.1039/C2CE06642D) · [2013 CSP057](https://doi.org/10.1016/j.cpc.2012.12.009) · [2019 CSP085](https://uspex-team.org/static/file/Podryabinkin-2019.pdf) · [2019 USPEXTopology2019](https://doi.org/10.1016/j.cpc.2018.09.016) · [2012 MolecularUSPEX2012](https://doi.org/10.1107/S0108768112017466) | [Access portal](https://uspex-team.org/documentation.html/uspex/downloads) | [Profile](docs/software.md#uspex) |
 | **XtalOpt (including r7–14)** | [2011 CSP052](https://doi.org/10.1016/j.cpc.2011.06.003) · [2011 CSP053](https://doi.org/10.1016/j.cpc.2010.07.048) · [2016 CSP069](https://doi.org/10.1016/j.cpc.2015.09.018) · [2017 CSP074](https://doi.org/10.1016/j.cpc.2017.04.001) · [2018 CSP084](https://doi.org/10.1016/j.cpc.2017.09.011) · [2019 CSP091](https://doi.org/10.1016/j.cpc.2018.11.016) · [2024 CSP158](https://doi.org/10.1016/j.cpc.2024.109306) · [2026 CSP196](https://doi.org/10.1016/j.cpc.2025.109910) | [Source](https://github.com/xtalopt/XtalOpt) | [Profile](docs/software.md#xtalopt) |
 
 ### Swarm and differential evolution
 
 | Algorithm / component | Papers | Code or access | Details |
 |---|---|---|---|
-| **CALYPSO** | [2010 CSP043](https://doi.org/10.1103/PhysRevB.82.094116) · [2012 CSP054](https://doi.org/10.1016/j.cpc.2012.05.008) | [Access portal](https://download.calypso.cn/home/) | [Profile](docs/software.md#calypso) |
+| **CALYPSO** | [2010 CSP043](https://doi.org/10.1103/PhysRevB.82.094116) · [2012 CSP054](https://doi.org/10.1016/j.cpc.2012.05.008) · [2022 CSP108](https://doi.org/10.1063/5.0074677) | [Access portal](https://download.calypso.cn/home/) | [Profile](docs/software.md#calypso) |
 | **CMCrystalHS** | [2021 CMCrystalHS2021](https://doi.org/10.1088/1361-648x/ac1d6c) | [Source](https://github.com/usccolumbia/DE-CSP-highsymmetry) | [Profile](docs/software.md#cmcrystalhs) |
 | **IM²ODE** | [2015 CSP064](https://doi.org/10.1016/j.commatsci.2014.10.054) | Not verified | [Profile](docs/software.md#im2ode) |
 | **SGO** | [2017 CSP073](https://doi.org/10.1016/j.cpc.2017.05.005) | Not verified | [Profile](docs/software.md#sgo) |

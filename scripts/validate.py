@@ -32,3 +32,14 @@ for p in [*R.glob('data/*.json'),R/'references.bib']:
 html=(R/'docs/index.html').read_text();embedded=json.loads(re.search(r'<script id="catalogue" type="application/json">(.*?)</script>',html,re.S)[1])
 assert len(embedded['papers'])==len(papers) and len(embedded['software'])==len(software)
 print(f'PASS: {len(papers)} papers, {len(software)} software records, {len(benchmarks)} named benchmarks, {len(keys)} unique bibliography keys; internal links and embedded data consistent.')
+
+priors=load('structural_priors');features={f['id'] for f in priors['features']};sids={s['id'] for s in software}
+for profile in priors['profiles']:
+ assert set(profile['paper_ids'])<=pids and set(profile['software_ids'])<=sids
+ assert set(profile['features'])<=features and profile['evidence_urls'] and profile['limitations']
+for kind,rows in [('paper',papers),('software',software)]:
+ for row in rows:
+  expected={f for p in priors['profiles'] if row['id'] in p[kind+'_ids'] for f in p['features']}
+  assert set(row.get('structural_priors',[]))==expected,(row['id'],'structural-prior linkage')
+assert embedded['priors']==priors
+print(f"PASS: {len(priors['profiles'])} structural-prior profiles, {len(features)} categories and source linkages.")

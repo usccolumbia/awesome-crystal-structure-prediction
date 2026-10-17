@@ -12,4 +12,5 @@ jobs:
           python-version: '3.12'
       - run: python scripts/build.py
       - run: python scripts/validate.py
+      - run: node scripts/check-explorer.cjs
       - run: git diff --exit-code

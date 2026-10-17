@@ -11,7 +11,7 @@ Availability is recorded separately from license status and runtime validation. 
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -67,7 +67,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -119,13 +119,15 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Random structure search · Atomic / inorganic · CSP search / proposal implementation**
 
-[2006 CSP028](https://doi.org/10.1103/PhysRevLett.97.045504) · [2025 CSP165](https://doi.org/10.1039/D4FD00134F)
+[2006 CSP028](https://doi.org/10.1103/PhysRevLett.97.045504) · [2025 CSP165](https://doi.org/10.1039/D4FD00134F) · [2011 CSP045](https://doi.org/10.1088/0953-8984/23/5/053201)
 
 **Source / access:** [Code](https://www.mtg.msm.cam.ac.uk/Codes/AIRSS) — Source download
 
 **License:** Open-source license verified [GPL-2.0](https://airss-docs.github.io/#licence-and-citation)
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 Not applicable — non-trained algorithm
@@ -140,7 +142,7 @@ Developer university page explicitly provides full-source downloads and links hi
 
 Core search, enumeration, construction or DFT-screening algorithm does not require a fixed pretrained dataset. Optional evaluators and extensions must be qualified separately. Primary source links retained; named examples are not assumed to be standardized benchmarks.
 
-**Checked:** 2026-10-16. **Evidence:** [source 1](https://www.mtg.msm.cam.ac.uk/Codes/AIRSS) · [source 2](https://airss-docs.github.io/) · [source 3](https://airss-docs.github.io/getting-started/installation/) · [source 4](https://arxiv.org/abs/1101.3987) · [source 5](https://airss-docs.github.io/#licence-and-citation) · [source 6](https://doi.org/10.1103/PhysRevLett.97.045504) · [source 7](https://doi.org/10.1039/D4FD00134F)
+**Checked:** 2026-10-17. **Evidence:** [source 1](https://www.mtg.msm.cam.ac.uk/Codes/AIRSS) · [source 2](https://airss-docs.github.io/) · [source 3](https://airss-docs.github.io/getting-started/installation/) · [source 4](https://arxiv.org/abs/1101.3987) · [source 5](https://airss-docs.github.io/#licence-and-citation) · [source 6](https://doi.org/10.1103/PhysRevLett.97.045504) · [source 7](https://doi.org/10.1039/D4FD00134F)
 
 <a id="all-atom-diffusion-transformer-adit"></a>
 ## All-atom Diffusion Transformer (ADiT)
@@ -215,7 +217,7 @@ Learned model/component or adaptive surrogate identified; exact training corpus 
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -267,13 +269,15 @@ Learned model/component or adaptive surrogate identified; exact training corpus 
 
 **Swarm and differential evolution · Atomic / inorganic · CSP search / proposal implementation**
 
-[2010 CSP043](https://doi.org/10.1103/PhysRevB.82.094116) · [2012 CSP054](https://doi.org/10.1016/j.cpc.2012.05.008)
+[2010 CSP043](https://doi.org/10.1103/PhysRevB.82.094116) · [2012 CSP054](https://doi.org/10.1016/j.cpc.2012.05.008) · [2022 CSP108](https://doi.org/10.1063/5.0074677)
 
 **Source / access:** [Project](https://download.calypso.cn/home/) — Registration or request required
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Chemical / geometric plausibility, Symmetry hierarchy / diversity, Symmetric initialization, Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 Not applicable — non-trained algorithm
@@ -284,11 +288,11 @@ No separate item verified.
 **Evaluation:**
 - [Elemental, binary and ternary known crystal systems](https://doi.org/10.1103/PhysRevB.82.094116) — Particle-swarm structure recovery. Original CALYPSO paper reports recovery over metallic, ionic and covalent systems; exact named-system manifest not recovered from abstract
 
-Official distribution and manual describe licensed registration/request access and binary releases. No public source-code repository was verified. CALYPSO-Python documentation is separate from evidence that the full CSP source is publicly downloadable.
+Official distribution and manual describe licensed registration/request access and binary releases. No public source-code repository was verified. CALYPSO-Python documentation is separate from evidence that the full CSP source is publicly downloadable. SPAI (2022) is the symmetry-preserving divide-and-conquer method implemented in CALYPSO. The v10.1.x documentation lists IAlgo=3 as ABC with symmetry; no separate public SPAI source release was verified.
 
 Core search, enumeration, construction or DFT-screening algorithm does not require a fixed pretrained dataset. Optional evaluators and extensions must be qualified separately. Primary source links retained; named examples are not assumed to be standardized benchmarks.
 
-**Checked:** 2026-10-16. **Evidence:** [source 1](https://download.calypso.cn/home/) · [source 2](https://download.calypso.cn/releasenotes/) · [source 3](https://www.calypso.cn/static/web/documentation/CALYPSO_Manual_English.pdf) · [source 4](https://doi.org/10.1103/PhysRevB.82.094116) · [source 5](https://doi.org/10.1016/j.cpc.2012.05.008)
+**Checked:** 2026-10-17. **Evidence:** [source 1](https://download.calypso.cn/home/) · [source 2](https://download.calypso.cn/releasenotes/) · [source 3](https://www.calypso.cn/static/web/documentation/CALYPSO_Manual_English.pdf) · [source 4](https://doi.org/10.1063/5.0074677) · [source 5](https://calypso.cn/docs/posts/_input_parameters.html#ialgo) · [source 6](https://doi.org/10.1103/PhysRevB.82.094116) · [source 7](https://doi.org/10.1016/j.cpc.2012.05.008)
 
 <a id="casting"></a>
 ## CASTING
@@ -327,7 +331,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** [Code](https://github.com/TengLong1993/CCDCGAN-for-single-system) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -416,7 +420,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -502,7 +506,7 @@ This canonical record is the learned CHGNet potential itself, so MPtrj is main-m
 
 **Source / access:** [Code](https://github.com/usccolumbia/cmcrystal) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -530,9 +534,11 @@ Author README inspected; model and dataset payloads were not downloaded or execu
 
 **Source / access:** [Code](https://github.com/usccolumbia/DE-CSP-highsymmetry) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 Not applicable — non-trained algorithm
@@ -586,7 +592,7 @@ Author README inspected; model and dataset payloads were not downloaded or execu
 
 **Source / access:** [Code](https://github.com/Yuxinya/SG_predict) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -614,7 +620,7 @@ Author README inspected; model and dataset payloads were not downloaded or execu
 
 **Source / access:** [Code](https://github.com/kaist-amsg/Composition-Conditioned-Crystal-GAN) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -700,7 +706,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -760,7 +766,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Code](https://github.com/wu-han-lin/CrysBFN) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Public pretrained download
 - [Released pretrained model / checkpoints](https://drive.google.com/drive/folders/1W5kGiZYFRJZiyKyTwCdcPk9lbjTsTCO-?usp=drive_link) — Main model / Public download (official release instructions; no inference performed)
@@ -792,6 +798,8 @@ Model/component training-data usage is listed with role and split qualifications
 **License:** Open-source license verified [MIT](https://github.com/tsudalab/CRYSIM/blob/main/LICENSE)
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 - [M3GNet pretrained energy evaluator](https://github.com/materialyzeai/m3gnet/tree/main/pretrained) — Optional evaluator / Hosted API
 
 **Training data:**
@@ -819,7 +827,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](https://www.mdpi.com/2411-5134/10/2/26/html) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -847,7 +855,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Code](https://github.com/AuroraLHT/cryspnet) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Public pretrained download
 - [CRYSPNet learner.zip (fastai v2)](https://drive.google.com/file/d/1rpbV2-mnNj3M16-4BKvhuo5pkeoIY96q/view?usp=sharing) — Main model / Public download
@@ -968,6 +976,8 @@ Explicit pressure-conditioned training example uses MP-CALYPSO-60. MP-20 formati
 **License:** Open-source license verified [Apache-2.0](https://github.com/deepmodeling/CrystalFormer/blob/main/LICENSE)
 
 **Pretrained model:** Public pretrained download
+
+**Structural knowledge:** Prototypes / substitution, Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 - [Multitask and CSP-only Alex20s checkpoints](https://huggingface.co/zdcao/CrystalFormer) — Main model / Public download (official release instructions; no inference performed)
 
 **Training data:**
@@ -1022,7 +1032,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -1143,7 +1153,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](https://sargentcentre.org/impact/spinouts-software/) — Registration or request required
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1171,7 +1181,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** [Project](https://sargentcentre.org/impact/spinouts-software/) — Registration or request required
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1199,7 +1209,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** [Project](https://www.physics.udel.edu/~szalewic/SAPT/SAPT.html) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -1255,7 +1265,7 @@ Bounded check of author repository/paper sources; exact main-model training data
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -1315,6 +1325,8 @@ Author README inspected; model and dataset payloads were not downloaded or execu
 **License:** Open-source license verified [MIT](https://github.com/Minoru938/CSPML/blob/master/LICENSE)
 
 **Pretrained model:** Public pretrained download
+
+**Structural knowledge:** Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
 - [CSPML embedded pretrained classifiers](https://github.com/Minoru938/CSPML#cspml-crystal-structure-prediction-with-machine-learning-based-element-substitution) — Main model / Public download
 
 **Training data:**
@@ -1405,6 +1417,8 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
+**Structural knowledge:** Chemical / geometric plausibility, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
+
 **Training data:**
 Not verified
 
@@ -1429,7 +1443,7 @@ Learned model/component or adaptive surrogate identified; exact training corpus 
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1485,7 +1499,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -1513,7 +1527,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](https://sites.google.com/view/yezhuyifan/) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -1579,6 +1593,8 @@ Explicit author data/training instructions establish usage. MP-20 and MPTS-52 ar
 **License:** Open-source license verified [MIT](https://raw.githubusercontent.com/jiaor17/DiffCSP-PP/main/LICENSE)
 
 **Pretrained model:** Public pretrained download
+
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 - [Released pretrained model / checkpoints](https://drive.google.com/drive/folders/1FQ_b6CE09KtyGaU_r6uO8_I5JhrQmUFB?usp=sharing) — Main model / Public download (official release instructions; no inference performed)
 
 **Training data:**
@@ -1611,7 +1627,7 @@ Author README supports Perov-5, Carbon-24, MP-20 and MPTS-52; its cited Alex-MP-
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1639,7 +1655,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -1667,7 +1683,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Code](https://github.com/usccolumbia/dmcrystal) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1731,6 +1747,8 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
+**Structural knowledge:** Cation / occupation ordering, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
+
 **Training data:**
 Not applicable — non-trained algorithm
 
@@ -1790,7 +1808,7 @@ Explicit author data/training instructions establish usage. MP-20 and MPTS-52 ar
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1885,6 +1903,8 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility — [Mechanisms and limits](structural-priors.md)
+
 **Training data:**
 Not applicable — non-trained algorithm
 
@@ -1937,7 +1957,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** [Code](https://www.noamarom.com/wp-content/uploads/2023/01/GAtor_Test.zip) — Source download
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -1965,7 +1985,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** [Code](https://github.com/aklipf/gemsdiff) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Public pretrained download
 - [Released checkpoints without lattice diffusion](https://github.com/aklipf/gemsdiff/tree/main/runs/without_cell_diffusion) — Main model / Public download (official release instructions; no inference performed)
@@ -2022,7 +2042,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** [Project](https://eprints.soton.ac.uk/385478) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2050,7 +2070,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** [Project](http://www.comates.group/links?software=gn_oa) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2107,7 +2127,7 @@ Bounded check of author repository/paper sources; exact main-model training data
 
 **Source / access:** [Code](https://www.cristal.org/grinsp/) — Source download
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2135,7 +2155,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2192,7 +2212,7 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Source / access:** [Code](https://github.com/kaist-amsg/imatgen) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -2220,7 +2240,7 @@ Bounded author README/source check did not establish exact main-model training d
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2248,7 +2268,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2357,13 +2377,15 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Evolutionary and genetic search · Atomic / inorganic · CSP search / proposal implementation**
 
-[2025 CSP170](https://doi.org/10.1038/s43588-025-00775-z)
+[2025 CSP170](https://doi.org/10.1038/s43588-025-00775-z) · [2023 MAGUS2023](https://doi.org/10.1093/nsr/nwad128)
 
-**Source / access:** [Project](https://gitlab.com/bigd4/magus) — Registration or request required
+**Source / access:** [Code](https://zenodo.org/records/14730874) — Source download
 
-**License:** No source license verified 
+**License:** Restricted / non-open-source license [Academic non-commercial terms; registration/approval and no redistribution](https://zenodo.org/records/14730874)
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Molecular units / chemical motifs, Symmetry hierarchy / diversity, Symmetry-preserving exploration, Topology / connectivity — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 Not applicable — non-trained algorithm
@@ -2374,11 +2396,11 @@ No separate item verified.
 **Evaluation:**
 - [MgAl2O4, gamma-boron, phosphorus allotropes and Si(111)-(7×7)](https://doi.org/10.1038/s43588-025-00775-z) — Symmetry-principle MAGUS optimization. 2025 method-specific tests; paper-defined benchmarks, not a standardized CSP corpus
 
-Developer GitLab public README identifies Jian Sun group and the 2025 paper, but How to get access explicitly requires registration and invitation before full source can be seen. GitLab link is a project/access portal, not a verified public source repository. Registration endpoint: https://table.nju.edu.cn/dtable/forms/custom/magus/.
+MAGUS v2.0.0 has a public source-code-and-demo.zip on Zenodo. The archive description imposes academic non-commercial terms and registration/approval; GitLab updates require registration. Includes the 2023 framework and 2025 symmetry-principle paper; no runtime validation.
 
 Core symmetry/group/graph-guided evolutionary generator is non-trained; optional learned potentials can be used but their datasets were not established for these reported tests.
 
-**Checked:** 2026-10-16. **Evidence:** [source 1](https://gitlab.com/bigd4/magus) · [source 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC10275355/) · [source 3](https://doi.org/10.1038/s43588-025-00775-z) · [source 4](https://www.nature.com/articles/s43588-025-00775-z)
+**Checked:** 2026-10-17. **Evidence:** [source 1](https://gitlab.com/bigd4/magus) · [source 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC10275355/) · [source 3](https://zenodo.org/records/14730874) · [source 4](https://doi.org/10.1093/nsr/nwad128) · [source 5](https://zenodo.org/api/records/14730874) · [source 6](https://doi.org/10.1038/s43588-025-00775-z) · [source 7](https://www.nature.com/articles/s43588-025-00775-z)
 
 <a id="maise"></a>
 ## MAISE
@@ -2488,6 +2510,8 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility — [Mechanisms and limits](structural-priors.md)
+
 **Training data:**
 Not applicable — non-trained algorithm
 
@@ -2568,7 +2592,7 @@ Author README inspected; model and dataset payloads were not downloaded or execu
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2653,7 +2677,7 @@ Bounded check of author repository/paper sources; exact main-model training data
 
 **Source / access:** [Code](https://github.com/zhongliliu/muse) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2681,7 +2705,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -2752,7 +2776,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](https://www.nature.com/articles/s41524-026-02180-0) — Registration or request required
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2840,7 +2864,7 @@ CSD-derived training explicitly documented. Model weights and source code use di
 
 **Source / access:** [Code](https://github.com/sadmanomee/ParetoCSP) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 - [M3GNet pretrained energy evaluator](https://github.com/materialyzeai/m3gnet/tree/main/pretrained) — Optional evaluator / Hosted API
@@ -2873,6 +2897,8 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
+**Structural knowledge:** Symmetry hierarchy / diversity — [Mechanisms and limits](structural-priors.md)
+
 **Training data:**
 Not applicable — non-trained algorithm
 
@@ -2897,7 +2923,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -2925,7 +2951,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3014,6 +3040,8 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
 **Training data:**
 Not applicable — non-trained algorithm
 
@@ -3041,6 +3069,8 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 **License:** Open-source license verified [BSD-3-Clause](https://github.com/xtalopt/randSpg/blob/master/COPYING)
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Chemical / geometric plausibility, Symmetric initialization, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 Not applicable — non-trained algorithm
@@ -3122,7 +3152,7 @@ Main-model training data remain unverified. Evaluation datasets and validation s
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3150,7 +3180,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** [Code](https://github.com/ngminhtri0394/SHAFT) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -3206,7 +3236,7 @@ Learned model/component or adaptive surrogate identified; exact training corpus 
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3284,6 +3314,36 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Checked:** 2026-10-16. **Evidence:** [source 1](https://pubs.rsc.org/en/content/articlepdf/2025/dd/d5dd00304k) · [source 2](https://github.com/takuyhaa/SPaDe-CSP) · [source 3](https://doi.org/10.1039/D5DD00304K) · [source 4](https://raw.githubusercontent.com/takuyhaa/SPaDe-CSP/main/README.md) · [source 5](https://raw.githubusercontent.com/takuyhaa/SPaDe-CSP/main/LICENSE) · [source 6](https://github.com/takuyhaa/SPaDe-CSP#installation)
 
+<a id="symmetry-divide-conquer"></a>
+## SPAI / CALYPSO symmetry divide-and-conquer
+
+**Construction, templates and discrete search · Atomic / inorganic · Algorithm described in paper; source not verified**
+
+[2022 CSP108](https://doi.org/10.1063/5.0074677)
+
+**Source / access:** [Project](https://download.calypso.cn/home/) — Registration or request required
+
+**License:** No source license verified
+
+**Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Symmetry hierarchy / diversity, Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
+**Training data:**
+Not applicable — non-trained algorithm
+
+**Reference data:**
+No separate item verified.
+
+**Evaluation:**
+No separate item verified.
+
+SPAI is implemented within CALYPSO according to the primary paper. The parent software portal requires registration. No separate public standalone source release was verified. The documented method organizes space groups, Wyckoff combinations and coordinates; it excludes P1 in the reported search.
+
+Core search, enumeration, construction or DFT-screening algorithm does not require a fixed pretrained dataset. Optional evaluators and extensions must be qualified separately. Primary source links retained; named examples are not assumed to be standardized benchmarks.
+
+**Checked:** 2026-10-17. **Evidence:** [source 1](https://doi.org/10.1063/5.0074677) · [source 2](https://www.shaoxc.com/assets/pdf/publications/shao2022symmetry.pdf) · [source 3](https://calypso.cn/docs/posts/_input_parameters.html#ialgo)
+
 <a id="spinner"></a>
 ## SPINNER
 
@@ -3322,7 +3382,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](https://www.lasphub.com/) — Registration or request required
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3378,9 +3438,11 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Code](https://github.com/sibasmarak/SymmCD) — Public source repository
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
+
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 - [Perov-5](https://github.com/txie-93/cdvae/tree/main/data/perov_5) — Main model training. Author-provided training split; exact counts and split identity not independently compared.
@@ -3412,7 +3474,7 @@ Explicit author data/training instructions establish usage. MP-20 and MPTS-52 ar
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3431,34 +3493,6 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Checked:** 2026-10-16. **Evidence:** [source 1](https://doi.org/10.1103/PhysRevB.98.174107)
 
-<a id="symmetry-divide-conquer"></a>
-## Symmetry-orientated divide-and-conquer CSP
-
-**Construction, templates and discrete search · Atomic / inorganic · Algorithm described in paper; source not verified**
-
-[2022 CSP108](https://doi.org/10.1063/5.0074677)
-
-**Source / access:** No source or access link verified — No public code verified
-
-**License:** No source license verified 
-
-**Pretrained model:** Not applicable — non-trained algorithm
-
-**Training data:**
-Not applicable — non-trained algorithm
-
-**Reference data:**
-No separate item verified.
-
-**Evaluation:**
-No separate item verified.
-
-Primary paper defines the algorithm. An author-maintained public source repository or source download for this particular implementation was not verified; this label does not mean no code exists. The descriptive entry name is not a claimed software-package name.
-
-Core search, enumeration, construction or DFT-screening algorithm does not require a fixed pretrained dataset. Optional evaluators and extensions must be qualified separately. Primary source links retained; named examples are not assumed to be standardized benchmarks.
-
-**Checked:** 2026-10-16. **Evidence:** [source 1](https://doi.org/10.1063/5.0074677)
-
 <a id="systematic-network-enumeration"></a>
 ## Systematic crystalline-network enumeration (Delgado Friedrichs et al.)
 
@@ -3468,7 +3502,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3496,7 +3530,7 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 
 **Source / access:** No source or access link verified — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3527,6 +3561,8 @@ Core search, enumeration, construction or DFT-screening algorithm does not requi
 **License:** Open-source license verified [MIT](https://github.com/usccolumbia/TCSP/blob/main/LICENSE)
 
 **Pretrained model:** Public pretrained download
+
+**Structural knowledge:** Chemical / geometric plausibility, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
 - [BERTOS oxidation-state checkpoint](https://figshare.com/articles/journal_contribution/BERTOS/28379117) — Required component / Public download
 
 **Training data:**
@@ -3614,7 +3650,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](https://unified-materials.github.io/unimat/) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** No pretrained release verified
 
@@ -3646,7 +3682,7 @@ Model/component training-data usage is listed with role and split qualifications
 
 **Source / access:** [Project](http://www.crystal.chem.uu.nl/~vaneyck/upack.html) — No public code verified
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
 
@@ -3670,13 +3706,15 @@ Classical lattice-energy search/minimization is not a pretrained generative mode
 
 **Evolutionary and genetic search · Atomic / inorganic · CSP search / proposal implementation**
 
-[2006 CSP027](https://doi.org/10.1063/1.2210932) · [2006 CSP030](https://doi.org/10.1016/j.cpc.2006.07.020) · [2010 CSP044](https://doi.org/10.1016/j.cpc.2010.06.007) · [2012 CSP055](https://doi.org/10.1039/C2CE06642D) · [2013 CSP057](https://doi.org/10.1016/j.cpc.2012.12.009) · [2019 CSP085](https://uspex-team.org/static/file/Podryabinkin-2019.pdf)
+[2006 CSP027](https://doi.org/10.1063/1.2210932) · [2006 CSP030](https://doi.org/10.1016/j.cpc.2006.07.020) · [2010 CSP044](https://doi.org/10.1016/j.cpc.2010.06.007) · [2012 CSP055](https://doi.org/10.1039/C2CE06642D) · [2013 CSP057](https://doi.org/10.1016/j.cpc.2012.12.009) · [2019 CSP085](https://uspex-team.org/static/file/Podryabinkin-2019.pdf) · [2019 USPEXTopology2019](https://doi.org/10.1016/j.cpc.2018.09.016) · [2012 MolecularUSPEX2012](https://doi.org/10.1107/S0108768112017466)
 
 **Source / access:** [Project](https://uspex-team.org/documentation.html/uspex/downloads) — Registration or request required
 
-**License:** No source license verified 
+**License:** No source license verified
 
 **Pretrained model:** Not applicable — non-trained algorithm
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization, Topology / connectivity — [Mechanisms and limits](structural-priors.md)
 
 **Training data:**
 Not applicable — non-trained algorithm
@@ -3688,11 +3726,11 @@ No separate item verified.
 - [Oxygen, sulphur, carbon, nitrogen and CaCO3 high-pressure phases](https://doi.org/10.1063/1.2210932) — Original USPEX crystal recovery/discovery. 2006 JCP abstract: tests with up to 40 atoms/cell, ionic/covalent/metallic/molecular systems; exact manifest not verified
 - [USPEX 2006 CPC known-structure tests](https://uspex-team.org/static/file/CPC-USPEX-2006.pdf) — Stable-structure recovery. Tables 2–3: C, Xe, Si, N, Fe, TiO2, SiO2, Al2O3, MgSiO3, Si2N2O, SrSiN2, urea and Li at specified pressures/cells; separate CPC companion protocol
 
-Official portal requires registration. Recent USPEX25 documentation describes a binary package; this link is a software-access portal, not a verified public source repository. Evolutionary metadynamics and active-learning MTP variants are linked as USPEX workflows, not separate independently verified public releases. Access and redistribution terms differ between historical versions.
+Official portal requires registration. Recent USPEX25 documentation describes a binary package; this link is a software-access portal, not a verified public source repository. Evolutionary metadynamics and active-learning MTP variants are linked as USPEX workflows, not separate independently verified public releases. Access and redistribution terms differ between historical versions. The topology-based generator (2019) and constrained molecular search (2012) are USPEX methods; a separate public standalone source release was not verified.
 
 Core search, enumeration, construction or DFT-screening algorithm does not require a fixed pretrained dataset. Optional evaluators and extensions must be qualified separately. Primary source links retained; named examples are not assumed to be standardized benchmarks.
 
-**Checked:** 2026-10-16. **Evidence:** [source 1](https://uspex-team.org/documentation.html/uspex/downloads) · [source 2](https://uspex-team.org/static/file/uspex_manual_english_v25.pdf) · [source 3](https://arxiv.org/abs/1105.1729) · [source 4](https://arxiv.org/abs/1211.0591) · [source 5](https://doi.org/10.1063/1.2210932) · [source 6](https://doi.org/10.1016/j.cpc.2006.07.020) · [source 7](https://doi.org/10.1016/j.cpc.2010.06.007) · [source 8](https://doi.org/10.1039/C2CE06642D) · [source 9](https://doi.org/10.1016/j.cpc.2012.12.009) · [source 10](https://uspex-team.org/static/file/Podryabinkin-2019.pdf) · [source 11](https://pubmed.ncbi.nlm.nih.gov/16821993/) · [source 12](https://uspex-team.org/static/file/CPC-USPEX-2006.pdf)
+**Checked:** 2026-10-17. **Evidence:** [source 1](https://uspex-team.org/documentation.html/uspex/downloads) · [source 2](https://uspex-team.org/static/file/uspex_manual_english_v25.pdf) · [source 3](https://doi.org/10.1016/j.cpc.2018.09.016) · [source 4](https://doi.org/10.1107/S0108768112017466) · [source 5](https://uspex-team.org/en/uspex/overview) · [source 6](https://arxiv.org/abs/1105.1729) · [source 7](https://arxiv.org/abs/1211.0591) · [source 8](https://doi.org/10.1063/1.2210932) · [source 9](https://doi.org/10.1016/j.cpc.2006.07.020) · [source 10](https://doi.org/10.1016/j.cpc.2010.06.007) · [source 11](https://doi.org/10.1039/C2CE06642D) · [source 12](https://doi.org/10.1016/j.cpc.2012.12.009) · [source 13](https://uspex-team.org/static/file/Podryabinkin-2019.pdf) · [source 14](https://pubmed.ncbi.nlm.nih.gov/16821993/) · [source 15](https://uspex-team.org/static/file/CPC-USPEX-2006.pdf)
 
 <a id="wren-aviary"></a>
 ## Wren (aviary)

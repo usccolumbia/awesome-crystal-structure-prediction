@@ -1,6 +1,6 @@
 # Paper catalogue
 
-205 records, grouped by primary category. All source records are in [papers.json](../data/papers.json); citations are in [references.bib](../references.bib).
+208 records, grouped by primary category. All source records are in [papers.json](../data/papers.json); citations are in [references.bib](../references.bib).
 
 ## Construction, templates and discrete search
 
@@ -184,6 +184,8 @@ Gus L. W. Hart; Rodney W. Forcade. *Physical Review B*. [Paper](https://doi.org/
 
 **Inputs:** Parent lattice; species; supercell-size bounds
 
+**Structural knowledge:** Cation / occupation ordering, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [enumlib](software.md#enumlib)
 
 **Groups:** [Hart–Forcade enumeration team](https://doi.org/10.1103/PhysRevB.77.224115)
@@ -203,6 +205,8 @@ Geoffroy Hautier; Chris Fischer; Virginie Ehrlacher; Anubhav Jain; Gerbrand Cede
 
 **Inputs:** Known ionic crystal templates and substitution species
 
+**Structural knowledge:** Chemical / geometric plausibility, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [Data-mined ionic substitution (pymatgen implementation)](software.md#pymatgen-ionic-substitution)
 
 **Groups:** [Gerbrand Ceder / data-driven crystal modeling](https://pubs.acs.org/doi/abs/10.1021/ic102031h)
@@ -221,6 +225,8 @@ Gus L.W. Hart; Lance J. Nelson; Rodney W. Forcade. *Computational Materials Scie
 **Method:** Enumerate distinct atomic decorations efficiently while fixing composition.. Enumerate distinct atomic decorations efficiently while fixing composition.
 
 **Inputs:** Parent lattice; fixed concentrations; cell bounds
+
+**Structural knowledge:** Cation / occupation ordering, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [enumlib](software.md#enumlib)
 
@@ -247,6 +253,27 @@ Jason C. Cole; Colin R. Groom; Murray G. Read; Ilenia Giangreco; Patrick McCabe;
 
 **Scope:** Requires suitable database analogues; conformational flexibility, special sites and multicomponent cases need further development.
 
+<a id="uspextopology2019"></a>
+### 2019 — Topology-based crystal structure generator
+
+**USPEXTopology2019 · Published journal article · Atomic / inorganic**
+
+Pavel V. Bushlanov; Vladislav A. Blatov; Artem R. Oganov. *Computer Physics Communications*. [Paper](https://doi.org/10.1016/j.cpc.2018.09.016)
+
+**Method:** Topological net construction for evolutionary CSP. Select suitable idealized periodic nets, decorate for the target stoichiometry, and use candidates directly or within evolutionary search.
+
+**Inputs:** Composition, permitted cell sizes and a periodic-net library
+
+**Structural knowledge:** Symmetric initialization, Topology / connectivity — [Mechanisms and limits](structural-priors.md)
+
+**Software:** [USPEX](software.md#uspex)
+
+**Groups:** [Oganov / USPEX collaboration](https://doi.org/10.1016/j.cpc.2018.09.016)
+
+**Evidence:** Primary paper and developer descriptions; Crossref title/authors verified. [source 1](https://doi.org/10.1016/j.cpc.2018.09.016)
+
+**Scope:** Finite net-library and decoration coverage; topology is not a fixed space-group label.
+
 <a id="csp108"></a>
 ### 2022 — A symmetry-orientated divide-and-conquer method for crystal structure prediction
 
@@ -258,7 +285,9 @@ Xuecheng Shao; Jian Lv; Peng Liu; Sen Shao; Pengyue Gao; Hanyu Liu; Yanchao Wang
 
 **Inputs:** Composition and symmetry representations
 
-**Software:** [Symmetry-orientated divide-and-conquer CSP](software.md#symmetry-divide-conquer)
+**Structural knowledge:** Symmetry hierarchy / diversity, Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
+**Software:** [SPAI / CALYPSO symmetry divide-and-conquer](software.md#symmetry-divide-conquer) · [CALYPSO](software.md#calypso)
 
 **Groups:** [Yanming Ma–Yanchao Wang / CALYPSO collaboration](https://doi.org/10.1063/5.0074677)
 
@@ -276,6 +305,8 @@ Minoru Kusaba; Chang Liu; Ryo Yoshida. *Computational Materials Science*. [Paper
 **Method:** CSPML metric-learning template selection. Formula → classify template isomorphism → select database templates → element substitution → relaxation
 
 **Inputs:** Query composition and structure database
+
+**Structural knowledge:** Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [CSPML](software.md#cspml)
 
@@ -295,6 +326,8 @@ Lai Wei; Nihang Fu; Edirisuriya M. D. Siriwardane; Wenhui Yang; Sadman Sadeed Om
 **Method:** TCSP chemistry-informed template matching / substitution. Formula → chemistry / oxidation-state template ranking → substitute elements → candidate structures
 
 **Inputs:** Query composition and known templates
+
+**Structural knowledge:** Chemical / geometric plausibility, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [TCSP / TCSP2.0](software.md#tcsp)
 
@@ -334,6 +367,8 @@ Chen Liang; Diptesh Das; Jiang Guo; Ryo Tamura; Zetian Mao; Koji Tsuda. *Communi
 
 **Inputs:** Composition, symmetry encoding and objective evaluator
 
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [CRYSIM](software.md#crysim)
 
 **Groups:** [Yamashita–Tsuda / adaptive CSP collaboration](https://www.nature.com/articles/s42005-025-02380-y)
@@ -352,6 +387,8 @@ Lai Wei; Rongzhi Dong; Nihang Fu; Sadman Sadeed Omee; Jianjun Hu. *Computational
 **Method:** TCSP2.0: learned oxidation states, element embeddings and symmetry voting. Formula → BERTOS oxidation states → embedding-ranked templates → symmetry voting → substitution
 
 **Inputs:** Composition and crystal-template database
+
+**Structural knowledge:** Chemical / geometric plausibility, Prototypes / substitution — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [TCSP / TCSP2.0](software.md#tcsp)
 
@@ -411,6 +448,8 @@ Chris J. Pickard; R. J. Needs. *Physical Review Letters*. [Paper](https://doi.or
 **Method:** Introduce random initialization followed by first-principles enthalpy relaxation for crystal prediction.. Introduce random initialization followed by first-principles enthalpy relaxation for crystal prediction.
 
 **Inputs:** Chemical composition; atom counts or cell-size bounds; pressure
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [AIRSS / buildcell](software.md#airss)
 
@@ -524,6 +563,8 @@ Patrick Avery; Eva Zurek. *Computer Physics Communications*. [Paper](https://doi
 
 **Inputs:** Composition; chosen space groups; cell/distance bounds
 
+**Structural knowledge:** Chemical / geometric plausibility, Symmetric initialization, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [RandSpg](software.md#randspg)
 
 **Groups:** [Zurek / XtalOpt team](https://researchconnect.buffalo.edu/en/publications/randspg-an-open-source-program-for-generating-atomistic-crystal-s/)
@@ -599,6 +640,8 @@ Scott Fredericks; Kevin Parrish; Dean Sayre; Qiang Zhu. *Computer Physics Commun
 **Method:** Generate atomic or molecular structures consistent with specified symmetry and Wyckoff-site compatibility.. Generate atomic or molecular structures consistent with specified symmetry and Wyckoff-site compatibility.
 
 **Inputs:** Composition; symmetry group; optional molecular geometry
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [PyXtal](software.md#pyxtal)
 
@@ -876,6 +919,27 @@ David C. Lonie; Eva Zurek. *Computer Physics Communications*. [Paper](https://do
 
 **Scope:** Finite search budgets and evaluator errors prevent a proof of the global ground state.
 
+<a id="molecularuspex2012"></a>
+### 2012 — Constrained evolutionary algorithm for structure prediction of molecular crystals: methodology and applications
+
+**MolecularUSPEX2012 · Published journal article · Molecular / organic**
+
+Qiang Zhu; Artem R. Oganov; Colin W. Glass; Harold T. Stokes. *Acta Crystallographica Section B Structural Science*. [Paper](https://doi.org/10.1107/S0108768112017466)
+
+**Method:** Constrained molecular evolutionary CSP. Construct and vary packings of molecular units; sample symmetry and relax candidate crystals.
+
+**Inputs:** Molecular units, composition and search bounds
+
+**Structural knowledge:** Molecular units / chemical motifs, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
+
+**Software:** [USPEX](software.md#uspex)
+
+**Groups:** [Oganov / USPEX collaboration](https://doi.org/10.1107/S0108768112017466)
+
+**Evidence:** Primary paper and developer descriptions; Crossref title/authors verified. [source 1](https://doi.org/10.1107/S0108768112017466)
+
+**Scope:** Constraining units can exclude alternative bonding or dissociation.
+
 <a id="csp057"></a>
 ### 2013 — New developments in evolutionary structure prediction algorithm USPEX
 
@@ -886,6 +950,8 @@ Andriy O. Lyakhov; Artem R. Oganov; Harold T. Stokes; Qiang Zhu. *Computer Physi
 **Method:** Combine random symmetric initialization, environment-aware variation and antiseeds to reduce search trapping.. Combine random symmetric initialization, environment-aware variation and antiseeds to reduce search trapping.
 
 **Inputs:** Chemical composition; atom counts or cell-size bounds; pressure
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [USPEX](software.md#uspex)
 
@@ -1159,6 +1225,27 @@ Amit Kadan; Kevin Ryczko; Andrew Wildman; Rodrigo Wang; Adrian Roitberg; Takeshi
 
 **Scope:** Success depends on molecular/element coverage and potential quality; reported target recovery is not completeness.
 
+<a id="magus2023"></a>
+### 2023 — MAGUS: machine learning and graph theory assisted universal structure searcher
+
+**MAGUS2023 · Published journal article · Atomic / inorganic**
+
+Junjie Wang; Hao Gao; Yu Han; Chi Ding; Shuning Pan; Yong Wang; Qiuhan Jia; Hui-Tian Wang; Dingyu Xing; Jian Sun. *National Science Review*. [Paper](https://doi.org/10.1093/nsr/nwad128)
+
+**Method:** Graph-decomposition and ML-assisted evolutionary search. Extract and rearrange graph-based fragments; accelerate structure evaluation using on-the-fly learned potentials.
+
+**Inputs:** Composition, cell bounds and a reference energy evaluator
+
+**Structural knowledge:** Molecular units / chemical motifs, Symmetry hierarchy / diversity, Symmetry-preserving exploration, Topology / connectivity — [Mechanisms and limits](structural-priors.md)
+
+**Software:** [MAGUS](software.md#magus)
+
+**Groups:** [Jian Sun–Wang–Han / MAGUS team](https://doi.org/10.1093/nsr/nwad128)
+
+**Evidence:** Primary paper and developer descriptions; Crossref title/authors verified. [source 1](https://doi.org/10.1093/nsr/nwad128)
+
+**Scope:** Training generated during search is system-dependent; fragment restrictions and potential accuracy affect coverage.
+
 <a id="csp141"></a>
 ### 2024 — Crystal structure prediction using neural network potential and age-fitness Pareto genetic algorithm
 
@@ -1246,6 +1333,8 @@ Yu Han; Chi Ding; Junjie Wang; Hao Gao; Jiuyang Shi; Shaobo Yu; Qiuhan Jia; Shun
 
 **Inputs:** Composition and search/energy settings
 
+**Structural knowledge:** Molecular units / chemical motifs, Symmetry hierarchy / diversity, Symmetry-preserving exploration, Topology / connectivity — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [MAGUS](software.md#magus)
 
 **Groups:** [Jian Sun–Wang–Han / MAGUS team](https://doi.org/10.1038/s43588-025-00775-z)
@@ -1264,6 +1353,8 @@ Sadman Sadeed Omee; Lai Wei; Sourin Dey; Jianjun Hu. *Advanced Science*. [Paper]
 **Method:** ParetoCSP2: symmetry-diverse Pareto evolutionary CSP. Symmetry-aware generation → neural-potential relaxation → age/fitness and adaptive space-group diversity selection
 
 **Inputs:** Composition and population / symmetry bounds
+
+**Structural knowledge:** Symmetry hierarchy / diversity — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [ParetoCSP2](software.md#paretocsp2)
 
@@ -1305,6 +1396,8 @@ Yanchao Wang; Jian Lv; Li Zhu; Yanming Ma. *Physical Review B*. [Paper](https://
 
 **Inputs:** Chemical composition; atom counts or cell-size bounds; pressure
 
+**Structural knowledge:** Chemical / geometric plausibility, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [CALYPSO](software.md#calypso)
 
 **Groups:** [Yanming Ma–Yanchao Wang / CALYPSO collaboration](https://arxiv.org/abs/1008.3601)
@@ -1323,6 +1416,8 @@ Yanchao Wang; Jian Lv; Li Zhu; Yanming Ma. *Computer Physics Communications*. [P
 **Method:** Combine PSO with symmetry-constrained initialization, structure duplicate checks and random injection.. Combine PSO with symmetry-constrained initialization, structure duplicate checks and random injection.
 
 **Inputs:** Chemical composition; atom counts or cell-size bounds; pressure
+
+**Structural knowledge:** Chemical / geometric plausibility, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [CALYPSO](software.md#calypso)
 
@@ -1380,6 +1475,8 @@ Yang, Wenhui; Dilanga Siriwardane, Edirisuriya M; Dong, Rongzhi; Li, Yuxin; Hu, 
 **Method:** CMCrystalHS. PyXtal-compatible Wyckoff assignments followed by differential evolution of free coordinates.
 
 **Inputs:** Formula, contact map and space group
+
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [CMCrystalHS](software.md#cmcrystalhs)
 
@@ -1611,6 +1708,8 @@ C. Collins; M. S. Dyer; M. J. Pitcher; G. F. S. Whitehead; M. Zanella; P. Mandal
 
 **Inputs:** Specified chemical phase field and modular crystal-chemistry knowledge
 
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [MC-EMMA](software.md#mc-emma)
 
 **Groups:** [Rosseinsky–Dyer–Collins / Liverpool CSP collaboration](https://doi.org/10.1038/nature22374)
@@ -1629,6 +1728,8 @@ C. Collins; G. R. Darling; M. J. Rosseinsky. *Faraday Discussions*. [Paper](http
 **Method:** Small chemical building blocks are assembled and explored by modified basin hopping.. Chemical submodules → probe structures → basin hopping / relaxation → composition-region ranking
 
 **Inputs:** Phase field or composition and chemical construction rules
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [FUSE / FUSE2](software.md#fuse)
 
@@ -2240,6 +2341,8 @@ Christopher M. Collins; Hasan M. Sayeed; George R. Darling; John B. Claridge; Ta
 
 **Inputs:** Composition, generative model and heuristic CSP settings
 
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [FUSE / FUSE2](software.md#fuse)
 
 **Groups:** [Rosseinsky–Dyer–Collins / Liverpool CSP collaboration](https://doi.org/10.1039/d4fd00094c)
@@ -2699,6 +2802,8 @@ Rui Jiao; Wenbing Huang; Yu Liu; Deli Zhao; Yang Liu. *Published, ICLR 2024*. [P
 
 **Inputs:** Composition and space-group / Wyckoff constraints
 
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [DiffCSP++](software.md#diffcsp-plus-plus)
 
 **Groups:** [Rui Jiao / Wenbing Huang](https://arxiv.org/abs/2402.03992)
@@ -2832,6 +2937,8 @@ Zhendong Cao; Shigang Ou; Lei Wang. **. [Paper](https://arxiv.org/abs/2512.18251
 
 **Inputs:** Composition; additional inference controls depend on version
 
+**Structural knowledge:** Prototypes / substitution, Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [CrystalFormer](software.md#crystalformer)
 
 **Groups:** [CrystalFormer collaboration](https://arxiv.org/abs/2512.18251)
@@ -2908,6 +3015,8 @@ Zhendong Cao; Xiaoshan Luo; Jian Lv; Lei Wang. *Science Bulletin*. [Paper](https
 
 **Inputs:** Space group and autoregressive crystal-token prefix
 
+**Structural knowledge:** Prototypes / substitution, Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
+
 **Software:** [CrystalFormer](software.md#crystalformer)
 
 **Groups:** [CrystalFormer collaboration · Zhendong Cao / Lei Wang](https://doi.org/10.1016/j.scib.2025.09.035)
@@ -2926,6 +3035,8 @@ Daniel Levy; Siba Smarak Panigrahi; Sékou-Oumar Kaba; Qiang Zhu; Kin Long Kelvi
 **Method:** Diffusion on asymmetric units and site symmetry transformations. Sample asymmetric unit + transformations → symmetry-expand full crystal → assess
 
 **Inputs:** Asymmetric unit and site-symmetry generative variables
+
+**Structural knowledge:** Symmetry-preserving exploration, Wyckoff / site assignments — [Mechanisms and limits](structural-priors.md)
 
 **Software:** [SymmCD](software.md#symmcd)
 
@@ -3328,6 +3439,10 @@ Chris J Pickard; R J Needs. *Journal of Physics: Condensed Matter*. [Paper](http
 **Method:** Sample chemically sensible random structures, exploit symmetry or motifs, and locally relax each candidate.. Sample chemically sensible random structures, exploit symmetry or motifs, and locally relax each candidate.
 
 **Inputs:** Chemical composition; atom counts or cell-size bounds; pressure
+
+**Structural knowledge:** Molecular units / chemical motifs, Chemical / geometric plausibility, Symmetric initialization — [Mechanisms and limits](structural-priors.md)
+
+**Software:** [AIRSS / buildcell](software.md#airss)
 
 **Groups:** [Pickard–Needs / AIRSS collaboration](https://arxiv.org/abs/1101.3987)
 
@@ -3758,6 +3873,8 @@ Sterling G. Baird; Hasan M. Sayeed; Joseph Montoya; Taylor D. Sparks. *Journal o
 **Groups:** [Baird–Sparks collaboration](https://joss.theoj.org/papers/10.21105/joss.05618)
 
 **Evidence:** Primary JOSS record and original data repository README. [source 1](https://joss.theoj.org/papers/10.21105/joss.05618) · [source 2](https://github.com/sparks-baird/mp-time-split)
+
+**Scope:** See primary source
 
 <a id="csp180"></a>
 ### 2026 — Crystal Structure Prediction of Inorganic Materials: A Benchmark and Modern Evaluation

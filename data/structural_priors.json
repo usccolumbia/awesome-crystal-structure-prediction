@@ -1,0 +1,518 @@
+{
+  "checked_on": "2026-10-17",
+  "scope": "Source-backed representative methods from the structural-priors survey section. Tags describe documented roles, not universal capability or runtime qualification. Untagged means not assessed in this focused pass.",
+  "features": [
+    {
+      "id": "symmetry-initialization",
+      "label": "Symmetric initialization",
+      "description": "Generate ordered starting structures; symmetry may change later."
+    },
+    {
+      "id": "wyckoff",
+      "label": "Wyckoff / site assignments",
+      "description": "Choose compatible orbit multiplicities, species and free coordinates."
+    },
+    {
+      "id": "symmetry-preserving",
+      "label": "Symmetry-preserving exploration",
+      "description": "Enforce crystallographic constraints during a proposal or search stage."
+    },
+    {
+      "id": "symmetry-diversity",
+      "label": "Symmetry hierarchy / diversity",
+      "description": "Allocate exploration among symmetry classes or retain multiple classes."
+    },
+    {
+      "id": "topology",
+      "label": "Topology / connectivity",
+      "description": "Use periodic nets or graph fragments, rather than only coordinates."
+    },
+    {
+      "id": "building-blocks",
+      "label": "Molecular units / chemical motifs",
+      "description": "Construct and vary reusable molecules, fragments or modules."
+    },
+    {
+      "id": "prototypes",
+      "label": "Prototypes / substitution",
+      "description": "Transfer known structural arrangements and chemical substitutions."
+    },
+    {
+      "id": "ordering",
+      "label": "Cation / occupation ordering",
+      "description": "Enumerate symmetry-distinct decorations of a parent lattice."
+    },
+    {
+      "id": "chemical-constraints",
+      "label": "Chemical / geometric plausibility",
+      "description": "Use separation, coordination or chemical-compatibility constraints."
+    }
+  ],
+  "profiles": [
+    {
+      "id": "uspex-variation",
+      "name": "USPEX: symmetric initialization and variation",
+      "paper_ids": [
+        "CSP057"
+      ],
+      "software_ids": [
+        "uspex"
+      ],
+      "features": [
+        "symmetry-initialization",
+        "building-blocks",
+        "chemical-constraints"
+      ],
+      "role": "Initialize symmetric candidates and favor useful local environments in variation.",
+      "symmetry_behavior": "Initial symmetry may change through variation and relaxation.",
+      "limitations": "This is not a permanently fixed-space-group search.",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.cpc.2012.12.009"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "calypso-construction",
+      "name": "CALYPSO: construction and duplicate control",
+      "paper_ids": [
+        "CSP043",
+        "CSP054"
+      ],
+      "software_ids": [
+        "calypso"
+      ],
+      "features": [
+        "symmetry-initialization",
+        "chemical-constraints"
+      ],
+      "role": "Combine symmetric generation, swarm search and bond-based duplicate rejection.",
+      "symmetry_behavior": "Construction symmetry and subsequent symmetry handling are separate settings.",
+      "limitations": "Same symmetry or energy alone does not establish structural identity.",
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevB.82.094116",
+        "https://doi.org/10.1016/j.cpc.2012.05.008"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "spai",
+      "name": "SPAI / CALYPSO divide-and-conquer",
+      "paper_ids": [
+        "CSP108"
+      ],
+      "software_ids": [
+        "symmetry-divide-conquer",
+        "calypso"
+      ],
+      "features": [
+        "wyckoff",
+        "symmetry-preserving",
+        "symmetry-diversity"
+      ],
+      "role": "Explore a hierarchy of space groups, Wyckoff combinations and coordinates using bee-colony-inspired roles.",
+      "symmetry_behavior": "Preserves symmetry during evolution; reported scheme excludes P1.",
+      "limitations": "Crystallographic subspaces, not independently optimized spatial pieces. Excluding P1 restricts coverage.",
+      "evidence_urls": [
+        "https://doi.org/10.1063/5.0074677",
+        "https://www.shaoxc.com/assets/pdf/publications/shao2022symmetry.pdf",
+        "https://calypso.cn/docs/posts/_input_parameters.html#ialgo"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "randspg",
+      "name": "RandSpg",
+      "paper_ids": [
+        "CSP072"
+      ],
+      "software_ids": [
+        "randspg"
+      ],
+      "features": [
+        "symmetry-initialization",
+        "wyckoff",
+        "chemical-constraints"
+      ],
+      "role": "Generate compatible Wyckoff occupations and reject unsuitable distances.",
+      "symmetry_behavior": "Specified symmetry at construction.",
+      "limitations": "A constructor, not a complete energy-ranking search.",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.cpc.2016.12.005"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "pyxtal",
+      "name": "PyXtal",
+      "paper_ids": [
+        "CSP107"
+      ],
+      "software_ids": [
+        "pyxtal"
+      ],
+      "features": [
+        "symmetry-initialization",
+        "wyckoff",
+        "building-blocks",
+        "chemical-constraints"
+      ],
+      "role": "Construct atomic or molecular crystals with compatible site symmetry.",
+      "symmetry_behavior": "Space, layer, rod and point-group construction; molecular site compatibility.",
+      "limitations": "Atom counts, cell setting and molecular orientations must be compatible.",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.cpc.2020.107810"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "uspex-topology",
+      "name": "Topology-based USPEX generator",
+      "paper_ids": [
+        "USPEXTopology2019"
+      ],
+      "software_ids": [
+        "uspex"
+      ],
+      "features": [
+        "topology",
+        "symmetry-initialization"
+      ],
+      "role": "Decorate idealized periodic nets to create candidates for a target stoichiometry.",
+      "symmetry_behavior": "Net embedding and group relations guide candidate construction.",
+      "limitations": "Net-library and decoration coverage limit exploration; topology differs from geometry.",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.cpc.2018.09.016"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "magus",
+      "name": "MAGUS: graph fragments and symmetry mining",
+      "paper_ids": [
+        "MAGUS2023",
+        "CSP170"
+      ],
+      "software_ids": [
+        "magus"
+      ],
+      "features": [
+        "topology",
+        "building-blocks",
+        "symmetry-preserving",
+        "symmetry-diversity"
+      ],
+      "role": "Combine graph decomposition with later space-group mining, fragment reorganization and symmetry-preserving mutation.",
+      "symmetry_behavior": "Global symmetry and local fragments guide the evolving search.",
+      "limitations": "Source archive is public, but its academic-use terms are not an open-source license.",
+      "evidence_urls": [
+        "https://doi.org/10.1093/nsr/nwad128",
+        "https://doi.org/10.1038/s43588-025-00775-z"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "molecular-uspex",
+      "name": "Constrained molecular USPEX",
+      "paper_ids": [
+        "MolecularUSPEX2012"
+      ],
+      "software_ids": [
+        "uspex"
+      ],
+      "features": [
+        "building-blocks",
+        "symmetry-initialization"
+      ],
+      "role": "Treat molecular units as whole objects in construction and variation.",
+      "symmetry_behavior": "Symmetric packing initialization with unit positions and orientations.",
+      "limitations": "Fixed units can exclude dissociation or changes in bonding.",
+      "evidence_urls": [
+        "https://doi.org/10.1107/S0108768112017466"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "mc-emma",
+      "name": "MC-EMMA",
+      "paper_ids": [
+        "CSP070"
+      ],
+      "software_ids": [
+        "mc-emma"
+      ],
+      "features": [
+        "building-blocks",
+        "chemical-constraints"
+      ],
+      "role": "Assemble chemically informed modules for exploration of complex phase fields.",
+      "symmetry_behavior": "Modular construction does not require a single prescribed space group.",
+      "limitations": "The available modules constrain representable chemistry.",
+      "evidence_urls": [
+        "https://doi.org/10.1038/nature22374"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "fuse",
+      "name": "FUSE / FUSE2",
+      "paper_ids": [
+        "CSP083",
+        "CSP148"
+      ],
+      "software_ids": [
+        "fuse"
+      ],
+      "features": [
+        "building-blocks",
+        "chemical-constraints"
+      ],
+      "role": "Build and rearrange cation–anion modules with stacking and coordination rules.",
+      "symmetry_behavior": "Approximate lattice types do not impose full internal symmetry.",
+      "limitations": "Motif restrictions may exclude unusual coordination or reconstructive changes.",
+      "evidence_urls": [
+        "https://doi.org/10.1039/c8fd00045j",
+        "https://doi.org/10.1039/d4fd00094c"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "substitution",
+      "name": "Data-mined ionic substitution",
+      "paper_ids": [
+        "CSP048"
+      ],
+      "software_ids": [
+        "pymatgen-ionic-substitution"
+      ],
+      "features": [
+        "prototypes",
+        "chemical-constraints"
+      ],
+      "role": "Learn likely ionic substitutions while transferring a known structure type.",
+      "symmetry_behavior": "Inherited template geometry may change during relaxation.",
+      "limitations": "Substitution alone does not specify every ordered site decoration.",
+      "evidence_urls": [
+        "https://doi.org/10.1021/ic102031h"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "tcsp",
+      "name": "TCSP / TCSP2",
+      "paper_ids": [
+        "CSP123",
+        "CSP194"
+      ],
+      "software_ids": [
+        "tcsp"
+      ],
+      "features": [
+        "prototypes",
+        "chemical-constraints"
+      ],
+      "role": "Select and chemically adapt template structures for a specified composition.",
+      "symmetry_behavior": "Template occupations and geometry provide the starting arrangement.",
+      "limitations": "Template coverage differs from unconstrained topology discovery.",
+      "evidence_urls": [
+        "https://pubs.acs.org/doi/10.1021/acs.inorgchem.1c03879",
+        "https://www.sciencedirect.com/science/article/pii/S0927025625006603"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "cspml",
+      "name": "CSPML",
+      "paper_ids": [
+        "CSP115"
+      ],
+      "software_ids": [
+        "cspml"
+      ],
+      "features": [
+        "prototypes"
+      ],
+      "role": "Use learned similarity to retrieve structural templates.",
+      "symmetry_behavior": "Symmetry is inherited through candidate templates.",
+      "limitations": "A missing prototype may be difficult to recover by local relaxation.",
+      "evidence_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0927025622002555"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "enumlib",
+      "name": "Derivative-structure enumeration / enumlib",
+      "paper_ids": [
+        "CSP035",
+        "CSP056"
+      ],
+      "software_ids": [
+        "enumlib"
+      ],
+      "features": [
+        "ordering",
+        "prototypes"
+      ],
+      "role": "Enumerate distinct parent-lattice occupations while removing symmetry-equivalent arrangements.",
+      "symmetry_behavior": "Decorations may lower parent symmetry or require supercells.",
+      "limitations": "Completeness holds only within the chosen parent and cell-size bounds.",
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevB.77.224115",
+        "https://doi.org/10.1016/j.commatsci.2012.02.015"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "airss",
+      "name": "AIRSS / buildcell",
+      "paper_ids": [
+        "CSP028",
+        "CSP045"
+      ],
+      "software_ids": [
+        "airss"
+      ],
+      "features": [
+        "symmetry-initialization",
+        "building-blocks",
+        "chemical-constraints"
+      ],
+      "role": "Sample plausible starts using volume, separation, symmetry and structural-unit information.",
+      "symmetry_behavior": "Construction constraints are selected for the system and workflow.",
+      "limitations": "Chemical constraints are domain-dependent, particularly under pressure.",
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevLett.97.045504",
+        "https://doi.org/10.1088/0953-8984/23/5/053201"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "cmcrystalhs",
+      "name": "CMCrystalHS",
+      "paper_ids": [
+        "CMCrystalHS2021"
+      ],
+      "software_ids": [
+        "cmcrystalhs"
+      ],
+      "features": [
+        "wyckoff",
+        "symmetry-preserving"
+      ],
+      "role": "Use PyXtal assignments and differential evolution over free Wyckoff coordinates.",
+      "symmetry_behavior": "Supplied symmetry and a contact-map objective constrain reconstruction.",
+      "limitations": "Descriptor-assisted reconstruction supplies more information than formula-only prediction.",
+      "evidence_urls": [
+        "https://doi.org/10.1088/1361-648x/ac1d6c"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "crysim",
+      "name": "CRYSIM",
+      "paper_ids": [
+        "CSP176"
+      ],
+      "software_ids": [
+        "crysim"
+      ],
+      "features": [
+        "wyckoff",
+        "symmetry-preserving"
+      ],
+      "role": "Encode space group, Wyckoff assignments and independent coordinates for optimization.",
+      "symmetry_behavior": "Separate discrete crystallographic choices from positional variables.",
+      "limitations": "Results depend on encoding bounds and the energy evaluator.",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42005-025-02380-y"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "diffcsp-pp",
+      "name": "DiffCSP++",
+      "paper_ids": [
+        "CSP154"
+      ],
+      "software_ids": [
+        "diffcsp-plus-plus"
+      ],
+      "features": [
+        "wyckoff",
+        "symmetry-preserving"
+      ],
+      "role": "Constrain lattice and coordinate diffusion using crystallographic symmetry.",
+      "symmetry_behavior": "Symmetry-compatible lattice representation and Wyckoff constraints.",
+      "limitations": "Symmetry conditioning is additional information; exact formula requires compatible counts.",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2402.03992"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "crystalformer",
+      "name": "CrystalFormer",
+      "paper_ids": [
+        "CSP177",
+        "CrystalFormerCSP2025"
+      ],
+      "software_ids": [
+        "crystalformer"
+      ],
+      "features": [
+        "wyckoff",
+        "symmetry-preserving",
+        "prototypes"
+      ],
+      "role": "Generate symmetry-inequivalent site sequences; support symmetry control and substitution workflows.",
+      "symmetry_behavior": "Reconstruct complete crystals from space group and site information.",
+      "limitations": "Original generation and later formula-conditioned CSP interfaces must be distinguished.",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.scib.2025.09.035",
+        "https://arxiv.org/abs/2512.18251"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "symmcd",
+      "name": "SymmCD",
+      "paper_ids": [
+        "CSP178"
+      ],
+      "software_ids": [
+        "symmcd"
+      ],
+      "features": [
+        "wyckoff",
+        "symmetry-preserving"
+      ],
+      "role": "Learn asymmetric-unit information together with its symmetry transformations.",
+      "symmetry_behavior": "Symmetry enters the generative variables rather than only geometric equivariance.",
+      "limitations": "Symmetry-aware generation alone does not establish exact formula conditioning.",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2502.03638"
+      ],
+      "checked_on": "2026-10-17"
+    },
+    {
+      "id": "paretocsp2",
+      "name": "ParetoCSP2",
+      "paper_ids": [
+        "CSP175"
+      ],
+      "software_ids": [
+        "paretocsp2"
+      ],
+      "features": [
+        "symmetry-diversity"
+      ],
+      "role": "Control space-group diversity within age–fitness evolutionary search.",
+      "symmetry_behavior": "Retain multiple symmetry classes across a population.",
+      "limitations": "Different polymorphs can share the same space group.",
+      "evidence_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202510792"
+      ],
+      "checked_on": "2026-10-17"
+    }
+  ]
+}

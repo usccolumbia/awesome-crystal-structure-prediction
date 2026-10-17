@@ -2,10 +2,10 @@
   "created_on": "2026-10-17",
   "literature_cutoff": "2026-10-16",
   "original_catalogue_records": 196,
-  "additional_paper_records": 9,
-  "paper_records": 205,
+  "additional_paper_records": 12,
+  "paper_records": 208,
   "software_records": 129,
-  "bibliography_entries": 211,
+  "bibliography_entries": 214,
   "availability_audit_dates": [
     "2026-10-16",
     "2026-10-17"
@@ -65,5 +65,22 @@
       "source": "https://github.com/usccolumbia/CSPBenchMetrics/blob/main/README.md",
       "checked_on": "2026-10-17"
     }
-  ]
+  ],
+  "structural_priors_update": {
+    "checked_on": "2026-10-17",
+    "profiles": 21,
+    "features": 9,
+    "new_papers": [
+      "USPEXTopology2019",
+      "MolecularUSPEX2012",
+      "MAGUS2023"
+    ],
+    "source_file": "data/structural_priors.json",
+    "magus_archive_evidence": "https://zenodo.org/api/records/14730874",
+    "current_data_sha256": {
+      "papers.json": "3994c6f308a4f7a5766d3ee77baa88d1a324c71ae9beef03655c375aa80bec7f",
+      "software.json": "b441bd788753535b9625048a25e05e3c73f8b9f8e305a24f91e61446d2e004b8",
+      "structural_priors.json": "24e3defafb3b199c0d7d287ba108120046710088c94b5791d6d29c83d90dfaa6"
+    }
+  }
 }

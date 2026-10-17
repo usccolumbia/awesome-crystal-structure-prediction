@@ -168,6 +168,7 @@ Labels attribute papers to named authors or documented collaborations. They are 
 ## Jian Sun–Wang–Han / MAGUS team
 
 - [Efficient crystal structure prediction based on the symmetry principle](https://doi.org/10.1038/s43588-025-00775-z) (2025) — Evolutionary and genetic search. [Attribution source](https://doi.org/10.1038/s43588-025-00775-z)
+- [MAGUS: machine learning and graph theory assisted universal structure searcher](https://doi.org/10.1093/nsr/nwad128) (2023) — Evolutionary and genetic search. [Attribution source](https://doi.org/10.1093/nsr/nwad128)
 
 ## Jianjun Hu / USC crystal prediction collaboration
 
@@ -279,6 +280,8 @@ Labels attribute papers to named authors or documented collaborations. They are 
 - [How Evolutionary Crystal Structure Prediction Works—and Why](https://doi.org/10.1021/ar1001318) (2011) — Context, evaluators and evaluation. [Attribution source](https://pubs.acs.org/doi/10.1021/ar1001318)
 - [Evolutionary metadynamics: a novel method to predict crystal structures](https://doi.org/10.1039/C2CE06642D) (2012) — Energy-landscape exploration. [Attribution source](https://pubs.rsc.org/en/content/articlelanding/2012/ce/c2ce06642d)
 - [New developments in evolutionary structure prediction algorithm USPEX](https://doi.org/10.1016/j.cpc.2012.12.009) (2013) — Evolutionary and genetic search. [Attribution source](https://uspex-team.org/static/file/Lyakhov-CPC-2013.pdf)
+- [Topology-based crystal structure generator](https://doi.org/10.1016/j.cpc.2018.09.016) (2019) — Construction, templates and discrete search. [Attribution source](https://doi.org/10.1016/j.cpc.2018.09.016)
+- [Constrained evolutionary algorithm for structure prediction of molecular crystals: methodology and applications](https://doi.org/10.1107/S0108768112017466) (2012) — Evolutionary and genetic search. [Attribution source](https://doi.org/10.1107/S0108768112017466)
 
 ## Oganov–Pickard–Zhu–Needs review collaboration
 
