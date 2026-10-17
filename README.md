@@ -10,7 +10,7 @@ A curated directory of **algorithms, papers, source code, pretrained models, dat
 
 Companion resources for *Crystal Structure Prediction from Search to Learning: A 30-Year Expedition* (survey in preparation). Related collection: [Awesome Crystal Prototype](https://github.com/usccolumbia/awesome-crystal-prototype).
 
-**208 literature/software-paper records · 129 implementation and component entries · 42 formula-conditioning audits.** Literature window: 1996–16 October 2026. Resource checks: 16–17 October 2026. This is a curated collection, not an exhaustive census or a performance ranking. The 1996 start is a survey boundary; the founding USPEX journal papers appeared in 2006.
+**210 literature/software-paper records · 129 implementation and component entries · 42 formula-conditioning audits.** Literature window: 1996–16 October 2026. Resource checks: 16–17 October 2026. This is a curated collection, not an exhaustive census or a performance ranking. The 1996 start is a survey boundary; the founding USPEX journal papers appeared in 2006.
 
 ## Contents
 

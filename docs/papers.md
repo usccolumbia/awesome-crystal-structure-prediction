@@ -1,6 +1,6 @@
 # Paper catalogue
 
-208 records, grouped by primary category. All source records are in [papers.json](../data/papers.json); citations are in [references.bib](../references.bib).
+210 records, grouped by primary category. All source records are in [papers.json](../data/papers.json); citations are in [references.bib](../references.bib).
 
 ## Construction, templates and discrete search
 
@@ -3004,6 +3004,25 @@ Philipp Höllmer; Thomas Egg; Maya Martirossyan; Eric Fuemmeler; Zeren Shui; Ami
 
 **Scope:** Benchmark CSP and de novo stability results are different tasks; independent DFT checks remain necessary. Stochastic interpolants unify diffusion and flow matching as special cases; original model's CSP/DNG benchmarks should be distinguished from later reward-guided extensions.
 
+<a id="tgdmat2025"></a>
+### 2025 — Periodic Materials Generation using Text-Guided Joint Diffusion Model
+
+**TGDMat2025 · Published conference paper · Atomic / inorganic**
+
+Kishalay Das; Subhojyoti Khastagir; Pawan Goyal; Seung-Cheol Lee; Satadeep Bhattacharjee; Niloy Ganguly. *International Conference on Learning Representations*. [Paper](https://arxiv.org/abs/2503.00522)
+
+**Method:** TGDMat: text-guided joint diffusion. Condition denoising on textual descriptions while jointly generating atomic types, fractional coordinates and lattice parameters with a periodic E(3)-equivariant graph neural network.
+
+**Inputs:** Text descriptions of desired composition and structural characteristics; task-specific CSP and generation setups
+
+**Official source code:** [Repository](https://github.com/kdmsit/TGDMat) (separate software availability audit pending)
+
+**Groups:** [Das–Khastagir–Goyal–Lee–Bhattacharjee–Ganguly / TGDMat collaboration](https://arxiv.org/abs/2503.00522)
+
+**Evidence:** Primary arXiv record and official author repository; bibliographic metadata and method overview checked. [source 1](https://arxiv.org/abs/2503.00522) · [source 2](https://github.com/kdmsit/TGDMat)
+
+**Scope:** Rich structural descriptions supply more information than formula-only CSP. Exact full-cell composition enforcement is not independently verified here; results depend on the text and task protocol. No runtime reproduction is claimed.
+
 <a id="csp177"></a>
 ### 2025 — Space group informed transformer for crystalline materials generation
 
@@ -3121,6 +3140,25 @@ Tin Hadži Veljković; Joshua Rosenthal; Ivor Lončarić; Jan-Willem van de Meen
 **Evidence:** Primary arXiv abstract / authors and author project explanation. [source 1](https://arxiv.org/abs/2604.02270) · [source 2](https://stases.github.io/blogposts/crystalite/) · [source 3](https://arxiv.org/html/2604.02270)
 
 **Scope:** Preprint results depend on compared baselines / sample budget. Lightweight architecture and S.U.N. discovery performance do not establish unseen-prototype CSP.
+
+<a id="maskgxt2026"></a>
+### 2026 — Discovering Crystal Structure Prediction Algorithms with an AI Co-Scientist
+
+**MaskGXT2026 · Preprint · Atomic / inorganic**
+
+Kiyoung Seong; Nayoung Kim; Sungsoo Ahn. *arXiv*. [Paper](https://arxiv.org/abs/2606.22866)
+
+**Method:** MaskGXT: masked generative crystal Transformer. Generate discrete crystal tokens from chemical composition using iterative unmasking, crystallographic symmetry tokens, space-group-stratified sampling and sub-bin coordinate refinement.
+
+**Inputs:** Chemical composition; symmetry tokens are part of the generated crystal representation
+
+**Official source code:** [Repository](https://github.com/kiyoung98/MaskGXT) (separate software availability audit pending)
+
+**Groups:** [Seong–Kim–Ahn / MaskGXT collaboration](https://arxiv.org/abs/2606.22866)
+
+**Evidence:** Primary arXiv record and official author repository; bibliographic metadata and method overview checked. [source 1](https://arxiv.org/abs/2606.22866) · [source 2](https://github.com/kiyoung98/MaskGXT)
+
+**Scope:** Preprint results are benchmark-specific. Composition-conditioned CSP is reported; exact per-element cell-count enforcement has not been independently audited here, and no runtime reproduction is claimed.
 
 <a id="csp187"></a>
 ### 2026 — Efficient symmetry-aware materials generation via hierarchical generative flow networks

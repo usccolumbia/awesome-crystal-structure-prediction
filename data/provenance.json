@@ -2,10 +2,10 @@
   "created_on": "2026-10-17",
   "literature_cutoff": "2026-10-16",
   "original_catalogue_records": 196,
-  "additional_paper_records": 12,
-  "paper_records": 208,
+  "additional_paper_records": 14,
+  "paper_records": 210,
   "software_records": 129,
-  "bibliography_entries": 214,
+  "bibliography_entries": 216,
   "availability_audit_dates": [
     "2026-10-16",
     "2026-10-17"
@@ -82,5 +82,16 @@
       "software.json": "b441bd788753535b9625048a25e05e3c73f8b9f8e305a24f91e61446d2e004b8",
       "structural_priors.json": "24e3defafb3b199c0d7d287ba108120046710088c94b5791d6d29c83d90dfaa6"
     }
+  },
+  "survey_sync": {
+    "checked_on": "2026-10-17",
+    "added_papers": [
+      "MaskGXT2026",
+      "TGDMat2025"
+    ],
+    "paper_records": 210,
+    "software_records": 129,
+    "note": "Added survey-only MaskGXT and TGDMat papers with official code links; software availability profiles and the 42-record formula audit are unchanged.",
+    "papers_sha256": "34314fd8f1b37046e06d7c4997f9adf177a1a7deb18a0a8691cb266fcc2c030f"
   }
 }

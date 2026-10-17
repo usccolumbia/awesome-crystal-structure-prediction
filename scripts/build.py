@@ -81,6 +81,7 @@ for cat in [1,2,3,4,5,6,7,0]:
  lines += [f'## {C[cat]}','']
  for p in sorted((p for p in papers if p['primary_category']==cat),key=lambda p:(p['year'],p['title'])):
   lines += [f"<a id=\"{p['id'].lower()}\"></a>",f"### {p['year']} — {p['title']}",'',f"**{p['id']} · {p.get('publication_status','')} · {p['domain']}**",'',f"{'; '.join(p['authors'])}. *{p.get('venue','')}*. {link('Paper',p['url'])}",'',f"**Method:** {p['method']}. {p.get('workflow','')}",'',f"**Inputs:** {p.get('inputs','See paper')}"]
+  if p.get('code_url'):lines += ['', '**Official source code:** '+link('Repository',p['code_url'])+' (separate software availability audit pending)']
   if p.get('structural_priors'):lines += ['', '**Structural knowledge:** '+', '.join(feature_labels[t] for t in p['structural_priors'])+' — [Mechanisms and limits](structural-priors.md)']
   if S[p['id']]:lines += ['', '**Software:** '+' · '.join(link(s['name'],'software.md#'+s['id']) for s in S[p['id']])]
   if p.get('research_groups'):lines += ['', '**Groups:** '+' · '.join(link(g['label'],g.get('source_url','')) for g in p['research_groups'])]

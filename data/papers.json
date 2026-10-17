@@ -14434,5 +14434,134 @@
       "topology"
     ],
     "search_text": "magus2023 magus2023 magus: machine learning and graph theory assisted universal structure searcher 2023 junjie wang hao gao yu han chi ding shuning pan yong wang qiuhan jia hui-tian wang dingyu xing jian sun graph-decomposition and ml-assisted evolutionary search extract and rearrange graph-based fragments; accelerate structure evaluation using on-the-fly learned potentials. composition, cell bounds and a reference energy evaluator reference electronic-structure or interatomic-potential evaluator; see paper-specific workflow atomic / inorganic fixed composition fixed composition not a learned generative proposal method building-blocks symmetry-diversity symmetry-preserving topology constructive / template / discrete search evolutionary / genetic search adaptive / ml-guided search jian sun–wang–han / magus team"
+  },
+  {
+    "id": "MaskGXT2026",
+    "title": "Discovering Crystal Structure Prediction Algorithms with an AI Co-Scientist",
+    "year": 2026,
+    "doi": "10.48550/arXiv.2606.22866",
+    "url": "https://arxiv.org/abs/2606.22866",
+    "authors": [
+      "Kiyoung Seong",
+      "Nayoung Kim",
+      "Sungsoo Ahn"
+    ],
+    "venue": "arXiv",
+    "publication_status": "Preprint",
+    "method": "MaskGXT: masked generative crystal Transformer",
+    "workflow": "Generate discrete crystal tokens from chemical composition using iterative unmasking, crystallographic symmetry tokens, space-group-stratified sampling and sub-bin coordinate refinement.",
+    "inputs": "Chemical composition; symmetry tokens are part of the generated crystal representation",
+    "composition_scope": "Fixed composition",
+    "energy_evaluator": "Post-generation evaluation; see the paper-specific protocol",
+    "limitations": "Preprint results are benchmark-specific. Composition-conditioned CSP is reported; exact per-element cell-count enforcement has not been independently audited here, and no runtime reproduction is claimed.",
+    "code_url": "https://github.com/kiyoung98/MaskGXT",
+    "primary_category": 7,
+    "secondary_categories": [],
+    "categories": [
+      7
+    ],
+    "domain": "Atomic / inorganic",
+    "role": "Method",
+    "authors_complete": true,
+    "authors_verified": [
+      "Kiyoung Seong",
+      "Nayoung Kim",
+      "Sungsoo Ahn"
+    ],
+    "evidence_read": "Primary arXiv record and official author repository; bibliographic metadata and method overview checked",
+    "source_urls": [
+      "https://arxiv.org/abs/2606.22866",
+      "https://github.com/kiyoung98/MaskGXT"
+    ],
+    "research_groups": [
+      {
+        "id": "seong-kim-ahn-maskgxt",
+        "label": "Seong–Kim–Ahn / MaskGXT collaboration",
+        "named_authors": [
+          "Kiyoung Seong",
+          "Nayoung Kim",
+          "Sungsoo Ahn"
+        ],
+        "source_url": "https://arxiv.org/abs/2606.22866",
+        "basis": "Named authors on the primary paper; collaboration label does not imply exclusive ownership",
+        "original_group_label": "Seong–Kim–Ahn / MaskGXT collaboration"
+      }
+    ],
+    "verified_on": "2026-10-17",
+    "metadata_verification": "Primary arXiv title and authors matched; official code repository checked",
+    "bibtex_key": "MaskGXT2026",
+    "metadata_source": "Survey bibliography and primary sources",
+    "structural_priors": [],
+    "composition_scope_original": "Fixed composition",
+    "generative_csp_mode": "Not included in the 42-record formula-conditioning audit"
+  },
+  {
+    "id": "TGDMat2025",
+    "title": "Periodic Materials Generation using Text-Guided Joint Diffusion Model",
+    "year": 2025,
+    "doi": "10.48550/arXiv.2503.00522",
+    "url": "https://arxiv.org/abs/2503.00522",
+    "authors": [
+      "Kishalay Das",
+      "Subhojyoti Khastagir",
+      "Pawan Goyal",
+      "Seung-Cheol Lee",
+      "Satadeep Bhattacharjee",
+      "Niloy Ganguly"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "publication_status": "Published conference paper",
+    "method": "TGDMat: text-guided joint diffusion",
+    "workflow": "Condition denoising on textual descriptions while jointly generating atomic types, fractional coordinates and lattice parameters with a periodic E(3)-equivariant graph neural network.",
+    "inputs": "Text descriptions of desired composition and structural characteristics; task-specific CSP and generation setups",
+    "composition_scope": "Task-dependent composition constraints",
+    "energy_evaluator": "Post-generation evaluation; see the paper-specific protocol",
+    "limitations": "Rich structural descriptions supply more information than formula-only CSP. Exact full-cell composition enforcement is not independently verified here; results depend on the text and task protocol. No runtime reproduction is claimed.",
+    "code_url": "https://github.com/kdmsit/TGDMat",
+    "primary_category": 7,
+    "secondary_categories": [],
+    "categories": [
+      7
+    ],
+    "domain": "Atomic / inorganic",
+    "role": "Method",
+    "authors_complete": true,
+    "authors_verified": [
+      "Kishalay Das",
+      "Subhojyoti Khastagir",
+      "Pawan Goyal",
+      "Seung-Cheol Lee",
+      "Satadeep Bhattacharjee",
+      "Niloy Ganguly"
+    ],
+    "evidence_read": "Primary arXiv record and official author repository; bibliographic metadata and method overview checked",
+    "source_urls": [
+      "https://arxiv.org/abs/2503.00522",
+      "https://github.com/kdmsit/TGDMat"
+    ],
+    "research_groups": [
+      {
+        "id": "das-goyal-ganguly-tgdmat",
+        "label": "Das–Khastagir–Goyal–Lee–Bhattacharjee–Ganguly / TGDMat collaboration",
+        "named_authors": [
+          "Kishalay Das",
+          "Subhojyoti Khastagir",
+          "Pawan Goyal",
+          "Seung-Cheol Lee",
+          "Satadeep Bhattacharjee",
+          "Niloy Ganguly"
+        ],
+        "source_url": "https://arxiv.org/abs/2503.00522",
+        "basis": "Named authors on the primary paper; collaboration label does not imply exclusive ownership",
+        "original_group_label": "Das–Khastagir–Goyal–Lee–Bhattacharjee–Ganguly / TGDMat collaboration"
+      }
+    ],
+    "verified_on": "2026-10-17",
+    "metadata_verification": "Primary arXiv title and authors matched; official code repository checked",
+    "bibtex_key": "TGDMat2025",
+    "metadata_source": "Survey bibliography and primary sources",
+    "structural_priors": [],
+    "composition_scope_original": "Task-dependent composition constraints",
+    "generative_csp_mode": "Not included in the 42-record formula-conditioning audit"
   }
 ]

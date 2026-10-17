@@ -76,6 +76,10 @@ Labels attribute papers to named authors or documented collaborations. They are 
 
 - [Siamese foundation models for crystal structure prediction](https://www.nature.com/articles/s41467-026-72362-3) (2026) — Learned generation and conditional CSP. [Attribution source](https://www.nature.com/articles/s41467-026-72362-3)
 
+## Das–Khastagir–Goyal–Lee–Bhattacharjee–Ganguly / TGDMat collaboration
+
+- [Periodic Materials Generation using Text-Guided Joint Diffusion Model](https://arxiv.org/abs/2503.00522) (2025) — Learned generation and conditional CSP. [Attribution source](https://arxiv.org/abs/2503.00522)
+
 ## Day / GLEE–mol-CSPy collaboration
 
 - [Current approaches to predicting molecular organic crystal structures](https://doi.org/10.1080/0889311X.2010.517526) (2011) — Context, evaluators and evaluation. [Attribution source](https://www.tandfonline.com/doi/pdf/10.1080/0889311X.2010.517526)
@@ -380,6 +384,10 @@ Labels attribute papers to named authors or documented collaborations. They are 
 - [First Step Towards Planning of Syntheses in Solid‐State Chemistry: Determination of Promising Structure Candidates by Global Optimization](https://doi.org/10.1002/anie.199612861) (1996) — Context, evaluators and evaluation. [Attribution source](https://doi.org/10.1002/anie.199612861)
 - [A Concept for Synthesis Planning in Solid-State Chemistry](https://doi.org/10.1002/1521-3773(20021018)41:20<3746::AID-ANIE3746>3.0.CO;2-2) (2002) — Context, evaluators and evaluation. [Attribution source](https://doi.org/10.1002/1521-3773(20021018)41:20%3C3746::AID-ANIE3746%3E3.0.CO;2-2)
 - [Global exploration of the energy landscape of solids on the ab initio level](https://doi.org/10.1039/B709943F) (2007) — Energy-landscape exploration. [Attribution source](https://arxiv.org/abs/0711.2708)
+
+## Seong–Kim–Ahn / MaskGXT collaboration
+
+- [Discovering Crystal Structure Prediction Algorithms with an AI Co-Scientist](https://arxiv.org/abs/2606.22866) (2026) — Learned generation and conditional CSP. [Attribution source](https://arxiv.org/abs/2606.22866)
 
 ## Seungwu Han / SPINNER collaboration
 
