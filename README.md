@@ -192,7 +192,7 @@ Categories describe candidate construction or search. Learned energy evaluators,
 | **KLDM** | [2025 CSP172](https://proceedings.mlr.press/v267/cornet25a.html) | [Source](https://github.com/frcnt/kldm) | [Profile](docs/software.md#kldm) |
 | **Mat2Seq (AIRS)** | [2024 CSP149](https://papers.nips.cc/paper_files/paper/2024/hash/e23133d34964a0a09f6d076fc4b922a4-Abstract-Conference.html) | [Source](https://github.com/divelab/AIRS/tree/main/OpenMat/Mat2Seq) | [Profile](docs/software.md#mat2seq-airs) |
 | **MatterGen** | [2025 CSP159](https://www.nature.com/articles/s41586-025-08628-5) | [Source](https://github.com/microsoft/mattergen) | [Profile](docs/software.md#mattergen) |
-| **NextCrystal** | [2026 CSP189](https://arxiv.org/abs/2602.17176v4) | Not verified | [Profile](docs/software.md#nextcrystal) |
+| **NextCrystal** | [2026 CSP189](https://arxiv.org/abs/2602.17176v4) | [Code](https://github.com/Mu-Jinming/NextCrystal/tree/main) | [Profile](docs/software.md#nextcrystal) |
 | **OMatG** | [2025 CSP173](https://proceedings.mlr.press/v267/hollmer25a.html) | [Source](https://github.com/FERMat-ML/OMatG) | [Profile](docs/software.md#omatg) |
 | **OXtal** | [2025 CSP174](https://arxiv.org/abs/2512.06987) | [Source](https://github.com/OXtal/OXtal) | [Profile](docs/software.md#oxtal) |
 | **PackFlow** | [2026 CSP191](https://arxiv.org/abs/2602.20140) | [Source](https://github.com/learningmatter-mit/packflow) | [Profile](docs/software.md#packflow-molecular) |
